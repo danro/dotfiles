@@ -8,8 +8,9 @@ export PATH=/usr/local/mysql/bin:$PATH
 # bash aliases
 alias ls='~/scripts/ll.sh'
 alias ll='ls'
-alias d='cls && cd ~/.dotfiles && ll'
-alias h='cls && cd ~ && ll'
+alias d='cls && cd ~/.dotfiles && pwd && ll'
+alias h='cls && cd ~ && pwd && ll'
+alias s='cls && cd ~/Sites && pwd && ll'
 alias init-flash='~/scripts/init-flash.sh'
 alias init-git='~/scripts/init-git.sh'
 alias git-all='~/scripts/git-recursive-pull.sh'
