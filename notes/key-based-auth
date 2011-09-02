@@ -1,0 +1,21 @@
+### ON CLIENT ###
+
+ssh-keygen -t rsa
+scp ~/.ssh/id_rsa.pub user@example.com:~/
+ssh user@example.com
+
+### ON SERVER ###
+
+mkdir .ssh
+cat id_rsa.pub >> .ssh/authorized_keys
+rm id_rsa.pub
+
+chmod go-w ~
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/authorized_keys
+
+
+### ON CLIENT ###
+
+ssh -i ~/.ssh/id_rsa user@example.com
+

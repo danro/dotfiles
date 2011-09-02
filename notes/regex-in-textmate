@@ -1,0 +1,8 @@
+// FIND
+
+(.*?).jpg
+
+// REPLACE
+
+<asset id="$1" source="imagePath/$1.jpg" />
+

@@ -1,0 +1,191 @@
+" What a funny comment character
+" .gvimrc.local
+
+" Remember to set the following in vimrc:
+" let g:snips_trigger_key='<c-space>' " Custom snipmate trigger
+" let mapleader="," " Change the leader
+" let g:loaded_matchparen=1 " Disable matchparen highlight
+
+" start macvim config
+if has("gui_macvim")
+
+  " Colors / font
+  colorscheme danro-color
+  set guifont=Monaco:h11
+  set noantialias
+
+  " GUI Options - remove toolbar, scrollbars
+  " add console dialogs, tabs, menubar.
+  set guioptions=cemg
+
+  " Line numbers & code folding
+  set number
+  set foldcolumn=1
+  set nofoldenable
+
+  " Whitespace stuff
+  set cindent
+  set tabstop=2
+  set shiftwidth=2
+  set softtabstop=2
+  set expandtab
+  set listchars=tab:\⎯\⎯,trail:\  
+  set formatoptions-=tcr "Don't autowrap or auto-comment
+  set textwidth=0 "Do not autowrap, really
+  set linebreak " Wrap lines at whole words
+  set wrap " Enable code wrapping
+  set nolist " Hide invisibles
+
+  " Esc - quit select mode and go straight to normal mode
+  smap <Esc> <C-c>
+
+  " Remove Full Screen key bind
+  macmenu Window.Toggle\ Full\ Screen\ Mode key=<nop>
+
+  " Remove Terminal key bind
+  unmap <D-e>
+
+  " Find - change key to use standard command
+  macmenu Edit.Find.Find\.\.\. key=<nop>
+  imap <D-f> <Esc>/
+  map <D-f> <Esc>/
+  imap <silent> <D-F> <Esc>:promptf<CR>
+  map <silent> <D-F> <Esc>:promptf<CR>
+  
+  " Find Next - tweak so that it can be used instantly
+  macmenu Edit.Find.Find\ Next key=<nop>
+  cmap <D-g> <CR>
+  map <D-g> n
+  imap <D-g> <Esc>n
+  smap <D-g> <Esc>n 
+
+  " Esc - clear any search highlights
+  nnoremap <silent> <Esc> <Esc>:noh<CR>
+
+  " Shift indents with Command+[ or ]
+  map <D-]> >gv
+  nmap <D-]> >>
+  imap <D-]> <Esc><D-]>
+  map <D-[> <gv
+  nmap <D-[> <<
+  imap <D-[> <Esc><D-[>
+
+  " Toggle invisibles with list shortcut
+  nmap <silent> <leader>l :set list!<CR>
+
+  " Shift+Space - duplicate selected lines
+  map <S-Space> "*_YP
+
+  " Shift+Tab omnifunc completion
+  imap <S-Tab> <C-X><C-O>
+
+  " Backspace / Delete tweaks:
+  " delete whole words with Alt+Backspace
+  nmap <A-BS> ciw
+  " delete to end of word with Alt+Delete
+  imap <A-Del> <C-[>lce
+  nmap <A-Del> ce
+  " always enter insert after deletion
+  nmap <BS> a<BS>
+  nmap <Del> i<Del>
+  vmap <BS> <BS>i
+  vmap <Del> <Del>i
+  smap <BS> <BS>i
+  smap <Del> <Del>i
+
+  " Command+d - delete current or visually selected line.
+  imap <D-d> <Esc><C-v>Vd
+  map <D-d> <C-v>Vd
+
+  " Tweak cursor movement during Alt / Shift 
+  nmap <A-Right> w
+  nmap <A-Left> b
+  imap <S-M-Right> <C-[>lve<C-g>
+  imap <S-M-Left> <C-[>hvb<C-g>
+  nmap <S-M-Right> ve<C-g>
+  nmap <S-M-Left> vb<C-g>
+  vmap <S-M-Right> e
+  vmap <S-M-Left> b
+  smap <S-M-Right> <C-O>e
+  smap <S-M-Left> <C-O>b
+
+  " Alt + Up/Down for faster vertical cursor movement
+  map <A-Down> 7j
+  imap <A-Down> <Esc>7ji
+  map <A-Up> 7k
+  imap <A-Up> <Esc>7ki
+
+  " NERDTree options
+  let NERDTreeIgnore=['\.DS_Store$', '\~$']
+  let NERDTreeShowHidden=1
+  let NERDTreeDirArrows=1
+  let NERDTreeMouseMode=1
+  let NERDTreeQuitOnOpen=1
+  map <Leader>N <Esc>:let NERDTreeQuitOnOpen=0<CR>:NERDTree<CR>
+
+  " Command+/ to toggle comments
+  map <D-/> <plug>NERDCommenterToggle
+  imap <D-/> <Esc><plug>NERDCommenterTogglea
+
+  " CommandT options
+  let g:CommandTAlwaysShowDotFiles=1
+  set wildignore+=-assets,.git,*.gif,*.jpg,*.png,publish
+
+  " Command+Return - ActionScript - handle .as files and map the flash preview
+  au Bufread,BufNewFile *.as call InitActionScript()
+  function InitActionScript()
+    set filetype=actionscript
+    imap <silent> <D-Return> <Esc>:w<CR>:silent exe "!open ~/.dotfiles/mvim/flash-preview.jsfl"<CR>
+    map <silent> <D-Return> <Esc>:w<CR>:silent exe "!open ~/.dotfiles/mvim/flash-preview.jsfl"<CR>
+  endfunction
+
+  " Command+R - Web Dev - save file and reload web browser
+  au Bufread,BufNewFile *.html,*.css,*.js,*.php,*.json call InitWebBuild()
+  function InitWebBuild()
+    imap <silent> <D-r> <Esc>:w<CR>:silent exe "!osascript ~/.dotfiles/mvim/web-build.scpt"<CR>
+    map <silent> <D-r> <Esc>:w<CR>:silent exe "!osascript ~/.dotfiles/mvim/web-build.scpt"<CR>
+  endfunction
+
+  " Disable backup behavior
+  set nobackup
+  set nowritebackup
+  set noswapfile
+
+  " Command+Z - force command-mode undo 
+  macmenu Edit.Undo key=<nop>
+  macmenu Edit.Redo key=<nop>
+  map <D-z> :undo<CR>
+  map <D-Z> :redo<CR>
+  imap <D-z> <Esc>:undo<CR>
+  imap <D-Z> <Esc>:redo<CR>
+  vmap <D-z> <Esc>:undo<CR>
+  vmap <D-Z> <Esc>:redo<CR>
+
+  " Disable annoying tooltips
+  set noballooneval
+  
+  " Control + Left/Right - move splits around
+  " - remember to disable Spaces in OSX
+  map <C-Left> <C-w>H<C-w>=
+  map <C-Right> <C-w>x<C-w>l<C-w>=
+
+  " Return - insert normal mode line break
+  nmap <Return> :normal O<CR><Down>
+
+  " Control + A - append to end of line
+  nmap <C-a> <S-a>
+
+  " ,. - new file in vertical split, then call CommandT
+  imap <Leader>. <Esc>:rightb vnew<CR><C-w>=<D-t>
+  map <Leader>. <Esc>:rightb vnew<CR><C-w>=<D-t>
+
+  " ,h - same as above, but horizontal
+  imap <Leader>h <Esc>:new<CR><D-t>
+  map <Leader>h <Esc>:new<CR><D-t>
+
+  " ,, - activate surround.vim plugin for current line or selection 
+  nmap <Leader><Leader> ^vg_S
+  smap <Leader><Leader> <C-g>S
+
+" end macvim config
+endif

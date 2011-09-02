@@ -1,0 +1,8 @@
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^rickrockstar.dev$
+RewriteRule ^(.*)$ http://127.0.0.1:3000%{REQUEST_URI} [P,QSA,L]
+
+RewriteCond %{HTTP_HOST} ^danro11.local:13015$
+RewriteRule ^(.*)$ http://127.0.0.1:3000%{REQUEST_URI} [P,QSA,L]
+

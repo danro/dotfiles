@@ -1,0 +1,9 @@
+Create zip with resource forks intact:
+ditto -c -k --sequesterRsrc SOURCE DEST.zip
+
+Extract a ditto zip:
+ditto -x -k --sequesterRsrc SOURCE.zip
+
+Create zip with NO resource forks:
+ditto -c -k --norsrc SOURCE DEST.zip
+

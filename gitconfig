@@ -1,0 +1,23 @@
+[user]
+	name = Dan Rogers
+	email = dan@danro.net
+[core]
+	excludesfile = ~/.gitignore
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[diff]
+  external = ~/scripts/git-diff-wrapper.sh
+[alias]
+	st = status
+	ci = commit -vam
+	co = checkout
+	up = pull
+	unstage = reset HEAD
+	untrack = rm --cached
+	remotes = remote -v
+	branches = branch -va --color
+	diffs = diff --stat master origin/master
+	subinit = submodule update --init --recursive
+	subpull = submodule foreach git pull origin master
+	zip = archive --format zip --output
