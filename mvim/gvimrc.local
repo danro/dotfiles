@@ -164,8 +164,8 @@ if has("gui_macvim")
   map <C-Left> <C-w>H<C-w>=
   map <C-Right> <C-w>x<C-w>l<C-w>=
 
-  " Return - insert normal mode line break
-  nmap <Return> :normal O<CR><Down>
+  " Return - use insert mode line breaks in normal mode.
+  nmap <Return> i<Return>
 
   " Control + A - append to end of line
   nmap <C-a> <S-a>

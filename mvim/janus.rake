@@ -46,8 +46,6 @@ vim_plugin_task "actionscript", "git://github.com/vim-scripts/actionscript.vim--
 vim_plugin_task "vim-addon-mw-utils", "git://github.com/MarcWeber/vim-addon-mw-utils.git"
 vim_plugin_task "tlib_vim", "git://github.com/tomtom/tlib_vim.git"
 vim_plugin_task "snipmate-garbas", "git://github.com/garbas/vim-snipmate.git"
-vim_plugin_task "snipmate-snippets", "git://github.com/honza/snipmate-snippets.git"
-
 
 # disable formatoptions "o" to disallow comment continuation
 # in various ftplugin that enable it

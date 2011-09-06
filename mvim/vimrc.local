@@ -1,5 +1,4 @@
 " ~/.vimrc.local
 
-let g:snips_trigger_key='<c-space>' " Custom snipmate trigger
 let mapleader="," " Change the leader
-let g:loaded_matchparen=1 " Disable matchparen highlight
+" let g:loaded_matchparen=1 " Disable matchparen highlight
