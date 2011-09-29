@@ -6,8 +6,7 @@ export EDITOR='mate -w'
 export PATH=/usr/local/mysql/bin:$PATH
 
 # bash aliases
-alias ls='~/scripts/ll.sh'
-alias ll='ls'
+alias ll='~/scripts/ll.sh'
 alias d='cls && cd ~/.dotfiles && pwd && ll'
 alias h='cls && cd ~ && pwd && ll'
 alias s='cls && cd ~/Sites && pwd && ll'
@@ -38,3 +37,9 @@ alias mc-ltrain='cd ~/.mc-server && java -Xmx1G -Xms1G -jar minecraft_server.jar
 alias mc-btrain='dzip ~/.mc-server ~/Dropbox/Library/Minecraft/train.zip'
 alias mc-fixperms='cd ~/../_minecraft && sudo chown -R _minecraft:_minecraft *'
 
+# Setup Amazon EC2 Command-Line Tools
+export EC2_HOME=~/.ec2
+export PATH=$PATH:$EC2_HOME/bin
+export EC2_PRIVATE_KEY=`ls $EC2_HOME/pk-*.pem`
+export EC2_CERT=`ls $EC2_HOME/cert-*.pem`
+export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home/
