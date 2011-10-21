@@ -32,7 +32,7 @@ snippet flash
 	  <title></title>
 	  <meta name="viewport" content="width=device-width">
 	  <script src="js/swfobject.min.js"></script>
-	  <style>
+	  <style type="text/css">
 		body {
 		  background: #a0a0a0;
 		  margin: 0;
@@ -60,8 +60,20 @@ snippet flash
 		  content.style.width = width + "px";
 		  content.style.height = height + "px";
 		  document.title = swfFile;
-		  swfobject.embedSWF(swfFile + ".swf", "content", width, height, "9.0.0");
+		  swfobject.embedSWF(swfFile + ".swf", "content", width, height, "9.0.28");
 		})();
 	  </script>
 	</body>
 	</html>
+snippet swf
+	swfobject.embedSWF(${1:url}, ${2:elementId}, ${3:width}, ${4:height}, "${5:9.0.28}", null, ${6:flashVars}, ${7:params}, ${8:attributes}, ${9:callback});
+snippet qq
+	<article>
+	  <h4>${1:header}</h4>
+		<section>
+		  <p>${2:para}</p>
+		  <p>${3:para}</p>
+		  <p>${4:para}</p>
+		  <p>${5:para}</p>
+		</section>
+	</article>

@@ -14,12 +14,14 @@ alias init-flash='~/scripts/init-flash.sh'
 alias init-git='~/scripts/init-git.sh'
 alias git-all='~/scripts/git-recursive-pull.sh'
 alias danro-ssh='ssh -i ~/.ssh/id_rsa danro@danro.net'
+alias eleven-ssh='ssh eleven@eleveninc.com'
 alias clear-dns='~/scripts/clear-dns-cache.sh'
 alias dzip='~/scripts/dzip.sh'
 alias vim='mvim'
 alias getip='curl http://www.whatismyip.org && echo'
 alias git-diff-vi='git diff --no-ext-diff -w "$@" | vi -R -'
 alias vimrc='mvim ~/.gvimrc.local'
+alias swfobject='mkdir -p js && cp -n ~/Sites/GitHub/flash/swfobject/swfobject.min.js js/'
 
 # clear OSX Terminal screen
 function cls() {

@@ -124,21 +124,20 @@ if has("gui_macvim")
 
   " CommandT options
   let g:CommandTAlwaysShowDotFiles=1
-  set wildignore+=-assets,.git,*.gif,*.jpg,*.png,publish,intermediate
+  set wildignore+=-assets,.git,*.gif,*.jpg,*.png,publish,intermediate,node_modules
 
-  " Command+Return - ActionScript - handle .as files and map the flash preview
+  " Command+R - Web Dev - reload current web browser 
+  imap <silent> <D-r> <Esc>:silent exe "!osascript ~/.dotfiles/mvim/web-build.scpt"<CR>
+  map <silent> <D-r> <Esc>:silent exe "!osascript ~/.dotfiles/mvim/web-build.scpt"<CR>
+
+  " Command+Return (or Command+R) - ActionScript - handle .as files and map the flash preview
   au Bufread,BufNewFile *.as call InitActionScript()
   function InitActionScript()
     set filetype=actionscript
     imap <silent> <D-Return> <Esc>:w<CR>:silent exe "!open ~/.dotfiles/mvim/flash-preview.jsfl"<CR>
     map <silent> <D-Return> <Esc>:w<CR>:silent exe "!open ~/.dotfiles/mvim/flash-preview.jsfl"<CR>
-  endfunction
-
-  " Command+R - Web Dev - save file and reload web browser
-  au Bufread,BufNewFile *.html,*.css,*.js,*.php,*.json call InitWebBuild()
-  function InitWebBuild()
-    imap <silent> <D-r> <Esc>:w<CR>:silent exe "!osascript ~/.dotfiles/mvim/web-build.scpt"<CR>
-    map <silent> <D-r> <Esc>:w<CR>:silent exe "!osascript ~/.dotfiles/mvim/web-build.scpt"<CR>
+    imap <silent> <D-r> <Esc>:w<CR>:silent exe "!open ~/.dotfiles/mvim/flash-preview.jsfl"<CR>
+    map <silent> <D-r> <Esc>:w<CR>:silent exe "!open ~/.dotfiles/mvim/flash-preview.jsfl"<CR>
   endfunction
 
   " Disable backup behavior

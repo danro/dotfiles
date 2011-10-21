@@ -1,0 +1,6 @@
+# calculate current directory
+du -smc
+
+# get available disk space
+df -h /
+

@@ -1,0 +1,30 @@
+snippet fv
+	var params:Object = this.root.loaderInfo.parameters;
+snippet url
+	${1:import flash.net.*;}
+	var url = "insertUrlHere";
+	navigateToURL(new URLRequest(url), "_blank");
+snippet tr
+	trace(${1:message});
+snippet tween
+	TweenMan.add(${1:target}, { ${2:visible: false}, ease: "${3:easeInOutQuint}"${4:, onComplete: fn} });
+snippet class
+	package ${1:project} {
+
+	  import flash.display.*;
+	  import flash.events.*;
+	  import flash.text.*;
+	  import com.tweenman.TweenMan;
+
+	  public class ${2:ClassName} extends MovieClip {
+
+	    ${3:// properties}
+	
+	    public function $2 () {
+	      ${4:// construct}
+	    }
+
+	    ${5:// methods}
+
+	  }
+	}
