@@ -30,6 +30,8 @@ if has("gui_macvim")
   set linebreak " Wrap lines at whole words
   set wrap " Enable code wrapping
   set nolist " Hide invisibles
+  set ignorecase " ignore case when searching
+  set smartcase " Ignore case if search pattern is all lowercase
 
   " Esc - quit select mode and go straight to normal mode
   smap <Esc> <C-c>
@@ -46,13 +48,13 @@ if has("gui_macvim")
   map <D-f> <Esc>/
   imap <silent> <D-F> <Esc>:promptf<CR>
   map <silent> <D-F> <Esc>:promptf<CR>
-  
+
   " Find Next - tweak so that it can be used instantly
   macmenu Edit.Find.Find\ Next key=<nop>
   cmap <D-g> <CR>
-  map <D-g> n
-  imap <D-g> <Esc>n
-  smap <D-g> <Esc>n 
+  map <D-g> :maca findNext:<CR>
+  imap <D-g> <Esc>:maca findNext:<CR>
+  smap <D-g> <Esc>:maca findNext:<CR>
 
   " Esc - clear any search highlights
   nnoremap <silent> <Esc> <Esc>:noh<CR>

@@ -41,6 +41,7 @@ vim_plugin_task "html5", "git://github.com/othree/html5.vim.git"
 vim_plugin_task "json", "git://github.com/vim-scripts/JSON.vim.git"
 vim_plugin_task "rename", "git://github.com/danro/rename.vim.git"
 vim_plugin_task "actionscript", "git://github.com/vim-scripts/actionscript.vim--Leider.git"
+vim_plugin_task "html_entities_helper", "git://github.com/firegoby/html_entities_helper.vim.git"
 
 # snipmate + dependencies
 vim_plugin_task "vim-addon-mw-utils", "git://github.com/MarcWeber/vim-addon-mw-utils.git"
