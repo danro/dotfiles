@@ -20,7 +20,7 @@ alias dzip='~/scripts/dzip.sh'
 alias vim='mvim'
 alias getip='curl http://www.whatismyip.org && echo'
 alias git-diff-vi='git diff --no-ext-diff -w "$@" | vi -R -'
-alias vimrc='mvim ~/.gvimrc.local'
+alias vimrc='cd ~/.vim && mvim gvimrc'
 alias swfobject='mkdir -p js && cp -n ~/Sites/GitHub/flash/swfobject/swfobject.min.js js/'
 
 # clear OSX Terminal screen
@@ -46,3 +46,4 @@ export EC2_PRIVATE_KEY=`ls $EC2_HOME/pk-*.pem`
 export EC2_CERT=`ls $EC2_HOME/cert-*.pem`
 export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home/
 alias ec2-instances='ec2-describe-instances --region us-west-1'
+

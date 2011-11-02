@@ -1,4 +1,0 @@
-" ~/.vimrc.local
-
-let mapleader="," " Change the leader
-" let g:loaded_matchparen=1 " Disable matchparen highlight

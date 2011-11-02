@@ -1,7 +1,8 @@
-" What a funny comment character
-" ~/.gvimrc.local
+" =====================================================================
+" MacVim configuration
+" " ~/.vim/gvimrc
+" =====================================================================
 
-" start macvim config
 if has("gui_macvim")
 
   " Colors / font
@@ -13,36 +14,13 @@ if has("gui_macvim")
   " add console dialogs, tabs, menubar.
   set guioptions=cemg
 
-  " Line numbers & code folding
-  set number
-  set foldcolumn=1
-  set nofoldenable
-
-  " Whitespace stuff
-  set cindent
-  set tabstop=2
-  set shiftwidth=2
-  set softtabstop=2
-  set expandtab
-  set listchars=tab:\⎯\⎯,trail:\  
-  set formatoptions-=tcr "Don't autowrap or auto-comment
-  set textwidth=0 "Do not autowrap, really
-  set linebreak " Wrap lines at whole words
-  set wrap " Enable code wrapping
-  set nolist " Hide invisibles
-  set ignorecase " ignore case when searching
-  set smartcase " Ignore case if search pattern is all lowercase
-
   " Esc - quit select mode and go straight to normal mode
   smap <Esc> <C-c>
 
   " Remove Full Screen key bind
   macmenu Window.Toggle\ Full\ Screen\ Mode key=<nop>
 
-  " Remove Terminal key bind
-  unmap <D-e>
-
-  " Find - change key to use standard command
+  " Find - remap Command+F to use command mode 
   macmenu Edit.Find.Find\.\.\. key=<nop>
   imap <D-f> <Esc>/
   map <D-f> <Esc>/
@@ -76,19 +54,17 @@ if has("gui_macvim")
   " Shift+Tab omnifunc completion
   imap <S-Tab> <C-X><C-O>
 
-  " Backspace / Delete tweaks:
+  " Backspace / delete tweaks:
   " delete whole words with Alt+Backspace
-  nmap <A-BS> ciw
-  " delete to end of word with Alt+Delete
-  imap <A-Del> <C-[>lce
-  nmap <A-Del> ce
+  nmap <A-bs> ciw
+  " delete to end of word with Alt+delete
+  imap <A-del> <C-[>lce
+  nmap <A-del> ce
   " always enter insert after deletion
-  nmap <BS> a<BS>
-  nmap <Del> i<Del>
-  vmap <BS> <BS>i
-  vmap <Del> <Del>i
-  smap <BS> <BS>i
-  smap <Del> <Del>i
+  nmap <bs>  a<bs>
+  nmap <del> i<del>
+  smap <bs>  b<bs>
+  smap <del> b<bs>
 
   " Command+d - delete current or visually selected line.
   imap <D-d> <Esc><C-v>Vd
@@ -98,7 +74,7 @@ if has("gui_macvim")
   macmenu File.Print key=<nop>
   nmap <D-p> V"0p
 
-  " Tweak cursor movement during Alt / Shift 
+  " Tweak cursor movement during Alt / Shift
   nmap <A-Right> w
   nmap <A-Left> b
   imap <S-M-Right> <C-[>lve<C-g>
@@ -116,19 +92,14 @@ if has("gui_macvim")
   map <A-Up> 7k
   imap <A-Up> <Esc>7ki
 
-  " NERDTree options
-  let NERDTreeIgnore=['\.DS_Store$', '\~$']
-  let NERDTreeShowHidden=1
-  let NERDTreeDirArrows=1
-  let NERDTreeMouseMode=1
-  let NERDTreeQuitOnOpen=1
-  map <Leader>N <Esc>:let NERDTreeQuitOnOpen=0<CR>:NERDTree<CR>
-
   " Command+/ to toggle comments
   map <D-/> <plug>NERDCommenterToggle
   imap <D-/> <Esc><plug>NERDCommenterTogglea
 
   " CommandT options
+  macmenu &File.New\ Tab key=<D-T>
+  map <D-t> :CommandT<CR>
+  imap <D-t> <Esc>:CommandT<CR>
   let g:CommandTAlwaysShowDotFiles=1
   set wildignore+=-assets,.git,*.gif,*.jpg,*.png,publish,intermediate,node_modules
 
@@ -145,11 +116,6 @@ if has("gui_macvim")
     imap <silent> <D-r> <Esc>:w<CR>:silent exe "!open ~/.dotfiles/mvim/flash-preview.jsfl"<CR>
     map <silent> <D-r> <Esc>:w<CR>:silent exe "!open ~/.dotfiles/mvim/flash-preview.jsfl"<CR>
   endfunction
-
-  " Disable backup behavior
-  set nobackup
-  set nowritebackup
-  set noswapfile
 
   " Command+Z - force command-mode undo 
   macmenu Edit.Undo key=<nop>
@@ -169,30 +135,33 @@ if has("gui_macvim")
   map <C-Left> <C-w>H<C-w>=
   map <C-Right> <C-w>x<C-w>l<C-w>=
 
+  " Adjust viewports to the same size
+  map <Leader>= <C-w>=
+  imap <Leader>= <Esc> <C-w>=
+
   " Return - use insert mode line breaks in normal mode.
   nmap <Return> i<Return>
 
-  " Control + A - append to end of line
-  nmap <C-a> <S-a>
-
-  " ,. - new file in vertical split, then call CommandT
-  imap <Leader>. <Esc>:rightb vnew<CR><C-w>=<D-t>
-  map <Leader>. <Esc>:rightb vnew<CR><C-w>=<D-t>
+  " ,. - new file in vertical split
+  imap <Leader>. <Esc>:rightb vnew<CR>
+  map <Leader>. <Esc>:rightb vnew<CR>
 
   " ,h - same as above, but horizontal
-  imap <Leader>h <Esc>:new<CR><D-t>
-  map <Leader>h <Esc>:new<CR><D-t>
+  imap <Leader>h <Esc>:new<CR>
+  map <Leader>h <Esc>:new<CR>
 
   " ,, - activate surround.vim plugin for current line or selection 
   nmap <Leader><Leader> ^vg_S
   smap <Leader><Leader> <C-g>S
-
-  set exrc " enable per-directory .vimrc files
-  set secure " disable unsafe commands in local .vimrc files
 
   " User commands for frequently edited files
   command -nargs=1 Desk :silent exe "!mvim ~/Desktop/<args>"
   command -nargs=1 Snip :silent exe "!mvim ~/.dotfiles/mvim/snippets/<args>.snippets"
 
 " end macvim config
+endif
+
+" Include NERDTree config
+if filereadable(expand("~/.vim/nerd.vim"))
+  source ~/.vim/nerd.vim
 endif

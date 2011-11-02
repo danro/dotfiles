@@ -1,2 +1,5 @@
 # Files to ignore
 -assets
+
+# git submodule tags
+tags
