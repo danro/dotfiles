@@ -94,6 +94,10 @@ if has("gui_macvim")
   imap <D-d> <Esc><C-v>Vd
   map <D-d> <C-v>Vd
 
+  " Command+p - replace current line with yank from register.
+  macmenu File.Print key=<nop>
+  nmap <D-p> V"0p
+
   " Tweak cursor movement during Alt / Shift 
   nmap <A-Right> w
   nmap <A-Left> b
@@ -133,8 +137,8 @@ if has("gui_macvim")
   map <silent> <D-r> <Esc>:silent exe "!osascript ~/.dotfiles/mvim/web-build.scpt"<CR>
 
   " Command+Return (or Command+R) - ActionScript - handle .as files and map the flash preview
-  au Bufread,BufNewFile *.as call InitActionScript()
-  function InitActionScript()
+  au Bufread,BufNewFile *.as call s:InitActionScript()
+  function s:InitActionScript()
     set filetype=actionscript
     imap <silent> <D-Return> <Esc>:w<CR>:silent exe "!open ~/.dotfiles/mvim/flash-preview.jsfl"<CR>
     map <silent> <D-Return> <Esc>:w<CR>:silent exe "!open ~/.dotfiles/mvim/flash-preview.jsfl"<CR>
@@ -182,6 +186,13 @@ if has("gui_macvim")
   " ,, - activate surround.vim plugin for current line or selection 
   nmap <Leader><Leader> ^vg_S
   smap <Leader><Leader> <C-g>S
+
+  set exrc " enable per-directory .vimrc files
+  set secure " disable unsafe commands in local .vimrc files
+
+  " User commands for frequently edited files
+  command -nargs=1 Desk :silent exe "!mvim ~/Desktop/<args>"
+  command -nargs=1 Snip :silent exe "!mvim ~/.dotfiles/mvim/snippets/<args>.snippets"
 
 " end macvim config
 endif

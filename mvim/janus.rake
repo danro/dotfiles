@@ -31,6 +31,8 @@ remove_plugin_task "searchfold"
 remove_plugin_task "endwise"
 remove_plugin_task "puppet"
 remove_plugin_task "scala"
+remove_plugin_task "jshint"
+remove_plugin_task "jslint"
 
 # override plugins
 override_plugin_task "nerdtree", "git://github.com/scrooloose/nerdtree.git"
