@@ -7,9 +7,6 @@
 call pathogen#infect()
 call pathogen#helptags()
 
-" Change the leader
-let mapleader=","
-
 " Don't beep
 set visualbell
 
@@ -26,14 +23,6 @@ syntax on
 set foldcolumn=1
 set nofoldenable
 
-" Set encoding
-set encoding=utf-8
-
-" Disable backup behavior
-set nobackup
-set nowritebackup
-set noswapfile
-
 " Whitespace stuff
 set cindent
 set tabstop=2
@@ -48,6 +37,14 @@ set wrap " Enable code wrapping
 set nolist " Hide invisibles
 set ignorecase " ignore case when searching
 set smartcase " Ignore case if search pattern is all lowercase
+
+" Set encoding
+set encoding=utf-8
+
+" Disable backup behavior
+set nobackup
+set nowritebackup
+set noswapfile
 
 " Status bar options
 set laststatus=2

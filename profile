@@ -20,7 +20,7 @@ alias dzip='~/scripts/dzip.sh'
 alias vim='mvim'
 alias getip='curl http://www.whatismyip.org && echo'
 alias git-diff-vi='git diff --no-ext-diff -w "$@" | vi -R -'
-alias vimrc='cd ~/.vim && mvim gvimrc'
+alias vimrc='cd ~/.vim && mvim gvimrc; cd -'
 alias swfobject='mkdir -p js && cp -n ~/Sites/GitHub/flash/swfobject/swfobject.min.js js/'
 
 # clear OSX Terminal screen

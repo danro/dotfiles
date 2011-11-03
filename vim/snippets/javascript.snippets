@@ -1,11 +1,11 @@
 snippet log
-	log(${1:""});
-
+	console.log(${1:});
+snippet logs
+	console.log("${1:}");
 snippet ready
 	$(function() {
 	  ${1}
 	});
-
 snippet resize
 	$(window).bind("resize", function () {
 	  log($(this).width());

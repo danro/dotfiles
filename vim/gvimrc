@@ -30,9 +30,9 @@ if has("gui_macvim")
   " Find Next - tweak so that it can be used instantly
   macmenu Edit.Find.Find\ Next key=<nop>
   cmap <D-g> <CR>
-  map <D-g> :maca findNext:<CR>
-  imap <D-g> <Esc>:maca findNext:<CR>
-  smap <D-g> <Esc>:maca findNext:<CR>
+  map <silent> <D-g> :maca findNext:<CR>
+  imap <silent> <D-g> <Esc>:maca findNext:<CR>
+  smap <silent> <D-g> <Esc>:maca findNext:<CR>
 
   " Esc - clear any search highlights
   nnoremap <silent> <Esc> <Esc>:noh<CR>
@@ -60,11 +60,13 @@ if has("gui_macvim")
   " delete to end of word with Alt+delete
   imap <A-del> <C-[>lce
   nmap <A-del> ce
-  " always enter insert after deletion
-  nmap <bs>  a<bs>
+  " fix backspce and delete behavior
+  nmap <bs> a<bs>
   nmap <del> i<del>
-  smap <bs>  b<bs>
-  smap <del> b<bs>
+  vmap <bs> c
+  vmap <del> c
+  smap <bs> <C-g>c
+  smap <del> <C-g>c
 
   " Command+d - delete current or visually selected line.
   imap <D-d> <Esc><C-v>Vd
@@ -104,28 +106,28 @@ if has("gui_macvim")
   set wildignore+=-assets,.git,*.gif,*.jpg,*.png,publish,intermediate,node_modules
 
   " Command+R - Web Dev - reload current web browser 
-  imap <silent> <D-r> <Esc>:silent exe "!osascript ~/.dotfiles/mvim/web-build.scpt"<CR>
-  map <silent> <D-r> <Esc>:silent exe "!osascript ~/.dotfiles/mvim/web-build.scpt"<CR>
+  imap <silent> <D-r> <Esc>:w<Esc>:silent exe "!~/scripts/web-build.sh"<CR>
+  map <silent> <D-r> <Esc>:w<Esc>:silent exe "!~/scripts/web-build.sh"<CR>
 
   " Command+Return (or Command+R) - ActionScript - handle .as files and map the flash preview
   au Bufread,BufNewFile *.as call s:InitActionScript()
   function s:InitActionScript()
     set filetype=actionscript
-    imap <silent> <D-Return> <Esc>:w<CR>:silent exe "!open ~/.dotfiles/mvim/flash-preview.jsfl"<CR>
-    map <silent> <D-Return> <Esc>:w<CR>:silent exe "!open ~/.dotfiles/mvim/flash-preview.jsfl"<CR>
-    imap <silent> <D-r> <Esc>:w<CR>:silent exe "!open ~/.dotfiles/mvim/flash-preview.jsfl"<CR>
-    map <silent> <D-r> <Esc>:w<CR>:silent exe "!open ~/.dotfiles/mvim/flash-preview.jsfl"<CR>
+    imap <silent> <D-Return> <Esc>:w<CR>:silent exe "!open ~/scripts/flash-preview.jsfl"<CR>
+    map <silent> <D-Return> <Esc>:w<CR>:silent exe "!open ~/scripts/flash-preview.jsfl"<CR>
+    imap <silent> <D-r> <Esc>:w<CR>:silent exe "!open ~/scripts/flash-preview.jsfl"<CR>
+    map <silent> <D-r> <Esc>:w<CR>:silent exe "!open ~/scripts/flash-preview.jsfl"<CR>
   endfunction
 
   " Command+Z - force command-mode undo 
-  macmenu Edit.Undo key=<nop>
-  macmenu Edit.Redo key=<nop>
-  map <D-z> :undo<CR>
-  map <D-Z> :redo<CR>
-  imap <D-z> <Esc>:undo<CR>
-  imap <D-Z> <Esc>:redo<CR>
-  vmap <D-z> <Esc>:undo<CR>
-  vmap <D-Z> <Esc>:redo<CR>
+  " macmenu Edit.Undo key=<nop>
+  " macmenu Edit.Redo key=<nop>
+  " map <D-z> :undo<CR>
+  " map <D-Z> :redo<CR>
+  " imap <D-z> <Esc>:undo<CR>
+  " imap <D-Z> <Esc>:redo<CR>
+  " vmap <D-z> <Esc>:undo<CR>
+  " vmap <D-Z> <Esc>:redo<CR>
 
   " Disable annoying tooltips
   set noballooneval
@@ -142,21 +144,21 @@ if has("gui_macvim")
   " Return - use insert mode line breaks in normal mode.
   nmap <Return> i<Return>
 
-  " ,. - new file in vertical split
-  imap <Leader>. <Esc>:rightb vnew<CR>
-  map <Leader>. <Esc>:rightb vnew<CR>
+  " <Leader>] - new file in vertical split
+  imap <Leader>] <Esc>:rightb vnew<CR><D-t>
+  map <Leader>] <Esc>:rightb vnew<CR><D-t>
 
-  " ,h - same as above, but horizontal
-  imap <Leader>h <Esc>:new<CR>
-  map <Leader>h <Esc>:new<CR>
+  " <Leader>[ - new file in horizontal split
+  imap <Leader>[ <Esc>:new<CR><D-t>
+  map <Leader>[ <Esc>:new<CR><D-t>
 
-  " ,, - activate surround.vim plugin for current line or selection 
-  nmap <Leader><Leader> ^vg_S
-  smap <Leader><Leader> <C-g>S
+  " Control+Tab - activate surround.vim plugin for current line or selection 
+  nmap <C-Tab> ^vg_S
+  smap <C-Tab> <C-g>S
 
   " User commands for frequently edited files
   command -nargs=1 Desk :silent exe "!mvim ~/Desktop/<args>"
-  command -nargs=1 Snip :silent exe "!mvim ~/.dotfiles/mvim/snippets/<args>.snippets"
+  command -nargs=1 Snip :silent exe "!mvim ~/.vim/snippets/<args>.snippets"
 
 " end macvim config
 endif
