@@ -1,24 +1,21 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
-ZSH_THEME='danro'
-
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git github node npm osx)
 
 source $ZSH/oh-my-zsh.sh
 
-# Customize to your needs...
+# Load custom theme
+source ".dotfiles/zsh/danro.zsh-theme"
 
+# Custom aliases
 alias l='ls -lahGo $*'
 alias ll='ls -lhGo $*'
-alias profile='mvim ~/.zshrc'
+alias profile='mvim ~/.dotfiles/zsh/zshrc'
 alias shortcuts='mvim ~/.dotfiles/zsh/custom/shortcuts.zsh'
+alias theme='mvim ~/.dotfiles/zsh/danro.zsh-theme'
 alias vim='mvim'
 alias vimrc='mvim ~/.vim'
 alias init-flash='~/scripts/init-flash.sh'
