@@ -106,8 +106,8 @@ if has("gui_macvim")
   set wildignore+=-assets,.git,*.gif,*.jpg,*.png,publish,intermediate,node_modules
 
   " Command+R - Web Dev - reload current web browser 
-  imap <silent> <D-r> <Esc>:w<Esc>:silent exe "!~/scripts/web-build.sh"<CR>
-  map <silent> <D-r> <Esc>:w<Esc>:silent exe "!~/scripts/web-build.sh"<CR>
+  imap <silent> <D-r> <Esc>:w<Esc>:silent exe "!zsh ~/scripts/web-build.sh"<CR>
+  map <silent> <D-r> <Esc>:w<Esc>:silent exe "!zsh ~/scripts/web-build.sh"<CR>
 
   " Command+Return (or Command+R) - ActionScript - handle .as files and map the flash preview
   au Bufread,BufNewFile *.as call s:InitActionScript()

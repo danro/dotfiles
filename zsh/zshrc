@@ -1,0 +1,42 @@
+# Path to your oh-my-zsh configuration.
+ZSH=$HOME/.oh-my-zsh
+
+# Set name of the theme to load.
+# Look in ~/.oh-my-zsh/themes/
+# Optionally, if you set this to "random", it'll load a random theme each
+# time that oh-my-zsh is loaded.
+ZSH_THEME='danro'
+
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Example format: plugins=(rails git textmate ruby lighthouse)
+plugins=(git github node npm osx)
+
+source $ZSH/oh-my-zsh.sh
+
+# Customize to your needs...
+
+alias l='ls -lahGo $*'
+alias ll='ls -lhGo $*'
+alias profile='mvim ~/.zshrc'
+alias shortcuts='mvim ~/.dotfiles/zsh/custom/shortcuts.zsh'
+alias vim='mvim'
+alias vimrc='mvim ~/.vim'
+alias init-flash='~/scripts/init-flash.sh'
+alias init-git='~/scripts/init-git.sh'
+alias git-all='~/scripts/git-recursive-pull.sh'
+alias danro-ssh='ssh -i ~/.ssh/id_rsa danro@danro.net'
+alias eleven-ssh='ssh eleven@eleveninc.com'
+alias clear-dns='~/scripts/clear-dns-cache.sh'
+alias dzip='~/scripts/dzip.sh'
+alias getip='curl http://www.whatismyip.org && echo'
+alias git-diff-vi='git diff --no-ext-diff -w "$@" | vi -R -'
+alias swfobject='~/scripts/swfobject.sh'
+
+# old minecraft stuff
+# alias mc-single='~/scripts/mc-single.sh'
+# alias mc-backup='dzip /Users/_minecraft ~/Dropbox/Library/Minecraft/server.zip'
+# alias mc-load='sudo launchctl load /Library/LaunchDaemons/net.minecraft.server.plist'
+# alias mc-unload='sudo launchctl unload /Library/LaunchDaemons/net.minecraft.server.plist'
+# alias mc-ltrain='cd ~/.mc-server && java -Xmx1G -Xms1G -jar minecraft_server.jar nogui'
+# alias mc-btrain='dzip ~/.mc-server ~/Dropbox/Library/Minecraft/train.zip'
+# alias mc-fixperms='cd ~/../_minecraft && sudo chown -R _minecraft:_minecraft *'

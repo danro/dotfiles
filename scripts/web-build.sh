@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 /usr/bin/osascript -e '
 tell application "Google Chrome"
     activate

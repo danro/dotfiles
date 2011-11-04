@@ -25,18 +25,19 @@ set nofoldenable
 
 " Whitespace stuff
 set cindent
-set tabstop=2
+set tabstop=4
 set shiftwidth=2
 set softtabstop=2
 set expandtab
-set listchars=tab:\⎯\⎯,trail:\  
+set listchars=tab:\––
+" set listchars=tab:\––,trail:\  
+set list " Show invisibles
 set formatoptions-=tcr "Don't autowrap or auto-comment
 set textwidth=0 "Do not autowrap, really
 set linebreak " Wrap lines at whole words
-set wrap " Enable code wrapping
-set nolist " Hide invisibles
 set ignorecase " ignore case when searching
 set smartcase " Ignore case if search pattern is all lowercase
+set wrap " Enable code wrapping
 
 " Set encoding
 set encoding=utf-8
