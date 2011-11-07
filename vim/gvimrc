@@ -14,6 +14,9 @@ if has("gui_macvim")
   " add console dialogs, tabs, menubar.
   set guioptions=cemg
 
+  " Transparency ooh
+  set transparency=10
+
   " Esc - quit select mode and go straight to normal mode
   smap <Esc> <C-c>
 
@@ -118,16 +121,6 @@ if has("gui_macvim")
     imap <silent> <D-r> <Esc>:w<CR>:silent exe "!open ~/scripts/flash-preview.jsfl"<CR>
     map <silent> <D-r> <Esc>:w<CR>:silent exe "!open ~/scripts/flash-preview.jsfl"<CR>
   endfunction
-
-  " Command+Z - force command-mode undo 
-  " macmenu Edit.Undo key=<nop>
-  " macmenu Edit.Redo key=<nop>
-  " map <D-z> :undo<CR>
-  " map <D-Z> :redo<CR>
-  " imap <D-z> <Esc>:undo<CR>
-  " imap <D-Z> <Esc>:redo<CR>
-  " vmap <D-z> <Esc>:undo<CR>
-  " vmap <D-Z> <Esc>:redo<CR>
 
   " Disable annoying tooltips
   set noballooneval

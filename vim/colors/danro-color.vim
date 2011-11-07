@@ -94,7 +94,7 @@ hi Typedef         guifg=#66D9EF
 hi Type            guifg=#66D9EF               gui=none
 hi Underlined      guifg=#2babfc               gui=none
 
-hi VertSplit       guifg=#333333 guibg=#333333 gui=bold
+hi VertSplit       guifg=#333333 guibg=#333333 gui=none
 hi VisualNOS       guifg=#ffffff guibg=#708488
 hi Visual          guifg=#ffffff guibg=#708488
 hi WarningMsg      guifg=#FFFFFF guibg=#333333 gui=bold
@@ -104,7 +104,7 @@ hi Normal          guifg=#F8F8F2 guibg=#000000
 hi Comment         guifg=#708488
 hi CursorLine                    guibg=#293739
 hi CursorColumn                  guibg=#293739
-hi LineNr          guifg=#333333 guibg=#000000
+hi LineNr          guifg=#555555 guibg=#000000
 hi NonText         guifg=#333333 guibg=#000000
 
 "

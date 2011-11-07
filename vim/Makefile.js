@@ -23,6 +23,8 @@
 // git://github.com/tomtom/tlib_vim.git
 // git://github.com/garbas/vim-snipmate.git
 //
+// git://github.com/juvenn/mustache.vim.git
+//
 
 /*
 drwxr-xr-x   5 dan   170B Nov  2 15:41 actionscript
@@ -33,6 +35,7 @@ drwxr-xr-x  11 dan   374B Nov  2 15:31 html5
 drwxr-xr-x   9 dan   306B Nov  2 15:03 javascript
 drwxr-xr-x   5 dan   170B Nov  2 15:31 json
 drwxr-xr-x   6 dan   204B Nov  2 15:30 markdown
+drwxr-xr-x   6 dan   204B Nov  2 15:30 mustache
 drwxr-xr-x   7 dan   238B Nov  2 15:03 nerdcommenter
 drwxr-xr-x   8 dan   272B Nov  2 15:03 nerdtree
 drwxr-xr-x   6 dan   204B Nov  2 15:31 rename

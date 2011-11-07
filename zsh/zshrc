@@ -28,6 +28,7 @@ alias dzip='~/scripts/dzip.sh'
 alias getip='curl http://www.whatismyip.org && echo'
 alias git-diff-vi='git diff --no-ext-diff -w "$@" | vi -R -'
 alias swfobject='~/scripts/swfobject.sh'
+alias link-modules='~/scripts/link-modules.sh'
 
 # old minecraft stuff
 # alias mc-single='~/scripts/mc-single.sh'
