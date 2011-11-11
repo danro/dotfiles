@@ -5,10 +5,14 @@ snippet logs
 snippet ready
 	$(function() {
 	  ${1}
-	});
+	})
+snippet domready
+	$.domReady(function() {
+	  ${1}
+	})
 snippet resize
 	$(window).bind("resize", function () {
-	  log($(this).width());
-	});
+	  console.log($(this).width());
+	})
 snippet fn
 	function (${1}) {${2}}${3}
