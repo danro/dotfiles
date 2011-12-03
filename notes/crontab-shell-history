@@ -1,0 +1,1 @@
+*/5 * * * * cat /dev/null > ~/.zsh_history

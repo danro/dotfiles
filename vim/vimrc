@@ -29,9 +29,9 @@ set tabstop=4
 set shiftwidth=2
 set softtabstop=2
 set expandtab
-set listchars=tab:\––
+" set listchars=tab:\––
 " set listchars=tab:\––,trail:\  
-set list " Show invisibles
+set nolist " Hide invisibles
 set formatoptions-=tcr "Don't autowrap or auto-comment
 set textwidth=0 "Do not autowrap, really
 set linebreak " Wrap lines at whole words

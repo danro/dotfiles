@@ -1,3 +1,4 @@
+#!/bin/zsh
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -13,11 +14,10 @@ source ".dotfiles/zsh/danro.zsh-theme"
 # Custom aliases
 alias l='ls -lahGo $*'
 alias ll='ls -lhGo $*'
-alias profile='mvim ~/.dotfiles/zsh/zshrc'
-alias shortcuts='mvim ~/.dotfiles/zsh/custom/shortcuts.zsh'
-alias theme='mvim ~/.dotfiles/zsh/danro.zsh-theme'
 alias vim='mvim'
-alias vimrc='mvim ~/.vim'
+alias profile='mate ~/.dotfiles/zsh/zshrc'
+alias shortcuts='mate ~/.dotfiles/zsh/custom/shortcuts.zsh'
+alias theme='mate ~/.dotfiles/zsh/danro.zsh-theme'
 alias init-flash='~/scripts/init-flash.sh'
 alias init-git='~/scripts/init-git.sh'
 alias git-all='~/scripts/git-recursive-pull.sh'
