@@ -1,0 +1,2 @@
+*/30	*	*	*	*	cat /dev/null > ~/.zsh_history
+*/30	*	*	*	*	cp ~/Library/Safari/Bookmarks.plist ~/Dropbox/Library/Bookmarks
