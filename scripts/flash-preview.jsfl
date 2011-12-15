@@ -1,1 +1,0 @@
-fl.getDocumentDOM().testMovie()
