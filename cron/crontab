@@ -1,2 +1,3 @@
 */30	*	*	*	*	cat /dev/null > ~/.zsh_history
 */30	*	*	*	*	cp ~/Library/Safari/Bookmarks.plist ~/Dropbox/Library/Bookmarks
+*/30	*	*	*	*	cd ~/Library/Application\ Support && ~/scripts/dzip.sh ./Avian ~/Dropbox/Library/TextMate-2/Avian.zip
