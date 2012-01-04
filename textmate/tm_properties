@@ -1,52 +1,46 @@
 # Basic Settings
-#
 fontName         = "Monaco"
 fontSize         = 11
 
 # Extra files to include
-#
 myExtraIncludes = ".tm_properties,.htaccess,.gitignore"
 fileBrowserGlob  = "{*,$myExtraIncludes}"
 include = "{$include,$myExtraIncludes}"
 
 # Hide log, vendor and tmp directories from search popups.
-#
 myExtraExcludes = "log,vendor,tmp,publish,intermediate"
-excludeInFileChooser  = "{$excludeInFileChooser,$myExtraExcludes}" 
-excludeInFolderSearch = "{$excludeInFolderSearch,$myExtraExcludes}" 
+excludeInFileChooser  = "{$excludeInFileChooser,$myExtraExcludes}"
+excludeInFolderSearch = "{$excludeInFolderSearch,$myExtraExcludes}"
 
 # If you also want to hide them from your project manager pane, add
 # the following line to your project's local .tm_properties.
-#
 # excludeInBrowser      = "{$excludeInBrowser,log,vendor,tmp}" 
 
 # Env variables
-#
-TM_NODE = "/usr/local/bin/node"
+PATH = "$PATH:/usr/local/bin:/usr/bin"
+NODE_PATH = "$NODE_PATH:/usr/local/lib/node_modules"
 
 # Default editing configuration
-#
 softWrap         = false
 softTabs         = true
 tabSize          = 2
 
 # File type specific configuration
-#
 [ text ]
 showInvisibles   = true
 
-# [ *.{icns,ico,jpg,jpeg,m4v,nib,pdf,png,psd,pyc,rtf,tif,tiff,xib} ]
-# binary           = true
-
-[ source.python ]
-softTabs         = true
-tabSize          = 4
+[ attr.untitled ]
+fileType         = 'text.html.basic'
 
 [ source.actionscript ]
 softTabs         = false
 tabSize          = 4
 
-[ *.{txt,md,mdown,markdown} ]
-spellChecking  = true
-tabSize        = 4
+[ source.makefile ]
+softTabs         = false
+tabSize          = 4
 
+[ *.{txt,md,mdown,markdown} ]
+spellChecking    = true
+softTabs         = true
+tabSize          = 4

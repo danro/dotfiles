@@ -1,0 +1,4 @@
+projectDirectory  = "$CWD"
+windowTitle       = "$TM_DISPLAYNAME :: ${CWD/^.*\///}"
+include           = ".htaccess"
+exclude           = "{$exclude,*.tmproj}"
