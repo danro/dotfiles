@@ -8,7 +8,7 @@ fileBrowserGlob  = "{*,$myExtraIncludes}"
 include = "{$include,$myExtraIncludes}"
 
 # Hide log, vendor and tmp directories from search popups.
-myExtraExcludes = "log,vendor,tmp,publish,intermediate"
+myExtraExcludes = "log,vendor,tmp,publish,intermediate,*.jpg,*.png,*.gif"
 excludeInFileChooser  = "{$excludeInFileChooser,$myExtraExcludes}"
 excludeInFolderSearch = "{$excludeInFolderSearch,$myExtraExcludes}"
 

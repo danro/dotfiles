@@ -1,0 +1,31 @@
+[
+	// run build system
+	{ "keys": ["super+r"], "command": "build" },
+	
+	// goto line number
+  { "keys": ["super+l"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
+	
+	// enter completion
+	{ "keys": ["enter"], "command": "commit_completion", "context": [{ "key": "auto_complete_visible" }] },
+
+	// command - insert html tag
+	{ 
+		"keys"      :   ["ctrl+t"], 
+		"command"   :   "insert_snippet",
+		"args": {
+			"contents": "<${1:p}>${0:$SELECTION}</${1}>"
+		}
+	},
+
+	// fix cmd + left movement for keymando
+	{
+		"keys"      :   ["super+left"], 
+		"command"   :   "move_to",
+		"args": {"to": "hardbol", "extend": false}
+	},
+	{ 
+		"keys"      :   ["super+shift+left"], 
+		"command"   :   "move_to",
+		"args": {"to": "hardbol", "extend": true}
+	}
+]

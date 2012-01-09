@@ -1,0 +1,10 @@
+{
+	"auto_upgrade_last_run": 1326144969,
+	"installed_packages":
+	[
+		"Package Control",
+		"SCSS",
+		"SublimeLinter",
+		"ZenCoding"
+	]
+}

@@ -1,0 +1,4 @@
+{
+	"cmd": ["${file_path}/web-build.sh"],
+	"quiet": true
+}

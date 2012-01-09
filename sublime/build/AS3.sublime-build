@@ -1,0 +1,4 @@
+{
+	"cmd": ["open", "${file_path}/as3-preview.jsfl"],
+	"quiet": true
+}
