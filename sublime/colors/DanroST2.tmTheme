@@ -347,11 +347,11 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#17000E</string>
+				<string>#38000B</string>
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#81003E</string>
+				<string>#E6002B</string>
 			</dict>
 		</dict>
 		<dict>
@@ -362,9 +362,9 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#1A1C1D</string>
+				<string>#38000B</string>
 				<key>foreground</key>
-				<string>#F4005F</string>
+				<string>#E6002B</string>
 			</dict>
 		</dict>
 		<dict>
@@ -506,7 +506,7 @@
         <key>name</key>
         <string>SublimeLinter Underline</string>
         <key>scope</key>
-        <string>invalid.illegal</string>
+        <string>sublimelinter invalid.illegal</string>
         <key>settings</key>
         <dict>
             <key>background</key>

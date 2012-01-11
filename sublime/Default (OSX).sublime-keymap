@@ -4,6 +4,9 @@
 	{ "keys": ["ctrl+d"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"} },
 	{ "keys": ["ctrl+c"], "command": "run_macro_file", "args": {"file": "Packages/User/macros/Change Line.sublime-macro"} },
 
+	// command+t goto file
+	{ "keys": ["super+t"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+
 	// run build system
 	{ "keys": ["super+r"], "command": "build" },
 	
@@ -12,6 +15,9 @@
 	
 	// enter completion
 	{ "keys": ["enter"], "command": "commit_completion", "context": [{ "key": "auto_complete_visible" }] },
+
+	// expand selection
+	{ "keys": ["ctrl+shift+space"], "command": "expand_selection", "args": {"to": "scope"} },
 
 	// command - insert html tag
 	{ 

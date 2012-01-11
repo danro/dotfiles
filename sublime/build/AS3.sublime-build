@@ -1,4 +1,4 @@
 {
-	"cmd": ["open", "${file_path}/as3-preview.jsfl"],
+	"cmd": ["open", "/Users/dan/.dotfiles/sublime/build/as3-preview.jsfl"],
 	"quiet": true
 }

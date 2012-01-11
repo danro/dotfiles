@@ -1,4 +1,4 @@
 {
-	"cmd": ["${file_path}/web-build.sh"],
+	"cmd": ["/Users/dan/.dotfiles/sublime/build/web-build.sh"],
 	"quiet": true
 }

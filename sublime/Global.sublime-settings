@@ -4,6 +4,7 @@
 		".svn",
 		".git",
 		".hg",
+		".sass-cache",
 		"CVS",
 		"intermediate",
 		"publish"
