@@ -1,0 +1,7 @@
+<snippet>
+  <content><![CDATA[
+position: absolute;
+]]></content>
+  <tabTrigger>abs</tabTrigger>
+  <scope>source.css</scope>
+</snippet>

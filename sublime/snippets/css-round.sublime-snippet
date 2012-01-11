@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+-moz-border-radius: ${1:4}px;
+-webkit-border-radius: $1px;
+-khtml-border-radius: $1px;
+border-radius: $1px;
+]]></content>
+  <tabTrigger>round</tabTrigger>
+  <scope>source.css</scope>
+</snippet>

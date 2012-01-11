@@ -17,12 +17,12 @@
 				<string>#FFFFFF</string>
 				<key>invisibles</key>
 				<string>#3B3A32</string>
+				<key>lineHighlight</key>
+				<string>#282828</string>
 				<key>selection</key>
 				<string>#48595B</string>
-        <key>selectionForeground</key>
-        <string>#dddddd</string>
-        <key>lineHighlight</key>
-        <string>#48595B80</string>
+				<key>selectionForeground</key>
+				<string>#ffffff</string>
 			</dict>
 		</dict>
 		<dict>
@@ -269,7 +269,7 @@
 			<key>name</key>
 			<string>PHP tag</string>
 			<key>scope</key>
-			<string>text.html.php punctuation.section.embedded</string>
+			<string>text.html source.php punctuation.section.embedded</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -476,6 +476,91 @@
 				<string>#85893F</string>
 			</dict>
 		</dict>
+    <dict>
+        <key>name</key>
+        <string>SublimeLinter Annotations</string>
+        <key>scope</key>
+        <string>sublimelinter.notes</string>
+        <key>settings</key>
+        <dict>
+            <key>background</key>
+            <string>#FFFFAA</string>
+            <key>foreground</key>
+            <string>#FFFFFF</string>
+        </dict>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>SublimeLinter Outline</string>
+        <key>scope</key>
+        <string>sublimelinter.illegal</string>
+        <key>settings</key>
+        <dict>
+            <key>background</key>
+            <string>#FF4A52</string>
+            <key>foreground</key>
+            <string>#FFFFFF</string>
+        </dict>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>SublimeLinter Underline</string>
+        <key>scope</key>
+        <string>invalid.illegal</string>
+        <key>settings</key>
+        <dict>
+            <key>background</key>
+            <string>#FF0000</string>
+        </dict>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>SublimeLinter Warning Outline</string>
+        <key>scope</key>
+        <string>sublimelinter.warning</string>
+        <key>settings</key>
+        <dict>
+            <key>background</key>
+            <string>#DF9400</string>
+            <key>foreground</key>
+            <string>#FFFFFF</string>
+        </dict>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>SublimeLinter Warning Underline</string>
+        <key>scope</key>
+        <string>invalid.warning</string>
+        <key>settings</key>
+        <dict>
+            <key>background</key>
+            <string>#FF0000</string>
+        </dict>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>SublimeLinter Violation Outline</string>
+        <key>scope</key>
+        <string>sublimelinter.violation</string>
+        <key>settings</key>
+        <dict>
+            <key>background</key>
+            <string>#ffffff33</string>
+            <key>foreground</key>
+            <string>#FFFFFF</string>
+        </dict>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>SublimeLinter Violation Underline</string>
+        <key>scope</key>
+        <string>invalid.violation</string>
+        <key>settings</key>
+        <dict>
+            <key>background</key>
+            <string>#FF0000</string>
+        </dict>
+    </dict>
 	</array>
 	<key>uuid</key>
 	<string>6C415C87-5245-4BF1-86BC-79BCE8A13D09</string>

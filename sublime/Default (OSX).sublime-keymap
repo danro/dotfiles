@@ -1,23 +1,28 @@
 [
+	// common text editing binds
+	{ "keys": ["super+d"], "command": "duplicate_line" },
+	{ "keys": ["ctrl+d"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"} },
+	{ "keys": ["ctrl+c"], "command": "run_macro_file", "args": {"file": "Packages/User/macros/Change Line.sublime-macro"} },
+
 	// run build system
 	{ "keys": ["super+r"], "command": "build" },
 	
 	// goto line number
-  { "keys": ["super+l"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
+	{ "keys": ["super+l"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
 	
 	// enter completion
 	{ "keys": ["enter"], "command": "commit_completion", "context": [{ "key": "auto_complete_visible" }] },
 
 	// command - insert html tag
 	{ 
-		"keys"      :   ["ctrl+t"], 
+		"keys"      :   ["ctrl+t"],
 		"command"   :   "insert_snippet",
 		"args": {
 			"contents": "<${1:p}>${0:$SELECTION}</${1}>"
 		}
 	},
 
-	// fix cmd + left movement for keymando
+	// fix cmd + left movement
 	{
 		"keys"      :   ["super+left"], 
 		"command"   :   "move_to",
