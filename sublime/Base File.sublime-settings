@@ -1,28 +1,29 @@
 {
-	"color_scheme": "Packages/User/colors/DanroST2.tmTheme",
-	"font_face": "Monaco",
-	"font_options": ["no_antialias"],
-	"font_size": 11,
-	"fade_fold_buttons": false,
-	"scroll_past_end": true,
-	"trim_automatic_white_space": false,
-	"draw_indent_guides": true,
-	"tab_size": 2,
-	"translate_tabs_to_spaces": true,
-	"detect_indentation": true,
 	"auto_match_enabled": false,
-	
-	// sublime linter settings
-	"sublimelinter": "load-save",
+	"color_scheme": "Packages/User/colors/DanroST2.tmTheme",
+	"detect_indentation": true,
+	"draw_indent_guides": true,
+	"fade_fold_buttons": false,
+	"font_face": "Monaco",
+	"font_options":
+	[
+		"no_antialias"
+	],
+	"font_size": 11.0,
 	"jshint_options":
 	{
-			"evil": true,
-			"regexdash": true,
-			"browser": true,
-			"wsh": true,
-			"eqnull": true,
-			"expr": true,
-			"curly": true,
-			"trailing": true
-	}
+		"browser": true,
+		"curly": true,
+		"eqnull": true,
+		"evil": true,
+		"expr": true,
+		"regexdash": true,
+		"trailing": true,
+		"wsh": true
+	},
+	"scroll_past_end": true,
+	"sublimelinter": "load-save",
+	"tab_size": 2,
+	"translate_tabs_to_spaces": true,
+	"trim_automatic_white_space": false
 }

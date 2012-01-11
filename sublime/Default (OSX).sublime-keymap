@@ -13,9 +13,6 @@
 	// goto line number
 	{ "keys": ["super+l"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
 	
-	// enter completion
-	{ "keys": ["enter"], "command": "commit_completion", "context": [{ "key": "auto_complete_visible" }] },
-
 	// expand selection
 	{ "keys": ["ctrl+shift+space"], "command": "expand_selection", "args": {"to": "scope"} },
 
