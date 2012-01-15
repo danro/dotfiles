@@ -3,7 +3,7 @@
 	{ "keys": ["super+d"], "command": "duplicate_line" },
 	{ "keys": ["ctrl+d"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"} },
 	{ "keys": ["ctrl+c"], "command": "run_macro_file", "args": {"file": "Packages/User/macros/Change Line.sublime-macro"} },
-
+	
 	// command+t goto file
 	{ "keys": ["super+t"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
 
@@ -13,9 +13,9 @@
 	// goto line number
 	{ "keys": ["super+l"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
 	
-	// expand selection
+	// select scope
 	{ "keys": ["ctrl+shift+space"], "command": "expand_selection", "args": {"to": "scope"} },
-
+		
 	// command - insert html tag
 	{ 
 		"keys"      :   ["ctrl+t"],
@@ -23,17 +23,5 @@
 		"args": {
 			"contents": "<${1:p}>${0:$SELECTION}</${1}>"
 		}
-	},
-
-	// fix cmd + left movement
-	{
-		"keys"      :   ["super+left"], 
-		"command"   :   "move_to",
-		"args": {"to": "hardbol", "extend": false}
-	},
-	{ 
-		"keys"      :   ["super+shift+left"], 
-		"command"   :   "move_to",
-		"args": {"to": "hardbol", "extend": true}
 	}
 ]

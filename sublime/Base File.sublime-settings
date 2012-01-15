@@ -13,17 +13,21 @@
 	"jshint_options":
 	{
 		"browser": true,
-		"curly": true,
 		"eqnull": true,
 		"evil": true,
 		"expr": true,
 		"regexdash": true,
 		"trailing": true,
-		"wsh": true
+		"wsh": true,
+		"laxbreak": true,
+		"loopfunc": true
 	},
 	"scroll_past_end": true,
 	"sublimelinter": "load-save",
 	"tab_size": 2,
 	"translate_tabs_to_spaces": true,
-	"trim_automatic_white_space": false
+	"trim_automatic_white_space": false,
+	"auto_complete_commit_on_tab": true,
+	"word_separators": "./\\()\"'-:,.;<>~!#%^&*|+=[]{}`~?" 
+
 }

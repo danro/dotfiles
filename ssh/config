@@ -5,3 +5,7 @@ IdentityFile ~/.ssh/eleven
 Host danro.net
 User danro
 IdentityFile ~/.ssh/danro
+
+Host github.com
+User git
+IdentityFile ~/.ssh/github

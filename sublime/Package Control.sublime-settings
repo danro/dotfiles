@@ -1,10 +1,12 @@
 {
-	"auto_upgrade_last_run": 1326322800,
+	"auto_upgrade_last_run": 1326602334,
 	"installed_packages":
 	[
+		"LESS",
 		"Package Control",
 		"SCSS",
 		"SublimeLinter",
+		"Theme - Soda",
 		"ZenCoding"
 	]
 }

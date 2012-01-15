@@ -1,7 +1,7 @@
 <snippet>
   <content><![CDATA[
-position: relative;
+@import "${1:something/awesome}";$0
 ]]></content>
-  <tabTrigger>rel</tabTrigger>
+  <tabTrigger>im</tabTrigger>
   <scope>source.css, source.scss</scope>
 </snippet>

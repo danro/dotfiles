@@ -1,0 +1,7 @@
+<snippet>
+  <content><![CDATA[
+@extend ${0:class-name};
+]]></content>
+  <tabTrigger>ex</tabTrigger>
+  <scope>source.scss</scope>
+</snippet>
