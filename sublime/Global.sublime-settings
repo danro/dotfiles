@@ -4,7 +4,6 @@
 		".svn",
 		".git",
 		".hg",
-		".sass-cache",
 		"CVS",
 		"intermediate",
 		"publish",
@@ -14,8 +13,8 @@
 	[
 		"Vintage"
 	],
+	"open_files_in_new_window": false,
 	"scroll_speed": 0,
 	"theme": "Soda Dark.sublime-theme",
-	"tree_animation_enabled": false,
-	"open_files_in_new_window": false
+	"tree_animation_enabled": false
 }

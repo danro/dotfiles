@@ -8,5 +8,5 @@ left: 0;
 margin: auto;
 ]]></content>
   <tabTrigger>center</tabTrigger>
-  <scope>source.css, source.scss</scope>
+  <scope>source.css</scope>
 </snippet>

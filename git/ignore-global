@@ -1,5 +1,6 @@
 # Files to ignore
 -assets
+_assets
 .DS_Store
 
 # git submodule tags

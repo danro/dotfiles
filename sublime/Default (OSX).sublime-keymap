@@ -13,8 +13,17 @@
 	// goto line number
 	{ "keys": ["super+l"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
 	
-	// select scope
-	{ "keys": ["ctrl+shift+space"], "command": "expand_selection", "args": {"to": "scope"} },
+	// toggle sidebar
+	{ "keys": ["ctrl+shift+s"], "command": "toggle_side_bar" },
+	
+	// expand selection to scope (or tag in html)
+	{ "keys": ["ctrl+space"], "command": "expand_selection", "args": {"to": "scope"} },
+	{ "keys": ["ctrl+space"], "command": "expand_selection", "args": {"to": "tag"}, "context":
+		[
+			{ "key": "selector", "operator": "equal", "operand": "text.html" },
+			{ "key": "selector", "operator": "not_equal", "operand": "string" }
+		]
+	},
 		
 	// command - insert html tag
 	{ 
@@ -23,5 +32,17 @@
 		"args": {
 			"contents": "<${1:p}>${0:$SELECTION}</${1}>"
 		}
+	},
+	
+	// fix cmd + left movement
+	{
+		"keys"      :   ["super+left"], 
+		"command"   :   "move_to",
+		"args": {"to": "hardbol", "extend": false}
+	},
+	{ 
+		"keys"      :   ["super+shift+left"], 
+		"command"   :   "move_to",
+		"args": {"to": "hardbol", "extend": true}
 	}
 ]

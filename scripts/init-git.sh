@@ -1,6 +1,8 @@
 #!/bin/bash
 git init
-cp ~/Sites/GitHub/html5-boilerplate/.gitignore ./
-touch .gitignore
+# create .gitignore if it doesn't exist
+if [ ! -f "./.gitignore" ]; then
+  cp -v ~/.dotfiles/git/ignore-project ./.gitignore
+fi
 git add .
 git commit -vam "Initial commit"
