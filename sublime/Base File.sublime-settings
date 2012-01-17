@@ -28,6 +28,7 @@
 	"translate_tabs_to_spaces": true,
 	"trim_automatic_white_space": false,
 	"auto_complete_commit_on_tab": true,
-	"word_separators": "./\\()\"'-:,.;<>~!#%&^*|+=[]{}`~?" 
+	"line_padding_top": 1,
+	"word_separators": "./\\()\"'-:,.;<>~!#%&^*|+=[]{}`~?"
 
 }
