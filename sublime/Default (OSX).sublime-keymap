@@ -4,8 +4,11 @@
 	{ "keys": ["ctrl+d"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"} },
 	{ "keys": ["ctrl+c"], "command": "run_macro_file", "args": {"file": "Packages/User/macros/Change Line.sublime-macro"} },
 	
-	// command+t goto file
+	// goto file / command palette / switch project
 	{ "keys": ["super+t"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+	{ "keys": ["alt+t"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
+	{ "keys": ["super+p"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
+	{ "keys": ["super+shift+p"], "command": "prompt_select_project" },
 
 	// run build system
 	{ "keys": ["super+r"], "command": "build" },
@@ -16,22 +19,28 @@
 	// toggle sidebar
 	{ "keys": ["ctrl+shift+s"], "command": "toggle_side_bar" },
 	
-	// expand selection to scope (or tag in html)
+	// expand selection to scope (or tag in html/xml)
 	{ "keys": ["ctrl+space"], "command": "expand_selection", "args": {"to": "scope"} },
 	{ "keys": ["ctrl+space"], "command": "expand_selection", "args": {"to": "tag"}, "context":
 		[
-			{ "key": "selector", "operator": "equal", "operand": "text.html" },
+			{ "key": "selector", "operator": "equal", "match_all": true, "operand": "text.html, text.xml" },
 			{ "key": "selector", "operator": "not_equal", "operand": "string" }
 		]
 	},
 		
-	// command - insert html tag
-	{ 
-		"keys"      :   ["ctrl+t"],
-		"command"   :   "insert_snippet",
-		"args": {
-			"contents": "<${1:p}>${0:$SELECTION}</${1}>"
-		}
+	// snippet commands
+	{ "keys": ["ctrl+j"], "command": "insert_snippet", "args":
+		{"name": "Packages/User/snippets/js-$jquery.sublime-snippet"}
+	},
+	
+	// zen coding remaps
+	{"keys": ["ctrl+w"],
+  "args": {}, "command": "zen_as_you_type", "context": [{"operand": "source.css - source.css.embedded, text.xml, text.html -source -meta.tag, meta.scope.between-tag-pair.html -source", "operator": "equal", "match_all": true, "key": "selector"} ]
+  },
+	{"keys": ["ctrl+w"],
+	"command": "wrap_zen_as_you_type", "context": [{"operand": "text.html meta.tag - string - meta.scope.between-tag-pair.html", "operator": "equal", "match_all": true, "key": "selector"} ]
+	},
+	{"keys": ["ctrl+w"], "command": "wrap_zen_as_you_type", "context": [{"operand"  : false, "key"      : "selection_empty", "match_all": true, "operator" : "equal"}, {"key"      : "num_selections", "operand"  : 1, "operator" : "equal"} ]
 	},
 	
 	// fix cmd + left movement

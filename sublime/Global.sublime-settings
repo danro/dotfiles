@@ -16,5 +16,6 @@
 	"open_files_in_new_window": false,
 	"scroll_speed": 0,
 	"theme": "Soda Dark.sublime-theme",
-	"tree_animation_enabled": false
+	"tree_animation_enabled": false,
+	"overlay_scroll_bars": "enabled"
 }
