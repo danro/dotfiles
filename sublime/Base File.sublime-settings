@@ -16,7 +16,10 @@
 		"eqnull": true,
 		"expr": true,
 		"trailing": true,
-		"loopfunc": true
+		"loopfunc": true,
+		"laxcomma": true,
+		"asi": true,
+		"validthis": true
 	},
 	"scroll_past_end": true,
 	"tab_size": 2,
@@ -25,5 +28,6 @@
 	"auto_complete_commit_on_tab": true,
 	"auto_complete_with_fields": true,
 	"line_padding_top": 1,
+	"match_selection": false,
 	"word_separators": "./\\()\"'-:,.;<>~!#%&^*|+=[]{}`~?"
 }

@@ -1,7 +1,7 @@
 ### ON CLIENT ###
 
 cd ~/.ssh
-ssh-keygen -t rsa
+ssh-keygen -t rsa -C "dan@danro.net"
 scp ~/.ssh/id_rsa.pub user@example.com:~/
 ssh user@example.com
 

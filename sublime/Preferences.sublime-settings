@@ -1,0 +1,52 @@
+{
+	"auto_complete_commit_on_tab": true,
+	"auto_complete_with_fields": true,
+	"auto_match_enabled": true,
+	"color_scheme": "Packages/User/colors/DanroST2.tmTheme",
+	"detect_indentation": true,
+	"draw_indent_guides": true,
+	"fade_fold_buttons": false,
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		"dist"
+	],
+	"font_face": "Monaco",
+	"font_options":
+	[
+		"no_antialias"
+	],
+	"font_size": 11.0,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"jshint_options":
+	{
+		"asi": true,
+		"browser": true,
+		"eqnull": true,
+		"evil": true,
+		"expr": true,
+		"laxcomma": true,
+		"loopfunc": true,
+		"trailing": true,
+		"undef": true,
+		"validthis": true
+	},
+	"line_padding_top": 1,
+	"match_selection": false,
+	"open_files_in_new_window": false,
+	"scroll_past_end": true,
+	"scroll_speed": 0,
+	"sublimelinter_delay": 1,
+	"tab_size": 2,
+	"theme": "Soda Dark.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"tree_animation_enabled": false,
+	"trim_automatic_white_space": false,
+	"word_separators": "./\\()\"'-:,.;<>~!#%&^*|+=[]{}`~?"
+}
