@@ -33,6 +33,9 @@
 		{"name": "Packages/User/snippets/js-$jquery.sublime-snippet"}
 	},
 	
+	// insert semicolon macro
+	{ "keys": ["ctrl+s"], "command": "run_macro_file", "args": {"file": "Packages/User/macros/Semicolon.sublime-macro"} },
+	
 	// zen coding remaps
 	{"keys": ["ctrl+w"],
   "args": {}, "command": "zen_as_you_type", "context": [{"operand": "source.css - source.css.embedded, text.xml, text.html -source -meta.tag, meta.scope.between-tag-pair.html -source", "operator": "equal", "match_all": true, "key": "selector"} ]

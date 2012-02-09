@@ -12,6 +12,7 @@
 		".git",
 		".hg",
 		"CVS",
+		"node_modules",
 		"dist"
 	],
 	"font_face": "Monaco",
