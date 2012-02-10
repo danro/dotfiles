@@ -229,7 +229,7 @@
         <key>fontStyle</key>
         <string></string>
         <key>foreground</key>
-        <string>#F4005F</string>
+        <string>#DA4632</string>
       </dict>
     </dict>
 		<dict>
@@ -273,7 +273,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#DA4632</string>
+				<string>#F4005F</string>
 			</dict>
 		</dict>
 		<dict>
@@ -561,6 +561,50 @@
             <string>#FF0000</string>
         </dict>
     </dict>
+		<dict>
+			<key>name</key>
+			<string>css.id</string>
+			<key>scope</key>
+			<string>meta.selector.css entity.other.attribute-name.id</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#E5D56D</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>css.class</string>
+			<key>scope</key>
+			<string>entity.other.attribute-name.class</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#A0C25F</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>css.element</string>
+			<key>scope</key>
+			<string>keyword.control.html.elements</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#DA4632</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>css.string</string>
+			<key>scope</key>
+			<string>meta.attribute-selector.css string</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FF950A</string>
+			</dict>
+		</dict>
 	</array>
 	<key>uuid</key>
 	<string>6C415C87-5245-4BF1-86BC-79BCE8A13D09</string>
