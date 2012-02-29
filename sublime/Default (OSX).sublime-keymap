@@ -46,6 +46,11 @@
 	{"keys": ["ctrl+w"], "command": "wrap_zen_as_you_type", "context": [{"operand"  : false, "key"      : "selection_empty", "match_all": true, "operator" : "equal"}, {"key"      : "num_selections", "operand"  : 1, "operator" : "equal"} ]
 	},
 	
+	// surroundings
+  { "keys": ["ctrl+shift+a"], "command": "add_surround" },
+  { "keys": ["ctrl+shift+d"], "command": "delete_surround" },
+  { "keys": ["ctrl+shift+c"], "command": "replace_surround" },
+	
 	// fix cmd + left movement
 	{
 		"keys"      :   ["super+left"], 

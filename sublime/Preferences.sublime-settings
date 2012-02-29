@@ -1,9 +1,11 @@
 {
 	"auto_complete_commit_on_tab": true,
+	"auto_complete_selector": "source",
 	"auto_complete_with_fields": true,
 	"auto_match_enabled": true,
 	"color_scheme": "Packages/User/colors/DanroST2.tmTheme",
 	"detect_indentation": true,
+	"detect_slow_plugins": false,
 	"draw_indent_guides": true,
 	"fade_fold_buttons": false,
 	"folder_exclude_patterns":
@@ -34,6 +36,7 @@
 		"expr": true,
 		"laxcomma": true,
 		"loopfunc": true,
+		"node": true,
 		"trailing": true,
 		"undef": true,
 		"validthis": true

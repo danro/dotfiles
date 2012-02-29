@@ -35,6 +35,7 @@ alias getip='curl http://www.whatismyip.org && echo'
 alias git-diff-vi='git diff --no-ext-diff -w "$@" | vi -R -'
 alias swfobject='~/scripts/swfobject.sh'
 alias link-modules='~/scripts/link-modules.sh'
+alias gh='~/scripts/gh.sh'
 alias node-singlevisor='supervisor -w app.js app.js'
 alias lotro='open /Library/Storage/Games/LOTRO/Lord\ of\ the\ Rings\ Online.app'
 

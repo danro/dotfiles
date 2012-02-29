@@ -1,0 +1,6 @@
+%systemroot%\system32\drivers\etc\
+
+edit hosts file
+
+add the following:
+10.0.2.2        local.dev

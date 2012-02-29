@@ -1,7 +1,8 @@
 {
-	"auto_upgrade_last_run": 1328913933,
+	"auto_upgrade_last_run": 1330498465,
 	"installed_packages":
 	[
+		"FileDiffs",
 		"LESS",
 		"Package Control",
 		"SublimeLinter",
