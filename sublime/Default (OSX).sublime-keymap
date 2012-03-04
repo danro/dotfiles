@@ -51,15 +51,18 @@
   { "keys": ["ctrl+shift+d"], "command": "delete_surround" },
   { "keys": ["ctrl+shift+c"], "command": "replace_surround" },
 	
+	// disabled keys
+	{ "keys": ["f5"], "command": "noop" }
+	
 	// fix cmd + left movement
-	{
-		"keys"      :   ["super+left"], 
-		"command"   :   "move_to",
-		"args": {"to": "hardbol", "extend": false}
-	},
-	{ 
-		"keys"      :   ["super+shift+left"], 
-		"command"   :   "move_to",
-		"args": {"to": "hardbol", "extend": true}
-	}
+	// {
+	// 	"keys"      :   ["super+left"], 
+	// 	"command"   :   "move_to",
+	// 	"args": {"to": "hardbol", "extend": false}
+	// },
+	// { 
+	// 	"keys"      :   ["super+shift+left"], 
+	// 	"command"   :   "move_to",
+	// 	"args": {"to": "hardbol", "extend": true}
+	// }
 ]

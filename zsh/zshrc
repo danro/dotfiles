@@ -38,6 +38,7 @@ alias link-modules='~/scripts/link-modules.sh'
 alias gh='~/scripts/gh.sh'
 alias node-singlevisor='supervisor -w app.js app.js'
 alias lotro='open /Library/Storage/Games/LOTRO/Lord\ of\ the\ Rings\ Online.app'
+alias asciifonts='cd /usr/local/lib/node_modules/asciimo && node node-all-fonts.js'
 
 # old minecraft stuff
 # alias mc-single='~/scripts/mc-single.sh'

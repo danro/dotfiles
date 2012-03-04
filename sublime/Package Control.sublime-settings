@@ -1,8 +1,8 @@
 {
-	"auto_upgrade_last_run": 1330498465,
+	"auto_upgrade_last_run": 1330882677,
 	"installed_packages":
 	[
-		"FileDiffs",
+		"ActionScript 3",
 		"LESS",
 		"Package Control",
 		"SublimeLinter",
