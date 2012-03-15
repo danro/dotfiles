@@ -7,7 +7,7 @@ ZSH=$HOME/.oh-my-zsh
 plugins=(git github node npm osx)
 
 source $ZSH/oh-my-zsh.sh
-export EDITOR='subl'
+export EDITOR='sub'
 
 # add paths for wine install
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
@@ -20,13 +20,12 @@ source ".dotfiles/zsh/danro.zsh-theme"
 alias l='ls -lahGo $*'
 alias ll='ls -lhGo $*'
 alias vim='mvim'
-alias sub='subl'
-alias profile='subl ~/sites/github/dotfiles/zsh/zshrc'
-alias subuser='subl ~/sites/github/dotfiles/sublime'
+alias profile='sub ~/sites/github/dotfiles/zsh/zshrc'
+alias subuser='sub ~/sites/github/dotfiles/sublime'
 alias tmproject='cp ~/.dotfiles/.tm_properties ./'
 alias shortcuts='mate ~/.dotfiles/zsh/custom/shortcuts.zsh'
-alias theme='subl ~/sites/github/dotfiles/zsh/danro.zsh-theme'
-alias init-flash='~/scripts/init-flash.sh'
+alias theme='sub ~/sites/github/dotfiles/zsh/danro.zsh-theme'
+alias flash-out='~/scripts/init-flash.sh'
 alias init-git='~/scripts/init-git.sh'
 alias git-all='~/scripts/git-recursive-pull.sh'
 alias clear-dns='~/scripts/clear-dns-cache.sh'
