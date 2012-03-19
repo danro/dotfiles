@@ -28,27 +28,11 @@
   [
     "Vintage"
   ],
-  "jshint_options":
-  {
-    "asi": true,
-    "boss": true,
-    "browser": true,
-    "eqnull": true,
-    "evil": true,
-    "expr": true,
-    "laxcomma": true,
-    "loopfunc": true,
-    "node": true,
-    "trailing": true,
-    "undef": true,
-    "validthis": true
-  },
   "line_padding_top": 1,
   "match_selection": false,
   "open_files_in_new_window": false,
   "scroll_past_end": true,
   "scroll_speed": 0,
-  "sublimelinter_delay": 1,
   "tab_size": 2,
   "theme": "Soda Dark.sublime-theme",
   "translate_tabs_to_spaces": true,

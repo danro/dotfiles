@@ -38,10 +38,13 @@
   { "keys": ["ctrl+l"], "command": "insert_snippet", "args":
     {"name": "Packages/User/snippets/js-console-log.sublime-snippet"}
   },
+  { "keys": ["ctrl+p"], "command": "insert_snippet", "args":
+    {"name": "Packages/User/snippets/js-parse-int-10.sublime-snippet"}
+  },
   { "keys": ["ctrl+enter"], "command": "insert_snippet", "args": {"contents": "<br>"}},
   
   // insert semicolon macro
-  { "keys": ["ctrl+s"], "command": "run_macro_file", "args": {"file": "Packages/User/macros/Semicolon.sublime-macro"} },
+  { "keys": ["ctrl+;"], "command": "run_macro_file", "args": {"file": "Packages/User/macros/Semicolon.sublime-macro"} },
   
   // zen coding remaps
   {"keys": ["ctrl+w"],

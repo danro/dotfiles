@@ -1,7 +1,7 @@
 <snippet>
   <content><![CDATA[
-console.log(${0:$SELECTION})
+parseInt(${0:$SELECTION}, 10)
 ]]></content>
-  <tabTrigger>log</tabTrigger>
+  <tabTrigger>par</tabTrigger>
   <scope>source.js</scope>
 </snippet>
