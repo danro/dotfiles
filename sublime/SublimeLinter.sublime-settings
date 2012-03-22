@@ -13,6 +13,7 @@
     "node": true,
     "trailing": true,
     "undef": true,
-    "validthis": true
+    "validthis": true,
+    "devel": true
   }
 }

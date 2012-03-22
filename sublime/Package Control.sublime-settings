@@ -1,8 +1,10 @@
 {
-	"auto_upgrade_last_run": 1332182019,
+	"auto_upgrade_last_run": 1332402764,
 	"installed_packages":
 	[
 		"ActionScript 3",
+		"ApacheConf.tmLanguage",
+		"FileDiffs",
 		"LESS",
 		"Package Control",
 		"SublimeLinter",
