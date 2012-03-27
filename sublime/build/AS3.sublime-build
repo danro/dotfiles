@@ -1,4 +1,5 @@
 {
 	"cmd": ["open", "/Users/dan/.dotfiles/sublime/build/as3-preview.jsfl"],
-	"quiet": true
+	"quiet": true,
+  "selector": "source.actionscript"
 }
