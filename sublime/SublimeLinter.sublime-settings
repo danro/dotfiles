@@ -2,19 +2,13 @@
   "sublimelinter_delay": 1,
   "jshint_options":
   {
-    "asi": true,
     "boss": true,
     "browser": true,
     "eqnull": true,
-    "evil": true,
     "expr": true,
-    "laxcomma": true,
     "loopfunc": true,
-    "node": true,
+    "strict": false,
     "trailing": true,
-    "undef": true,
-    "validthis": true,
-    "devel": true,
-    "strict": false
+    "undef": true
   }
 }

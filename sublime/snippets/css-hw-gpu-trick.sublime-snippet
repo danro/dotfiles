@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+transform: translateZ(0); // hw gpu trick
+-webkit-transform: translateZ(0);
+]]></content>
+  <tabTrigger>hw</tabTrigger>
+  <scope>source.css</scope>
+</snippet>

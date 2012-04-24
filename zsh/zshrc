@@ -1,6 +1,12 @@
 #!/bin/zsh
+# Add home user bin.
+PATH=$PATH:$HOME/bin
+
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
+
+# Set name of the theme to load.
+ZSH_THEME="danro"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
@@ -9,17 +15,9 @@ plugins=(git github node npm osx)
 source $ZSH/oh-my-zsh.sh
 export EDITOR='sub'
 
-# add paths for wine install
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-export MANPATH=/opt/local/man:$MANPATH
-
-# Load custom theme
-source ".dotfiles/zsh/danro.zsh-theme"
-
 # Custom aliases
 alias l='ls -lahGo $*'
 alias ll='ls -lhGo $*'
-alias vim='mvim'
 alias profile='sub ~/sites/github/dotfiles/zsh/zshrc'
 alias subuser='sub ~/sites/github/dotfiles/sublime'
 alias tmproject='cp ~/.dotfiles/.tm_properties ./'
