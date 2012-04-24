@@ -1,7 +1,3 @@
-Host eleveninc.com
-User eleven
-IdentityFile ~/.ssh/eleven
-
 Host danro.net
 User danro
 IdentityFile ~/.ssh/danro
