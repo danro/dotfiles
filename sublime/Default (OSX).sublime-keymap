@@ -5,7 +5,7 @@
   { "keys": ["ctrl+c"], "command": "run_macro_file", "args": {"file": "Packages/User/macros/Change Line.sublime-macro"} },
   { "keys": ["super+shift+f"], "command": "show_panel", "args": {"panel": "replace"} },
   { "keys": ["super+alt+f"], "command": "show_panel", "args": {"panel": "find_in_files"} },
-  
+  { "keys": ["super+v"], "command": "paste_and_indent" },
   
   // goto file / command palette / switch project
   { "keys": ["super+t"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
