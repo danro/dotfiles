@@ -7,6 +7,4 @@ df=~/.dotfiles
 vim=~/.dotfiles/vim
 desk=~/Desktop
 danro=~/Sites/Danro
-eleven=~/Sites/Eleven
 github=~/Sites/GitHub
-titanium=~/Sites/Titanium

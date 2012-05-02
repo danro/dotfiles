@@ -16,7 +16,10 @@
 		"CVS",
 		"node_modules",
 		"dist",
-		"_assets"
+		"_assets",
+		".ogv",
+		".webm",
+		".mp4"
 	],
 	"font_face": "Monaco",
 	"font_options":

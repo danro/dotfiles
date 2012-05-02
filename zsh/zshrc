@@ -10,7 +10,7 @@ ZSH_THEME="danro"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git github node npm osx)
+plugins=(node npm)
 
 source $ZSH/oh-my-zsh.sh
 export EDITOR='sub'
@@ -21,7 +21,7 @@ alias ll='ls -lhGo $*'
 alias profile='sub ~/sites/github/dotfiles/zsh/zshrc'
 alias subuser='sub ~/sites/github/dotfiles/sublime'
 alias tmproject='cp ~/.dotfiles/.tm_properties ./'
-alias shortcuts='mate ~/.dotfiles/zsh/custom/shortcuts.zsh'
+alias shortcuts='sub ~/.dotfiles/zsh/custom/shortcuts.zsh'
 alias theme='sub ~/sites/github/dotfiles/zsh/danro.zsh-theme'
 alias flash-out='~/scripts/init-flash.sh'
 alias init-git='~/scripts/init-git.sh'
@@ -34,14 +34,6 @@ alias swfobject='~/scripts/swfobject.sh'
 alias link-modules='~/scripts/link-modules.sh'
 alias gh='~/scripts/gh.sh'
 alias node-singlevisor='supervisor -w app.js app.js'
-alias lotro='open /Library/Storage/Games/LOTRO/Lord\ of\ the\ Rings\ Online.app'
 alias asciifonts='cd /usr/local/lib/node_modules/asciimo && node node-all-fonts.js'
 
-# old minecraft stuff
-# alias mc-single='~/scripts/mc-single.sh'
-# alias mc-backup='dzip /Users/_minecraft ~/Dropbox/Library/Minecraft/server.zip'
-# alias mc-load='sudo launchctl load /Library/LaunchDaemons/net.minecraft.server.plist'
-# alias mc-unload='sudo launchctl unload /Library/LaunchDaemons/net.minecraft.server.plist'
-alias mc-ltrain='cd ~/.mc-server && java -Xmx1G -Xms1G -jar minecraft_server.jar nogui'
-# alias mc-btrain='dzip ~/.mc-server ~/Dropbox/Library/Minecraft/train.zip'
-# alias mc-fixperms='cd ~/../_minecraft && sudo chown -R _minecraft:_minecraft *'
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

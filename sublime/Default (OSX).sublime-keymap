@@ -61,6 +61,9 @@
   { "keys": ["ctrl+shift+d"], "command": "delete_surround" },
   { "keys": ["ctrl+shift+c"], "command": "replace_surround" },
   
+  // calculate
+  { "keys": ["super+shift+c"], "command": "calculate", "args": {"replace": true} },
+  
   // disabled keys
   { "keys": ["f5"], "command": "noop" }
   

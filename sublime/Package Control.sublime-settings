@@ -1,12 +1,15 @@
 {
-	"auto_upgrade_last_run": 1335228154,
+	"auto_upgrade_last_run": 1335976030,
 	"installed_packages":
 	[
 		"ActionScript 3",
 		"ApacheConf.tmLanguage",
+		"Calculate",
+		"CoffeeScript",
 		"FileDiffs",
 		"LESS",
 		"Package Control",
+		"SCSS",
 		"SublimeLinter",
 		"Theme - Soda",
 		"ZenCoding"

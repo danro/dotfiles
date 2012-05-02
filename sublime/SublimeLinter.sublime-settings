@@ -9,6 +9,7 @@
     "loopfunc": true,
     "strict": false,
     "trailing": true,
-    "undef": true
+    "undef": true,
+    "predef": ["define", "require"]
   }
 }

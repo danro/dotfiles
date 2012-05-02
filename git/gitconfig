@@ -12,12 +12,11 @@
 	st = status
 	ci = commit -vam
 	co = checkout
-	up = pull
 	unstage = reset HEAD
 	untrack = rm --cached
 	remotes = remote -v
 	branches = branch -va --color
-	diffs = diff --stat master origin/master
+	diffs = diff --stat master
 	sub = submodule add
 	subinit = submodule update --init --recursive
 	subpull = submodule foreach git pull origin master
