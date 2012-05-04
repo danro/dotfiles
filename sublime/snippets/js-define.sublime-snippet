@@ -1,0 +1,15 @@
+<snippet>
+  <content><![CDATA[
+define([
+  ${1:"jquery"}
+],
+
+function(${2:\$}) {
+  
+  $3
+  
+});
+]]></content>
+  <tabTrigger>define</tabTrigger>
+  <scope>source.js</scope>
+</snippet>
