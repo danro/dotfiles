@@ -3,11 +3,8 @@
 	"installed_packages":
 	[
 		"ActionScript 3",
-		"Alignment",
 		"ApacheConf.tmLanguage",
-		"Calculate",
 		"CoffeeScript",
-		"FileDiffs",
 		"LESS",
 		"Package Control",
 		"SCSS",
