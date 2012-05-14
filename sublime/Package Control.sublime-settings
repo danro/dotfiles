@@ -1,8 +1,9 @@
 {
-	"auto_upgrade_last_run": 1336149352,
+	"auto_upgrade_last_run": 1337020538,
 	"installed_packages":
 	[
 		"ActionScript 3",
+		"Alignment",
 		"ApacheConf.tmLanguage",
 		"Calculate",
 		"CoffeeScript",

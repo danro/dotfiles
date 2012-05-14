@@ -1,0 +1,6 @@
+defaults write com.apple.Preview NSRecentDocumentsLimit 0
+defaults delete com.apple.Preview.LSSharedFileList RecentDocuments
+defaults write com.apple.Preview.LSSharedFileList RecentDocuments -dict-add MaxAmount 0
+defaults write com.apple.TextEdit NSRecentDocumentsLimit 0
+defaults delete com.apple.TextEdit.LSSharedFileList RecentDocuments
+defaults write com.apple.TextEdit.LSSharedFileList RecentDocuments -dict-add MaxAmount 0

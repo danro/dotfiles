@@ -1,7 +1,7 @@
 <snippet>
-  <content><![CDATA[
+	<content><![CDATA[
 position: absolute;
 ]]></content>
-  <tabTrigger>abs</tabTrigger>
-  <scope>source.css</scope>
+	<tabTrigger>abs</tabTrigger>
+	<scope>source.css</scope>
 </snippet>

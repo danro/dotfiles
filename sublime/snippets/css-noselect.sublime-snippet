@@ -1,9 +1,9 @@
 <snippet>
-  <content><![CDATA[
+	<content><![CDATA[
 -moz-user-select: none;
 -webkit-user-select: none;
 user-select: none;
 ]]></content>
-  <tabTrigger>noselect</tabTrigger>
-  <scope>source.css</scope>
+	<tabTrigger>noselect</tabTrigger>
+	<scope>source.css</scope>
 </snippet>

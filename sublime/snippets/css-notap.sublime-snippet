@@ -1,8 +1,8 @@
 <snippet>
-  <content><![CDATA[
+	<content><![CDATA[
 -webkit-tap-highlight-color: rgba(0,0,0,0);
 tap-highlight-color: rgba(0,0,0,0);
 ]]></content>
-  <tabTrigger>notap</tabTrigger>
-  <scope>source.css</scope>
+	<tabTrigger>notap</tabTrigger>
+	<scope>source.css</scope>
 </snippet>

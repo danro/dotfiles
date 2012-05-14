@@ -1,7 +1,7 @@
 <snippet>
-  <content><![CDATA[
+	<content><![CDATA[
 "use strict";
 ]]></content>
-  <tabTrigger>strict</tabTrigger>
-  <scope>source.js</scope>
+	<tabTrigger>strict</tabTrigger>
+	<scope>source.js</scope>
 </snippet>

@@ -1,8 +1,8 @@
 <snippet>
-  <content><![CDATA[
+	<content><![CDATA[
 filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=${1:50});
 opacity: ${2:0.5};
 ]]></content>
-  <tabTrigger>opacity</tabTrigger>
-  <scope>source.css</scope>
+	<tabTrigger>opacity</tabTrigger>
+	<scope>source.css</scope>
 </snippet>

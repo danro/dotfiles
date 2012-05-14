@@ -3,9 +3,6 @@
 	email = dan@danro.net
 [core]
 	excludesfile = ~/.gitignore
-[branch "master"]
-	remote = origin
-	merge = refs/heads/master
 [diff]
   external = ~/scripts/git-diff-wrapper.sh
 [alias]

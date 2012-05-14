@@ -1,46 +1,46 @@
 <snippet>
-  <content><![CDATA[
+	<content><![CDATA[
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="viewport" content="width=device-width">
-  <script src="js/swfobject.min.js"></script>
-  <style type="text/css">
-  body {
-    background: #a0a0a0;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
-  #content {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-  }
-  </style>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width">
+	<script src="js/swfobject.min.js"></script>
+	<style type="text/css">
+	body {
+		background: #a0a0a0;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+	#content {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		margin: auto;
+	}
+	</style>
 </head>
 <body>
-  <div id="container">
-  <div id="content"></div>
-  </div>
-  <script>
-  (function () {
-    var swfFile = "${1:filename}", width = ${2:600}, height = ${3:400};
-    var content = document.getElementById("content");
-    content.style.width = width + "px";
-    content.style.height = height + "px";
-    document.title = swfFile;
-    swfobject.embedSWF(swfFile + ".swf", "content", width, height, "9.0.28");
-  })();
-  </script>
+	<div id="container">
+	<div id="content"></div>
+	</div>
+	<script>
+	(function () {
+		var swfFile = "${1:filename}", width = ${2:600}, height = ${3:400};
+		var content = document.getElementById("content");
+		content.style.width = width + "px";
+		content.style.height = height + "px";
+		document.title = swfFile;
+		swfobject.embedSWF(swfFile + ".swf", "content", width, height, "9.0.28");
+	})();
+	</script>
 </body>
 </html>
 ]]></content>
-  <tabTrigger>flash</tabTrigger>
-  <scope>text.html</scope>
+	<tabTrigger>flash</tabTrigger>
+	<scope>text.html</scope>
 </snippet>
