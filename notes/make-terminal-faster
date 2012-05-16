@@ -1,0 +1,10 @@
+# hush the login
+touch ~/.hushlogin
+
+# clean up asl logs
+sudo rm -rf /private/var/log/asl/*
+
+# then add these lines to /etc/asl.conf
+= archive 0
+= utmp_ttl 604800
+= fs_ttl 604800
