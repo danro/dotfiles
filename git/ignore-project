@@ -36,6 +36,7 @@ dwsync.xml
 .svn
 .CVS
 .idea
+.sass-cache
 _assets
 tags
 intermediate

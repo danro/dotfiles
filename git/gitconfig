@@ -1,8 +1,11 @@
 [user]
 	name = Dan Rogers
-	email = dan@danro.net
+	email = dan.rogers@bkwld.com
 [core]
 	excludesfile = ~/.gitignore
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
 [diff]
   external = ~/scripts/git-diff-wrapper.sh
 [alias]
