@@ -1,6 +1,8 @@
 #!/bin/zsh
-# Add home user bin.
-PATH=$PATH:$HOME/bin
+
+PATH=$PATH:$HOME/bin # Add user bin to path
+PATH=$PATH:$HOME/scripts # Add custom scripts to path
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
@@ -23,17 +25,6 @@ alias subuser='sub ~/sites/github/dotfiles/sublime'
 alias tmproject='cp ~/.dotfiles/.tm_properties ./'
 alias shortcuts='sub ~/.dotfiles/zsh/custom/shortcuts.zsh'
 alias theme='sub ~/sites/github/dotfiles/zsh/danro.zsh-theme'
-alias flash-out='~/scripts/init-flash.sh'
-alias init-git='~/scripts/init-git.sh'
-alias git-all='~/scripts/git-recursive-pull.sh'
-alias clear-dns='~/scripts/clear-dns-cache.sh'
-alias dzip='~/scripts/dzip.sh'
-alias getip='~/scripts/get-ip.sh'
 alias git-diff-vi='git diff --no-ext-diff -w "$@" | vi -R -'
-alias swfobject='~/scripts/swfobject.sh'
-alias link-modules='~/scripts/link-modules.sh'
-alias gh='~/scripts/gh.sh'
 alias node-singlevisor='supervisor -w app.js app.js'
 alias asciifonts='cd /usr/local/lib/node_modules/asciimo && node node-all-fonts.js'
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

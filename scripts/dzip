@@ -1,1 +1,2 @@
+#!/bin/sh
 ditto -c -k --norsrc $*

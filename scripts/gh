@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # Opens the github page for the current git repository in your browser
 # git@github.com:jasonneylon/dotfiles.git
 # https://github.com/jasonneylon/dotfiles/

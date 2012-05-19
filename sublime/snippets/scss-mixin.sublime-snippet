@@ -1,9 +1,9 @@
 <snippet>
 	<content><![CDATA[
 @mixin ${1:mixin-name} {
-	$0
+	$2
 }
 ]]></content>
-	<tabTrigger>mix</tabTrigger>
+	<tabTrigger>mixin</tabTrigger>
 	<scope>source.scss</scope>
 </snippet>

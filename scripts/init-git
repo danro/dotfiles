@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 git init
 # create .gitignore if it doesn't exist
 if [ ! -f "./.gitignore" ]; then
