@@ -41,7 +41,6 @@ _assets
 tags
 intermediate
 publish
-dist
 
 # Ignore CSS in common LESS paths
 less/*.css

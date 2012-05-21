@@ -25,7 +25,10 @@ if [ $githost == "git@codebasehq.com" ]
 		exit 1;
 fi
 
-# otherwise default to github
+# check for git:// urls
+giturl=${giturl/git\:/https:}
+
+# otherwise default to github ssh urls
 giturl=${giturl/git\@github\.com\:/https://github.com/}
 giturl=${giturl/\.git//}
 echo $giturl
