@@ -8,3 +8,4 @@ vim=~/.dotfiles/vim
 desk=~/Desktop
 danro=~/Sites/Danro
 github=~/Sites/GitHub
+notes=~/Dropbox/Notes/System
