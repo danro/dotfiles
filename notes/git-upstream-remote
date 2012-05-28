@@ -1,2 +1,0 @@
-git remote add upstream http://github.com/user/project.git
-git pull upstream master

@@ -1,4 +1,0 @@
-for x in "$*" ; do print -- $x ; done
-
-for x in "$@" ; do print -- $x; done
-

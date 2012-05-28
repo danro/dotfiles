@@ -1,3 +1,0 @@
-IFS='/' read -ra urlparts <<< "$giturl"
-
-echo ${urlparts[2]}

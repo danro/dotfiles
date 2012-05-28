@@ -1,1 +1,0 @@
-sed -i "s,__INSERT_PATH__,$WORK_PATH,g" filename.txt

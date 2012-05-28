@@ -1,5 +1,0 @@
-sudo su
-ipfw pipe 1 config bw 1000kbit/s
-ipfw add pipe 1 src-port http
-
-ipfw flush

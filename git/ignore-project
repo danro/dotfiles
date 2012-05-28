@@ -41,6 +41,7 @@ _assets
 tags
 intermediate
 publish
+node_modules
 
 # Ignore CSS in common LESS paths
 less/*.css

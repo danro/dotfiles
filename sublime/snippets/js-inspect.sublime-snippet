@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
-console.log(${1:$SELECTION});
+inspect(${1:$SELECTION});
 ]]></content>
-	<tabTrigger>log</tabTrigger>
+	<tabTrigger>inspect</tabTrigger>
 	<scope>source.js</scope>
 </snippet>

@@ -1,5 +1,0 @@
-git log --name-status
-
-git log --name-only
-
-git log --stat

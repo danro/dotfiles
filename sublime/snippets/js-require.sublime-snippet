@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
-console.log(${1:$SELECTION});
+require(${1:$SELECTION});
 ]]></content>
-	<tabTrigger>log</tabTrigger>
+	<tabTrigger>require</tabTrigger>
 	<scope>source.js</scope>
 </snippet>

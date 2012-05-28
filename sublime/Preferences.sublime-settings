@@ -10,6 +10,7 @@
 	"fade_fold_buttons": false,
 	"folder_exclude_patterns":
 	[
+		".sass-cache",
 		".svn",
 		".git",
 		".hg",

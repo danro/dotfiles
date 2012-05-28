@@ -13,3 +13,7 @@ IdentityFile ~/.ssh/heroku
 Host codebasehq.com
 User git
 IdentityFile ~/.ssh/codebasehq
+
+Host bkwlddev.com
+User bkwld
+IdentityFile ~/.ssh/bkwlddev

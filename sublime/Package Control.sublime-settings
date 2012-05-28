@@ -1,13 +1,15 @@
 {
-	"auto_upgrade_last_run": 1337701477,
+	"auto_upgrade_last_run": 1338243402,
 	"installed_packages":
 	[
 		"ActionScript 3",
 		"ApacheConf.tmLanguage",
 		"CoffeeScript",
+		"Jade",
 		"LESS",
 		"Package Control",
 		"SCSS",
+		"Stylus",
 		"SublimeLinter",
 		"Theme - Soda",
 		"ZenCoding"
