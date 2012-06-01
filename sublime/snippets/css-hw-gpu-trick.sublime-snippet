@@ -4,5 +4,5 @@ transform: translateZ(0); // hw gpu trick
 -webkit-transform: translateZ(0);
 ]]></content>
 	<tabTrigger>hw</tabTrigger>
-	<scope>source.css</scope>
+	<scope>source.css, source.scss</scope>
 </snippet>

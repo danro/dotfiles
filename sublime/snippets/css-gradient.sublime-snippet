@@ -8,5 +8,5 @@ background-image:     -ms-linear-gradient(top, #$1, #$2);
 background-image:      -o-linear-gradient(top, #$1, #$2);
 ]]></content>
 	<tabTrigger>grad</tabTrigger>
-	<scope>source.css</scope>
+	<scope>source.css, source.scss</scope>
 </snippet>

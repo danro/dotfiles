@@ -3,5 +3,5 @@
 text-shadow: ${1:0}px ${2:0}px ${3:0}px #${4:fff};
 ]]></content>
 	<tabTrigger>ds</tabTrigger>
-	<scope>source.css</scope>
+	<scope>source.css, source.scss</scope>
 </snippet>

@@ -1,2 +1,3 @@
 #!/bin/sh
-/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl -b $*
+SUBL="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
+eval "$SUBL -b $* && $SUBL"

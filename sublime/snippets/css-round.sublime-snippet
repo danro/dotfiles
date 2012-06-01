@@ -6,5 +6,5 @@
 border-radius: $1px;
 ]]></content>
 	<tabTrigger>round</tabTrigger>
-	<scope>source.css</scope>
+	<scope>source.css, source.scss</scope>
 </snippet>

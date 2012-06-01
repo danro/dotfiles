@@ -3,5 +3,5 @@
 @import "${1:something/awesome}";$0
 ]]></content>
 	<tabTrigger>im</tabTrigger>
-	<scope>source.css</scope>
+	<scope>source.css, source.scss</scope>
 </snippet>
