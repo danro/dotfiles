@@ -1,0 +1,2 @@
+#!/bin/sh
+sub --project ~/Dropbox/Notes/.sublime/notes.sublime-project

@@ -6,6 +6,7 @@
 	"color_scheme": "Packages/User/colors/DanroST2.tmTheme",
 	"detect_indentation": true,
 	"detect_slow_plugins": false,
+	"drag_text": false,
 	"draw_indent_guides": true,
 	"fade_fold_buttons": false,
 	"folder_exclude_patterns":
@@ -29,6 +30,7 @@
 		"no_antialias"
 	],
 	"font_size": 11.0,
+	"hot_exit": true,
 	"ignored_packages":
 	[
 		"Vintage"
@@ -38,10 +40,12 @@
 	"open_files_in_new_window": false,
 	"scroll_past_end": true,
 	"scroll_speed": 0,
+	"show_panel_on_build": false,
 	"tab_size": 2,
-	"theme": "Soda Dark.sublime-theme",
+	"theme": "Soda Dark Refined.sublime-theme",
 	"tree_animation_enabled": false,
 	"trim_automatic_white_space": false,
 	"word_separators": "./\\()\"'-:,.;<>~!#%&^*|+=[]{}`~?",
+	"preview_on_click": false,
 	"word_wrap": true
 }
