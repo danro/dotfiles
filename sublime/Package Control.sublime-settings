@@ -1,10 +1,9 @@
 {
-	"auto_upgrade_last_run": 1338833124,
+	"auto_upgrade_last_run": 1338930373,
 	"installed_packages":
 	[
 		"ActionScript 3",
 		"ApacheConf.tmLanguage",
-		"BracketHighlighter",
 		"CoffeeScript",
 		"Jade",
 		"LESS",

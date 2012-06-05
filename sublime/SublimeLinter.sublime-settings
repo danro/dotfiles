@@ -11,6 +11,7 @@
     "trailing": true,
     "undef": true,
     "supernew": true,
+    "sub": true,
     "predef": ["define", "require"]
   }
 }

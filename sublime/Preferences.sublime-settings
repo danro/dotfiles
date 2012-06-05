@@ -19,6 +19,10 @@
 		"node_modules",
 		"dist",
 		"_assets",
+		"video",
+		"videos",
+		"img",
+		"images",
 		".mov",
 		".ogv",
 		".webm",
@@ -38,6 +42,7 @@
 	"line_padding_top": 1,
 	"match_selection": false,
 	"open_files_in_new_window": false,
+	"preview_on_click": false,
 	"scroll_past_end": true,
 	"scroll_speed": 0,
 	"show_panel_on_build": false,
@@ -46,6 +51,5 @@
 	"tree_animation_enabled": false,
 	"trim_automatic_white_space": false,
 	"word_separators": "./\\()\"'-:,.;<>~!#%&^*|+=[]{}`~?",
-	"preview_on_click": false,
 	"word_wrap": true
 }

@@ -66,7 +66,9 @@
 	// surroundings
 	{ "keys": ["ctrl+shift+s"], "command": "add_surround" },
 	{ "keys": ["ctrl+shift+d"], "command": "delete_surround" },
-	{ "keys": ["ctrl+shift+x"], "command": "replace_surround" },
+	{ "keys": ["ctrl+shift+c"], "command": "replace_surround" },
+	{ "keys": ["ctrl+'"], "command": "quotes_to_single" },
+	{ "keys": ["ctrl+shift+'"], "command": "quotes_to_double" },
 	
 	// copy expanded file or text to clipboard
 	{ "keys": ["super+shift+c"], "command": "copy_expanded" },

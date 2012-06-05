@@ -183,3 +183,11 @@ class ReplaceSurroundCommand(sublime_plugin.TextCommand):
     self.view.replace(edit_sequence, regions[0], replace_chars[0])
     self.view.replace(edit_sequence, regions[1], replace_chars[1])
     self.view.end_edit(edit_sequence)
+
+class QuotesToSingleCommand(ReplaceSurroundCommand):
+  def run(self, edit):
+    self.after_input("\"'")
+
+class QuotesToDoubleCommand(ReplaceSurroundCommand):
+  def run(self, edit):
+    self.after_input("'\"")
