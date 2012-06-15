@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+/*jshint node:true, asi:true, laxcomma:true */
+]]></content>
+	<tabTrigger>hipster</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

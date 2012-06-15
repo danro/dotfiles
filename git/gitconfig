@@ -21,3 +21,4 @@
 	subinit = submodule update --init --recursive
 	subpull = submodule foreach git pull origin master
 	zip = archive --format zip --output
+	pm = push origin master

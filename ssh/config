@@ -1,19 +1,32 @@
+IdentitiesOnly yes
+
 Host danro.net
-User danro
-IdentityFile ~/.ssh/danro
+	User danro
+	IdentityFile ~/.ssh/danro
 
 Host github.com
-User git
-IdentityFile ~/.ssh/github
+	User git
+	IdentityFile ~/.ssh/github
 
 Host heroku.com
-User git
-IdentityFile ~/.ssh/heroku
+	User git
+	IdentityFile ~/.ssh/heroku
 
 Host codebasehq.com
-User git
-IdentityFile ~/.ssh/codebasehq
+	User git
+	IdentityFile ~/.ssh/codebasehq
 
 Host bkwlddev.com
-User bkwld
-IdentityFile ~/.ssh/bkwlddev
+	User bkwld
+	IdentityFile ~/.ssh/bkwlddev
+
+Host *.pagodabox.com
+	User git
+	Hostname git.pagodabox.com
+	PreferredAuthentications publickey
+	IdentityFile ~/.ssh/pagoda
+	IdentityFile ~/.ssh/pagoda-robert
+
+Host *.amazonaws.com
+	User ubuntu
+	IdentityFile ~/.ssh/canon.pem
