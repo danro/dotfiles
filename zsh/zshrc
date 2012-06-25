@@ -17,6 +17,9 @@ plugins=(node npm)
 source $ZSH/oh-my-zsh.sh
 export EDITOR='sub'
 
+# Disable annoying spelling help
+unsetopt correct_all
+
 # Custom aliases
 alias l='ls -lahGo $*'
 alias ll='ls -lhGo $*'

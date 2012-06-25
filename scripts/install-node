@@ -1,0 +1,34 @@
+#!/bin/bash
+#
+# Copyright 2012, Tim Branyen @tbranyen <tim@tabdeveloper.com>
+# Dual licensed under the MIT and GPL licenses.
+#
+# Easily install new or old versions of Node.js on an OS X machine.
+#
+# Install: curl -o /usr/local/bin/install_node https://gist.github.com/raw/2569416/install_node.sh
+#          chmod +x /usr/local/bin/install_node
+#
+# Usage: install_node 0.6.16
+#
+# Specify the version as the single argument, if you want to customize the
+# cache directory, you can modify this file or prefix with:
+#
+# DIR=~/.cache install_node 0.6.16
+#
+
+# Configure the installer cache directory
+DIR=~/.node
+# Configure the target harddisk to install to
+TARGET=/
+# Pass version in as an argument
+VER=$*
+
+# If install file doesn't already exist, fetch it first
+if [ ! -f ~/.node/$VER.pkg ]; then
+  # Fetch the package into a hidden directory
+  curl --create-dirs -o $DIR/$VER.pkg \
+    http://nodejs.org/dist/v$VER/node-v$VER.pkg
+fi
+
+# Invoke the installer
+sudo installer -pkg $DIR/$VER.pkg -target $TARGET
