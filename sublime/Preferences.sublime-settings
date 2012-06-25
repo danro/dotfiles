@@ -42,6 +42,7 @@
 	"line_padding_top": 1,
 	"match_selection": false,
 	"open_files_in_new_window": false,
+	"create_window_at_startup": false,
 	"preview_on_click": false,
 	"scroll_past_end": true,
 	"scroll_speed": 0,
