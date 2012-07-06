@@ -10,6 +10,7 @@
     "strict": false,
     "trailing": true,
     "undef": true,
+    "smarttabs": true,
     "supernew": true,
     "sub": true,
     "predef": ["define", "require"]

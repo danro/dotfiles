@@ -3,6 +3,7 @@
 	email = dan.rogers@bkwld.com
 [core]
 	excludesfile = ~/.gitignore
+	quotepath = false
 [branch "master"]
 	remote = origin
 	merge = refs/heads/master
@@ -22,3 +23,5 @@
 	subpull = submodule foreach git pull origin master
 	zip = archive --format zip --output
 	pm = push origin master
+[mergetool]
+	keepBackup = true

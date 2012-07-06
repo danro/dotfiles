@@ -585,6 +585,17 @@
       </dict>
       <dict>
         <key>name</key>
+        <string>less.mixin</string>
+        <key>scope</key>
+        <string>entity.other.less.mixin</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#98E124</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>name</key>
         <string>css.element</string>
         <key>scope</key>
         <string>keyword.control.html.elements</string>

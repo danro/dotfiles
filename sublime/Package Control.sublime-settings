@@ -1,5 +1,5 @@
 {
-	"auto_upgrade_last_run": 1340663184,
+	"auto_upgrade_last_run": 1341601471,
 	"installed_packages":
 	[
 		"ActionScript 3",
@@ -7,13 +7,12 @@
 		"CoffeeScript",
 		"Jade",
 		"LESS",
-		"LinkOpener",
 		"Package Control",
 		"SCSS",
 		"Stylus",
 		"SublimeLinter",
+		"Theme - Aqua",
 		"Theme - Soda",
-		"Theme - Soda Refined",
 		"ZenCoding"
 	]
 }

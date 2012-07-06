@@ -7,6 +7,11 @@
 	{ "keys": ["super+alt+f"], "command": "show_panel", "args": {"panel": "find_in_files"} },
 	{ "keys": ["super+v"], "command": "paste_and_indent" },
 	
+	// expand selection
+	{ "keys": ["super+alt+g"], "command": "find_under_expand" },
+	{ "keys": ["super+alt+b"], "command": "find_under_expand_skip" },
+	
+	// TODO
 	// alt up / down navigate to next empty line
 	// { "keys": ["alt+up"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": false} },
 	// { "keys": ["alt+down"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": true} },
