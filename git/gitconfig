@@ -8,7 +8,7 @@
 	remote = origin
 	merge = refs/heads/master
 [diff]
-  external = ~/scripts/git-diff-wrapper.sh
+	external = ~/scripts/git-diff-wrapper.sh
 [alias]
 	st = status
 	ci = commit -vam
