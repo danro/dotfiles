@@ -1,5 +1,5 @@
 {
-	"auto_upgrade_last_run": 1341814575,
+	"auto_upgrade_last_run": 1341869365,
 	"installed_packages":
 	[
 		"ActionScript 3",
@@ -9,7 +9,6 @@
 		"Jade",
 		"LESS",
 		"Package Control",
-		"SCSS",
 		"Stylus",
 		"SublimeLinter",
 		"Theme - Aqua",

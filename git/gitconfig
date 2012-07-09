@@ -22,4 +22,5 @@
 	subinit = submodule update --init --recursive
 	subpull = submodule foreach git pull origin master
 	zip = archive --format zip --output
+	setup = branch --set-upstream master origin/master
 	pm = push origin master
