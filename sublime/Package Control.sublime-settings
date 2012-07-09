@@ -1,8 +1,9 @@
 {
-	"auto_upgrade_last_run": 1341601471,
+	"auto_upgrade_last_run": 1341814575,
 	"installed_packages":
 	[
 		"ActionScript 3",
+		"Alignment",
 		"ApacheConf.tmLanguage",
 		"CoffeeScript",
 		"Jade",
@@ -12,6 +13,7 @@
 		"Stylus",
 		"SublimeLinter",
 		"Theme - Aqua",
+		"Theme - Refined",
 		"Theme - Soda",
 		"ZenCoding"
 	]
