@@ -3,14 +3,10 @@
 define(function (require) {
 	
 	// dependencies
-	var \$ = require('jquery'),
-		${1:_} = require('${2:underscore}')$3;
-	
-	// define module class
-	var ${4:Module} = ${5:function () {\}};
+	var \$ = require('jquery');
 	
 	// return exposed module
-	return $4;
+	return ${1:Module};
 });
 ]]></content>
 	<tabTrigger>define</tabTrigger>
