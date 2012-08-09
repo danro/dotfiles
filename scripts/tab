@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Launch a process in iTerm in a new tab
+# usage: tab <optional-command>
+
+osascript 2>/dev/null <<EOF
+  tell application "iTerm"
+  	tell the first terminal
+  		launch session "Default"
+  		tell the the current session
+  			write text "cd $PWD;"
+  			if "$*" is not "" then
+  				write text "$*"
+  			end if
+  		end tell
+  	end tell
+  end tell
+EOF
