@@ -1,5 +1,6 @@
 #!/bin/zsh
 
+PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 PATH=$PATH:$HOME/bin # Add user bin to path
 PATH=$PATH:$HOME/scripts # Add custom scripts to path
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH

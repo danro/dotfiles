@@ -662,6 +662,25 @@
         </dict>
       </dict>
       
+      <dict>
+        <key>scope</key>
+        <string>constant.numeric.line-number.find-in-files - match</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#AE81FFA0</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>scope</key>
+        <string>entity.name.filename.find-in-files</string>
+        <key>settings</key>
+        <dict>
+          <key>foreground</key>
+          <string>#E6DB74</string>
+        </dict>
+      </dict>
+      
     </array>
     <key>uuid</key>
     <string>6C415C87-5245-4BF1-86BC-79BCE8A13D09</string>

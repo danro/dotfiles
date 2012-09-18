@@ -1,18 +1,19 @@
 {
-  "sublimelinter_delay": 1,
-  "jshint_options":
-  {
-    "boss": true,
-    "browser": true,
-    "eqnull": true,
-    "expr": true,
-    "loopfunc": true,
-    "strict": false,
-    "trailing": true,
-    "undef": true,
-    "smarttabs": true,
-    "supernew": true,
-    "sub": true,
-    "predef": ["define", "require"]
-  }
+	"sublimelinter_delay": 1.5,
+	"sublimelinter_disable": ["css"],
+	"jshint_options":
+	{
+		"boss": true,
+		"browser": true,
+		"eqnull": true,
+		"expr": true,
+		"loopfunc": true,
+		"strict": false,
+		"trailing": true,
+		"undef": true,
+		"smarttabs": true,
+		"supernew": true,
+		"sub": true,
+		"predef": ["define", "require"]
+	}
 }

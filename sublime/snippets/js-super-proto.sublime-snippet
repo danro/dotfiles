@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+${1:BaseView}.prototype.${2:initialize}.call(this$3);
+]]></content>
+	<tabTrigger>super</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

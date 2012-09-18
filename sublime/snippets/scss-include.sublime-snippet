@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-@include ${0:mixin-name};
+@include ${0:mixin-name}
 ]]></content>
 	<tabTrigger>include</tabTrigger>
 	<scope>source.scss</scope>
