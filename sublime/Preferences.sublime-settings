@@ -3,7 +3,7 @@
 	"auto_complete_selector": "source",
 	"auto_complete_with_fields": true,
 	"auto_match_enabled": true,
-	"color_scheme": "Packages/User/colors/DanroST2.tmTheme",
+	"color_scheme": "Packages/Theme - Refined/Color Schemes/Danro.tmTheme",
 	"create_window_at_startup": false,
 	"detect_indentation": true,
 	"detect_slow_plugins": false,
