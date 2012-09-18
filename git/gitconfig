@@ -4,9 +4,8 @@
 [core]
 	excludesfile = ~/.gitignore
 	quotepath = false
-[branch "master"]
-	remote = origin
-	merge = refs/heads/master
+[push]
+	default = upstream
 [diff]
 	external = ~/scripts/git-diff-wrapper.sh
 [alias]
@@ -25,5 +24,3 @@
 	zip = archive --format zip --output
 	setup = branch --set-upstream master origin/master
 	pm = push origin master
-[push]
-	default = upstream
