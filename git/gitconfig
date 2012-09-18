@@ -25,3 +25,5 @@
 	zip = archive --format zip --output
 	setup = branch --set-upstream master origin/master
 	pm = push origin master
+[push]
+	default = upstream
