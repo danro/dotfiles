@@ -23,4 +23,5 @@
 	subpull = submodule foreach git pull origin master
 	zip = archive --format zip --output
 	setup = branch --set-upstream master origin/master
-	pm = push origin master
+	ignore = update-index --assume-unchanged
+	watch = update-index --no-assume-unchanged
