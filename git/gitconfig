@@ -1,9 +1,11 @@
+# ---- base config ----
 [user]
 	name = Dan Rogers
 	email = dan.rogers@bkwld.com
 [core]
 	excludesfile = ~/.gitignore
 	quotepath = false
+	whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
 [push]
 	default = upstream
 [diff]
@@ -18,11 +20,25 @@
 	remotes = remote -v
 	branches = branch -va --color
 	diffs = diff --stat master
-	sub = submodule add
-	subinit = submodule update --init --recursive
-	subpull = submodule foreach git pull origin master
-	zip = archive --format zip --output
-	setup = branch --set-upstream master origin/master
+	logs = log --stat --color
 	ignore = update-index --assume-unchanged --
 	watch = update-index --no-assume-unchanged --
 	refresh = update-index --really-refresh
+	
+# ---- pretty colors ----
+[color]
+	ui = true
+[color "branch"]
+	current = magenta
+	remote = cyan
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red reverse
+	new = green reverse
+	whitespace = white reverse
+[color "status"]
+	added = green
+	changed = cyan
+	untracked = blue bold
+	branch = magenta
