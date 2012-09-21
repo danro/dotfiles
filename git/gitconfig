@@ -1,3 +1,4 @@
+#!/bin/sh
 # ---- base config ----
 [user]
 	name = Dan Rogers
