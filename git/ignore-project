@@ -37,11 +37,10 @@ dwsync.xml
 .CVS
 .idea
 .sass-cache
-_assets
-tags
-intermediate
-publish
 
 # Ignore CSS in common LESS paths
 less/*.css
 less/*/*.css
+
+# Laravel bundles
+/bundles/*.git

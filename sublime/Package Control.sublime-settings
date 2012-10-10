@@ -1,5 +1,5 @@
 {
-	"auto_upgrade_last_run": 1348256203,
+	"auto_upgrade_last_run": 1349815637,
 	"installed_packages":
 	[
 		"ActionScript 3",
@@ -11,7 +11,6 @@
 		"Package Control",
 		"Stylus",
 		"SublimeLinter",
-		"Theme - Aqua",
 		"Theme - Refined",
 		"Theme - Soda",
 		"ZenCoding"
