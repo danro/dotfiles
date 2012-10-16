@@ -44,6 +44,9 @@
 	{ "keys": ["ctrl+j"], "command": "insert_snippet", "args":
 		{"name": "Packages/User/snippets/js-$jquery.sublime-snippet"}
 	},
+	{ "keys": ["ctrl+/"], "command": "insert_snippet", "args":
+		{"name": "Packages/User/snippets/php-?-tag.sublime-snippet"}
+	},
 	{ "keys": ["ctrl+i"], "command": "insert_snippet", "args":
 		{"name": "Packages/User/snippets/js-inspect.sublime-snippet"}
 	},
