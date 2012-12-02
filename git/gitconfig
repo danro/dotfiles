@@ -7,10 +7,9 @@
 	excludesfile = ~/.gitignore
 	quotepath = false
 	whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+	editor = vim
 [push]
 	default = upstream
-[diff]
-	external = ~/scripts/git-diff-wrapper.sh
 [alias]
 	st = status
 	ci = commit -vam
@@ -29,7 +28,7 @@
 	watch = update-index --no-assume-unchanged --
 	refresh = update-index --really-refresh
 	zip = archive --format zip --output
-	
+	diff = difftool
 # ---- pretty colors ----
 [color]
 	ui = true
@@ -47,3 +46,15 @@
 	changed = cyan
 	untracked = blue bold
 	branch = magenta
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[diff]
+	tool = Kaleidoscope
+[difftool]
+	prompt = false
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+[mergetool]
+	prompt = false
+[merge]
+	tool = Kaleidoscope

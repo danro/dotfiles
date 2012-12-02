@@ -1,7 +1,13 @@
 {
 	"auto_complete_commit_on_tab": true,
-	"auto_complete_selector": ["source", "text.html"],
-	"auto_complete_triggers": [],
+	"auto_complete_selector":
+	[
+		"source",
+		"text.html"
+	],
+	"auto_complete_triggers":
+	[
+	],
 	"auto_complete_with_fields": true,
 	"auto_match_enabled": true,
 	"color_scheme": "Packages/Theme - Refined/Color Schemes/Danro.tmTheme",

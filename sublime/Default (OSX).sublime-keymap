@@ -61,14 +61,34 @@
 	// insert semicolon macro
 	{ "keys": ["super+;"], "command": "run_macro_file", "args": {"file": "Packages/User/macros/Semicolon.sublime-macro"} },
 	
-	// zen coding remaps
-	{"keys": ["ctrl+w"],
-	"args": {}, "command": "zen_as_you_type", "context": [{"operand": "source.css - source.css.embedded, text.xml, text.html -source -meta.tag, meta.scope.between-tag-pair.html -source", "operator": "equal", "match_all": true, "key": "selector"} ]
+	// zen coding (emmet) remaps	
+	{
+		"keys": ["ctrl+w"],
+		"command": "expand_as_you_type", 
+		"context": [
+			{
+				"operand": false, 
+				"operator": "equal", 
+				"match_all": true, 
+				"key": "setting.is_widget"
+			}, 
+			{
+				"match_all": true, 
+				"key": "emmet_action_enabled.expand_as_you_type"
+			}
+		]
 	},
-	{"keys": ["ctrl+w"],
-	"command": "wrap_zen_as_you_type", "context": [{"operand": "text.html meta.tag - string - meta.scope.between-tag-pair.html", "operator": "equal", "match_all": true, "key": "selector"} ]
-	},
-	{"keys": ["ctrl+w"], "command": "wrap_zen_as_you_type", "context": [{"operand"  : false, "key"      : "selection_empty", "match_all": true, "operator" : "equal"}, {"key"      : "num_selections", "operand"  : 1, "operator" : "equal"} ]
+	{
+		"keys": ["ctrl+q"],
+		"args": {
+			"action": "remove_tag"
+		}, 
+		"command": "run_emmet_action", 
+		"context": [
+			{
+				"key": "emmet_action_enabled.remove_tag"
+			}
+		]
 	},
 	
 	// surroundings

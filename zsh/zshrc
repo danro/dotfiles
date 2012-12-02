@@ -24,6 +24,7 @@ unsetopt correct_all
 # Custom aliases
 alias l='ls -lahGo $*'
 alias ll='ls -lhGo $*'
+alias ks='ksdiff'
 alias profile='sub ~/sites/github/dotfiles/zsh/zshrc'
 alias subuser='sub ~/sites/github/dotfiles/sublime'
 alias shortcuts='sub ~/.dotfiles/zsh/custom/shortcuts.zsh'
@@ -31,3 +32,4 @@ alias theme='sub ~/sites/github/dotfiles/zsh/danro.zsh-theme'
 alias gitignore='cp -v ~/.dotfiles/git/ignore-project .gitignore'
 alias asciifonts='cd /usr/local/lib/node_modules/asciimo && node node-all-fonts.js'
 alias clean-asl='sudo rm -rfv /private/var/log/asl/*.asl'
+alias upjshint='cp /Users/dan/Sites/GitHub/javascript/jshint/src/stable/jshint.js /Users/dan/Library/Application\ Support/Sublime\ Text\ 2/Packages/SublimeLinter/sublimelinter/modules/libs/jshint/'

@@ -1,19 +1,18 @@
 {
-	"auto_upgrade_last_run": 1350418734,
+	"auto_upgrade_last_run": null,
 	"installed_packages":
 	[
 		"ActionScript 3",
 		"Alignment",
-		"All Autocomplete",
 		"ApacheConf.tmLanguage",
 		"CoffeeScript",
+		"Inline Calculator",
 		"Jade",
 		"LESS",
 		"Package Control",
 		"Stylus",
 		"SublimeLinter",
 		"Theme - Refined",
-		"Theme - Soda",
-		"ZenCoding"
+		"Theme - Soda"
 	]
 }
