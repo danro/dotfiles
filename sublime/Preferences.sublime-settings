@@ -48,7 +48,7 @@
 	"match_selection": false,
 	"open_files_in_new_window": false,
 	"overlay_scroll_bars": "system",
-	"preview_on_click": false,
+	"preview_on_click": true,
 	"scroll_past_end": true,
 	"scroll_speed": 0,
 	"show_panel_on_build": false,
