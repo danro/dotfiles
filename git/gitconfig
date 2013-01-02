@@ -8,8 +8,6 @@
 	quotepath = false
 	whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
 	editor = vim
-[push]
-	default = upstream
 [alias]
 	st = status
 	ci = commit -vam
@@ -54,6 +52,7 @@
 	prompt = false
 [mergetool "Kaleidoscope"]
 	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
 [mergetool]
 	prompt = false
 [merge]

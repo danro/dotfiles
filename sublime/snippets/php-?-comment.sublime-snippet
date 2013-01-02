@@ -3,6 +3,7 @@
 <? /* ?>
 ${1:$SELECTION}
 <? */ ?>
+
 ]]></content>
 	<tabTrigger>?*</tabTrigger>
 	<scope>text.html</scope>
