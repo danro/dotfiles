@@ -1,4 +1,4 @@
 My dotfiles.
 ============
 
-(for what they're worth)
+Full of dot goodness.
