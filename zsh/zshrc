@@ -2,8 +2,6 @@
 
 # PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 PATH=$PATH:$HOME/scripts # Add custom scripts to path
-export GEM_HOME=$HOME/.gem # Install gems to user location
-PATH=$PATH:$HOME/.gem/bin # Add gem bin to path
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh

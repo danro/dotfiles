@@ -1,6 +1,6 @@
 {
-	"git_binary": "/Applications/XCode.app/Contents/Developer/usr/bin/git",
 	"auto_upgrade_last_run": null,
+	"git_binary": "/Applications/XCode.app/Contents/Developer/usr/bin/git",
 	"installed_packages":
 	[
 		"ActionScript 3",

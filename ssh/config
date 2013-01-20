@@ -24,8 +24,7 @@ Host *.pagodabox.com
 	User git
 	Hostname git.pagodabox.com
 	PreferredAuthentications publickey
-	IdentityFile ~/.ssh/pagoda
-	IdentityFile ~/.ssh/pagoda-robert
+	IdentityFile ~/.ssh/pagoda-danbuck
 
 Host *.amazonaws.com
 	User ubuntu
