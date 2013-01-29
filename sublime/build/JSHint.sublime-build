@@ -1,0 +1,4 @@
+{
+	"cmd": ["jshint", "$file"],
+	"selector": "source.js"
+}

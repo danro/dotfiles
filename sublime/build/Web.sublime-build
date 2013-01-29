@@ -1,4 +1,0 @@
-{
-	"cmd": ["/Users/dan/.dotfiles/sublime/build/web-build.sh"],
-	"selector": "text.html, source.js, source.css"
-}

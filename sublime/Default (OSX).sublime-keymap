@@ -1,4 +1,9 @@
 [
+	// hack JS build-on-save until sublimelinter is fixed
+	{ "keys": ["super+s"], "command": "build", 
+		"context": [ { "key": "selector", "operator": "equal", "operand": "source.js" } ]
+	},
+	
 	// common text editing binds
 	{ "keys": ["super+d"], "command": "duplicate_line" },
 	{ "keys": ["ctrl+d"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
