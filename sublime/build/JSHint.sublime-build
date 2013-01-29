@@ -1,4 +1,5 @@
 {
+	"path": "/usr/local/bin",
 	"cmd": ["jshint", "$file"],
 	"selector": "source.js"
 }
