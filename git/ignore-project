@@ -44,3 +44,5 @@ less/*/*.css
 
 # Laravel bundles
 /bundles/*.git
+
+/node_modules

@@ -52,6 +52,7 @@
 	"scroll_past_end": true,
 	"scroll_speed": 0,
 	"show_panel_on_build": false,
+	"smart_indent": true,
 	"tab_size": 2,
 	"theme": "Refined-Dark.sublime-theme",
 	"tree_animation_enabled": false,

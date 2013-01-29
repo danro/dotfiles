@@ -1,21 +1,20 @@
 [
 	// common text editing binds
 	{ "keys": ["super+d"], "command": "duplicate_line" },
-	{ "keys": ["ctrl+d"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"} },
-	{ "keys": ["ctrl+c"], "command": "run_macro_file", "args": {"file": "Packages/User/macros/Change Line.sublime-macro"} },
+	{ "keys": ["ctrl+d"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+	{ "keys": ["ctrl+c"], "command": "run_macro_file", "args": {"file": "res://Packages/User/macros/Change Line.sublime-macro"} },
 	{ "keys": ["super+shift+f"], "command": "show_panel", "args": {"panel": "replace"} },
 	{ "keys": ["super+alt+f"], "command": "show_panel", "args": {"panel": "find_in_files"} },
 	{ "keys": ["super+v"], "command": "paste_and_indent" },
 	{ "keys": ["super+shift+v"], "command": "paste" },
 	
+	// add layout pane
+	{ "keys": ["ctrl+a"], "command": "new_pane", "args": {"move": true} },
+	
 	// expand selection
 	{ "keys": ["super+alt+g"], "command": "find_under_expand" },
 	{ "keys": ["super+alt+b"], "command": "find_under_expand_skip" },
-	
-	// alt up / down navigate to next empty line
-	// { "keys": ["alt+up"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": false} },
-	// { "keys": ["alt+down"], "command": "move", "args": {"by": "stops", "empty_line": true, "forward": true} },
-	
+		
 	// goto file / command palette / switch project
 	{ "keys": ["super+t"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
 	{ "keys": ["alt+t"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
@@ -62,7 +61,7 @@
 	{ "keys": ["ctrl+enter"], "command": "insert_snippet", "args": {"contents": "<br>"}},
 	
 	// insert semicolon macro
-	{ "keys": ["super+;"], "command": "run_macro_file", "args": {"file": "Packages/User/macros/Semicolon.sublime-macro"} },
+	{ "keys": ["super+;"], "command": "run_macro_file", "args": {"file": "res://Packages/User/macros/Semicolon.sublime-macro"} },
 	
 	// zen coding (emmet) remaps	
 	{
