@@ -23,26 +23,10 @@ nbproject
 *.sublime-workspace
 .tm_properties
 
-# Dreamweaver added files
-_notes
-dwsync.xml
-
-# Komodo
-*.komodoproject
-.komodotools
-
 # Folders to ignore
 .hg
 .svn
 .CVS
 .idea
 .sass-cache
-
-# Ignore CSS in common LESS paths
-less/*.css
-less/*/*.css
-
-# Laravel bundles
-/bundles/*.git
-
 /node_modules

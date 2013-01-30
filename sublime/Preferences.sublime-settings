@@ -42,8 +42,11 @@
 	"hot_exit": true,
 	"ignored_packages":
 	[
+		"CSS",
+		"JavaScript",
 		"Vintage"
 	],
+	"index_files": false,
 	"line_padding_top": 1,
 	"match_selection": false,
 	"open_files_in_new_window": false,
