@@ -5,6 +5,8 @@
 		"xsd",
 		"xslt",
 		"svg",
-		"stTheme"
+		"stTheme",
+		"tmLanguage",
+		"tmLanguage"
 	]
 }

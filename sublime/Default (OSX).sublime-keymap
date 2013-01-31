@@ -68,35 +68,37 @@
 	// insert semicolon macro
 	{ "keys": ["super+;"], "command": "run_macro_file", "args": {"file": "res://Packages/User/macros/Semicolon.sublime-macro"} },
 	
-	// zen coding (emmet) remaps	
-	{
-		"keys": ["ctrl+w"],
-		"command": "expand_as_you_type", 
-		"context": [
-			{
-				"operand": false, 
-				"operator": "equal", 
-				"match_all": true, 
-				"key": "setting.is_widget"
-			}, 
-			{
-				"match_all": true, 
-				"key": "emmet_action_enabled.expand_as_you_type"
-			}
-		]
-	},
-	{
-		"keys": ["ctrl+q"],
-		"args": {
-			"action": "remove_tag"
-		}, 
-		"command": "run_emmet_action", 
-		"context": [
-			{
-				"key": "emmet_action_enabled.remove_tag"
-			}
-		]
-	},
+	// zen coding (emmet) remaps
+	// TEMP snippet
+	{ "keys": ["ctrl+w"], "command": "insert_snippet", "args": { "name": "Packages/XML/long-tag.sublime-snippet" } },
+	// {
+	// 	"keys": ["ctrl+w"],
+	// 	"command": "expand_as_you_type", 
+	// 	"context": [
+	// 		{
+	// 			"operand": false, 
+	// 			"operator": "equal", 
+	// 			"match_all": true, 
+	// 			"key": "setting.is_widget"
+	// 		}, 
+	// 		{
+	// 			"match_all": true, 
+	// 			"key": "emmet_action_enabled.expand_as_you_type"
+	// 		}
+	// 	]
+	// },
+	// {
+	// 	"keys": ["ctrl+q"],
+	// 	"args": {
+	// 		"action": "remove_tag"
+	// 	}, 
+	// 	"command": "run_emmet_action", 
+	// 	"context": [
+	// 		{
+	// 			"key": "emmet_action_enabled.remove_tag"
+	// 		}
+	// 	]
+	// },
 	
 	// surroundings
 	{ "keys": ["ctrl+shift+s"], "command": "add_surround" },
