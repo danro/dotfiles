@@ -1,0 +1,6 @@
+[
+	{ "command": "insert", "args": {"characters": "\n"}},
+	{ "command": "move", "args": {"by": "lines", "forward": false }},
+	{ "command": "move_to", "args": {"to": "eol"}},
+	{ "command": "insert", "args": {"characters": "\n"}}
+]

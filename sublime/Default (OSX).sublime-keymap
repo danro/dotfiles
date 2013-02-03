@@ -1,9 +1,4 @@
 [
-	// hack JS build-on-save until sublimelinter is fixed
-	{ "keys": ["super+s"], "command": "build", 
-		"context": [ { "key": "selector", "operator": "equal", "operand": "source.js" } ]
-	},
-	
 	// common text editing binds
 	{ "keys": ["super+d"], "command": "duplicate_line" },
 	{ "keys": ["ctrl+d"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
@@ -12,6 +7,20 @@
 	{ "keys": ["super+alt+f"], "command": "show_panel", "args": {"panel": "find_in_files"} },
 	{ "keys": ["super+v"], "command": "paste_and_indent" },
 	{ "keys": ["super+shift+v"], "command": "paste" },
+	
+	// run js through jshint on each save
+	{ "keys": ["super+s"], "command": "build", 
+		"context": [ { "key": "selector", "operator": "equal", "operand": "source.js" } ]
+	},
+	
+	// properly indent between HTML tags
+	{ "keys": ["enter"], "command": "run_macro_file",
+		"args": {"file": "res://Packages/User/macros/Tag Indent.sublime-macro"},
+		"context": [ { "key": "selector", "operator": "equal", "operand": "meta.scope.between-tag-pair.html" } ]
+	},
+	
+	// run default build system
+	{ "keys": ["super+r"], "command": "build" },
 	
 	// add layout pane
 	{ "keys": ["ctrl+a"], "command": "new_pane", "args": {"move": true} },
@@ -25,9 +34,6 @@
 	{ "keys": ["alt+t"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
 	{ "keys": ["super+p"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
 	{ "keys": ["super+shift+p"], "command": "prompt_select_project" },
-
-	// run build system
-	{ "keys": ["super+r"], "command": "build" },
 	
 	// goto line number
 	{ "keys": ["super+l"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
@@ -68,9 +74,7 @@
 	// insert semicolon macro
 	{ "keys": ["super+;"], "command": "run_macro_file", "args": {"file": "res://Packages/User/macros/Semicolon.sublime-macro"} },
 	
-	// zen coding (emmet) remaps
-	// TEMP snippet
-	{ "keys": ["ctrl+w"], "command": "insert_snippet", "args": { "name": "Packages/XML/long-tag.sublime-snippet" } },
+	// zen coding (emmet) remaps (broken in ST3)
 	// {
 	// 	"keys": ["ctrl+w"],
 	// 	"command": "expand_as_you_type", 
