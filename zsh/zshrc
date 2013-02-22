@@ -32,3 +32,4 @@ alias asciifonts='cd /usr/local/lib/node_modules/asciimo && node node-all-fonts.
 alias clean-asl='sudo rm -rfv /private/var/log/asl/*.asl'
 alias migrate-install='php artisan migrate:install --env=local'
 alias migrate-update='php artisan migrate --env=local'
+alias custom-lodash='lodash -d underscore exports=amd'

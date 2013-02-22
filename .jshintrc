@@ -5,7 +5,6 @@
 	"expr": true,
 	"loopfunc": true,
 	"strict": false,
-	"trailing": true,
 	"undef": true,
 	"smarttabs": true,
 	"supernew": true,
