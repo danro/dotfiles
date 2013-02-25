@@ -8,11 +8,6 @@
 	{ "keys": ["super+v"], "command": "paste_and_indent" },
 	{ "keys": ["super+shift+v"], "command": "paste" },
 	
-	// run js through jshint on each save
-	{ "keys": ["super+s"], "command": "build", 
-		"context": [ { "key": "selector", "operator": "equal", "operand": "source.js" } ]
-	},
-	
 	// properly indent between HTML tags
 	{ "keys": ["enter"], "command": "run_macro_file",
 		"args": {"file": "res://Packages/User/macros/Tag Indent.sublime-macro"},

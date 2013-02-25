@@ -1,0 +1,4 @@
+{
+    "filename_filter": "\\.(js)$",
+    "build_on_save": 1
+}
