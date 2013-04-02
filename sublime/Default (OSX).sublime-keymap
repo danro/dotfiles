@@ -8,12 +8,6 @@
 	{ "keys": ["super+v"], "command": "paste_and_indent" },
 	{ "keys": ["super+shift+v"], "command": "paste" },
 	
-	// properly indent between HTML tags
-	{ "keys": ["enter"], "command": "run_macro_file",
-		"args": {"file": "res://Packages/User/macros/Tag Indent.sublime-macro"},
-		"context": [ { "key": "selector", "operator": "equal", "operand": "meta.scope.between-tag-pair.html" } ]
-	},
-	
 	// run default build system
 	{ "keys": ["super+r"], "command": "build" },
 	
@@ -98,6 +92,13 @@
 			}
 		]
 	},
+	
+	
+	// properly indent between HTML tags (seems fixed in 3018)
+	// { "keys": ["enter"], "command": "run_macro_file",
+	// 	"args": {"file": "res://Packages/User/macros/Tag Indent.sublime-macro"},
+	// 	"context": [ { "key": "selector", "operator": "equal", "operand": "meta.scope.between-tag-pair.html" } ]
+	// },
 	
 	// wrap tag around selection (temp replacement for emmet)
 	// { "keys": ["ctrl+w"], "command": "insert_snippet", "args": { "name": "Packages/XML/long-tag.sublime-snippet" } },

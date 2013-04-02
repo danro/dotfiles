@@ -19,6 +19,10 @@ export EDITOR='sub'
 # Disable annoying spelling help
 unsetopt correct_all
 
+# Swap between PHP53 and PHP54
+export PATH="/usr/local/opt/php53/bin:$PATH"
+# export PATH="/usr/local/opt/php54/bin:$PATH"
+
 # Custom aliases
 alias l='ls -lahGo $*'
 alias ll='ls -lhGo $*'

@@ -26,6 +26,7 @@
 		".hg",
 		"CVS",
 		"node_modules",
+		"_archive",
 		"_assets",
 		"video",
 		"videos",
@@ -58,9 +59,12 @@
 	"show_panel_on_build": true,
 	"smart_indent": true,
 	"tab_size": 2,
+	"translate_tabs_to_spaces": true,
 	"theme": "Refined-Dark.sublime-theme",
 	"tree_animation_enabled": false,
 	"trim_automatic_white_space": false,
 	"word_separators": "./\\()\"'-:,.;<>~!#%&^*|+=[]{}`~?",
-	"word_wrap": true
+	"word_wrap": true,
+	"wrap_width": 90,
+  "indent_subsequent_lines": true
 }
