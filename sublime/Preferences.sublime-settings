@@ -26,6 +26,8 @@
 		".hg",
 		"CVS",
 		"node_modules",
+		"laravel",
+		"bundles",
 		"_archive",
 		"_assets",
 		"video",
@@ -48,6 +50,7 @@
 		"JavaScript",
 		"Vintage"
 	],
+	"indent_subsequent_lines": true,
 	"index_files": false,
 	"line_padding_top": 1,
 	"match_selection": false,
@@ -59,12 +62,11 @@
 	"show_panel_on_build": true,
 	"smart_indent": true,
 	"tab_size": 2,
-	"translate_tabs_to_spaces": true,
 	"theme": "Refined-Dark.sublime-theme",
+	"translate_tabs_to_spaces": true,
 	"tree_animation_enabled": false,
 	"trim_automatic_white_space": false,
 	"word_separators": "./\\()\"'-:,.;<>~!#%&^*|+=[]{}`~?",
 	"word_wrap": true,
-	"wrap_width": 90,
-  "indent_subsequent_lines": true
+	"wrap_width": 90
 }

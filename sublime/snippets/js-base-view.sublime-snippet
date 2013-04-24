@@ -1,0 +1,36 @@
+<snippet>
+	<content><![CDATA[
+// --------------------------------------------------
+// ${1:Base view}
+// --------------------------------------------------
+define(function (require) {
+  
+  // dependencies + view helpers
+  var \$ = require('jquery')
+    , _ = require('underscore')
+    , Backbone = require('backbone')
+    , app = require('modules/app')
+    , view = {}
+    , base = Backbone.View
+    , supr = base.prototype
+  ;
+  
+  // private vars
+  
+  view.initialize = function () {
+    _.bindAll(this);
+    
+    $2
+  };
+  
+  view.${3:method} = function () {
+    $0
+  };
+  
+  // return extended view
+  return base.extend(view);
+});
+]]></content>
+	<tabTrigger>base</tabTrigger>
+	<scope>source.js</scope>
+</snippet>

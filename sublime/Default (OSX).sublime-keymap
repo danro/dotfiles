@@ -125,11 +125,6 @@
 	// disable ":" snippets
 	{ "keys": [":"], "command": "insert_snippet", "args": {"contents": ":"} },
 	
-	// css important snippet
-	{ "keys": ["!"], "command": "insert_snippet", "args": {"contents": "!important"}, "context":
-		[{"operand": "source.css, source.scss", "operator": "equal", "match_all": true, "key": "selector"} ]
-	},
-	
 	// disabled keys
 	{ "keys": ["f5"], "command": "noop" }
 ]

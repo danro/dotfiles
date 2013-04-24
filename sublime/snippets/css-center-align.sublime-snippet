@@ -7,6 +7,6 @@ bottom: 0;
 left: 0;
 margin: auto;
 ]]></content>
-	<tabTrigger>center</tabTrigger>
+	<tabTrigger>middle</tabTrigger>
 	<scope>source.css, source.scss</scope>
 </snippet>
