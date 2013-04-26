@@ -17,7 +17,7 @@ define(function (require) {
   
   // private vars
   
-  view.initialize = function () {
+  view.initialize = function (options) {
     _.bindAll(this);
     
     $2
