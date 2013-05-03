@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-require(${1:$SELECTION});
+require(${1:$SELECTION})
 ]]></content>
 	<tabTrigger>require</tabTrigger>
 	<scope>source.js</scope>

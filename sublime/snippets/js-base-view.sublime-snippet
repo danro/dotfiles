@@ -5,25 +5,23 @@
 // --------------------------------------------------
 define(function (require) {
   
-  // dependencies + view helpers
+  // dependencies
   var \$ = require('jquery')
     , _ = require('underscore')
     , Backbone = require('backbone')
     , app = require('modules/app')
+    
+    // view helpers
     , view = {}
     , base = Backbone.View
     , supr = base.prototype
+    
+    // private vars
   ;
-  
-  // private vars
   
   view.initialize = function (options) {
     _.bindAll(this);
     
-    $2
-  };
-  
-  view.${3:method} = function () {
     $0
   };
   
