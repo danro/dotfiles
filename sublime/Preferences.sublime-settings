@@ -39,6 +39,7 @@
 		".webm",
 		".mp4",
 		"log",
+		"storage",
 		"tmp"
 	],
 	"font_face": "Monaco",
