@@ -20,8 +20,8 @@ export EDITOR='sub'
 unsetopt correct_all
 
 # Swap between PHP53 and PHP54
-export PATH="/usr/local/opt/php53/bin:$PATH"
-# export PATH="/usr/local/opt/php54/bin:$PATH"
+# export PATH="/usr/local/opt/php53/bin:$PATH"
+export PATH="/usr/local/opt/php54/bin:$PATH"
 
 # Custom aliases
 alias l='ls -lahGo $*'
@@ -38,4 +38,8 @@ alias migrate-install='php artisan migrate:install --env=local'
 alias migrate-update='php artisan migrate --env=local'
 alias custom-lodash='lodash -d underscore exports=amd'
 alias airplay-fix='sudo killall coreaudiod'
+alias hostname-fix='sudo scutil --set HostName $*'
 alias webfont-rename="rename 's/-webfont//' *-webfont*" # brew install rename
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

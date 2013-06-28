@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+width: $0px;
+height: $0px;
+]]></content>
+	<tabTrigger>size</tabTrigger>
+	<scope>source.css, source.scss</scope>
+</snippet>
