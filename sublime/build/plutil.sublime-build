@@ -1,0 +1,6 @@
+{
+  // Convert convert JSON -> tmLanguage
+  "target": "exec_error",
+  "shell_cmd": "jshint $file && make",
+  "selector": "source.json"
+}

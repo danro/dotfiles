@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+@count: 12;
+.iterator (@index) when (@index < @count) {
+  .selector-@{index} {
+    left: 5 * @index;
+  }
+  .iterator(@index + 1);
+}
+.iterator (0);
+]]></content>
+	<tabTrigger>loop</tabTrigger>
+	<scope>source.css.less</scope>
+</snippet>

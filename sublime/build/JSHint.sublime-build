@@ -1,6 +1,6 @@
 {
-	"target": "exec_error",
-	"path": "/usr/local/bin",
-	"shell_cmd": "jshint $file",
-	"selector": "source.js"
+  "target": "exec_error",
+  "path": "/usr/local/bin",
+  "shell_cmd": "jshint $file",
+  "selector": "source.js"
 }

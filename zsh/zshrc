@@ -16,6 +16,9 @@ ZSH_THEME="danro"
 source $ZSH/oh-my-zsh.sh
 export EDITOR='sub'
 
+# Disable oh-my-zsh updates
+DISABLE_AUTO_UPDATE=true
+
 # Disable annoying spelling help
 unsetopt correct_all
 
