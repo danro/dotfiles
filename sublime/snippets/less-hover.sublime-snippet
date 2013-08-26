@@ -3,5 +3,5 @@
 .no-touch &:hover {$0}
 ]]></content>
 	<tabTrigger>hover</tabTrigger>
-	<scope>source.css.less</scope>
+	<scope>source.less</scope>
 </snippet>

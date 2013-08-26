@@ -3,5 +3,5 @@
 position: absolute;
 ]]></content>
 	<tabTrigger>abs</tabTrigger>
-	<scope>source.css, source.scss</scope>
+	<scope>source.css, source.scss, source.less</scope>
 </snippet>

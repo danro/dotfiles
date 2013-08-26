@@ -42,6 +42,7 @@
 		".mp4",
 		"log",
 		"storage",
+		"dist",
 		"tmp"
 	],
 	"font_face": "Monaco",
@@ -50,7 +51,9 @@
 	"ignored_packages":
 	[
 		"JavaScript",
-		"Vintage"
+		"Vintage",
+		"Text",
+		"CSS"
 	],
 	"indent_subsequent_lines": true,
 	"index_files": false,

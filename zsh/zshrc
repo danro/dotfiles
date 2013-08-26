@@ -17,6 +17,7 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR='sub'
 
 # Disable oh-my-zsh updates
+DISABLE_UPDATE_PROMPT=true
 DISABLE_AUTO_UPDATE=true
 
 # Disable annoying spelling help
