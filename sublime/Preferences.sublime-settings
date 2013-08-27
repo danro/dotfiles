@@ -51,9 +51,8 @@
 	"ignored_packages":
 	[
 		"JavaScript",
-		"Vintage",
-		"Text",
-		"CSS"
+		"CSS",
+		"Vintage"
 	],
 	"indent_subsequent_lines": true,
 	"index_files": false,

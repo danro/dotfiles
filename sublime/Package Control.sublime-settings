@@ -1,6 +1,8 @@
 {
 	"installed_packages":
 	[
+		"Emmet",
+		"SublimeOnSaveBuild",
 		"Tomorrow Color Schemes"
 	]
 }
