@@ -1,7 +1,12 @@
 {
 	"installed_packages":
 	[
+		"AdvancedNewFile",
+		"Alignment",
+		"ChangeQuotes",
 		"Emmet",
+		"SCSS",
+		"SideBarEnhancements",
 		"SublimeOnSaveBuild",
 		"Tomorrow Color Schemes"
 	]

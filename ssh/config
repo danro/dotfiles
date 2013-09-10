@@ -29,3 +29,8 @@ Host *.pagodabox.com
 Host *.amazonaws.com
 	User ubuntu
 	IdentityFile ~/.ssh/canon.pem
+
+Host *.beanstalkapp.com
+	User git
+	IdentityFile ~/.ssh/beanstalk
+

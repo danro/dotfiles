@@ -13,12 +13,12 @@ ZSH_THEME="danro"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # plugins=(node npm)
 
-source $ZSH/oh-my-zsh.sh
-export EDITOR='sub'
-
 # Disable oh-my-zsh updates
 DISABLE_UPDATE_PROMPT=true
 DISABLE_AUTO_UPDATE=true
+
+source $ZSH/oh-my-zsh.sh
+export EDITOR='sub'
 
 # Disable annoying spelling help
 unsetopt correct_all
@@ -44,6 +44,7 @@ alias custom-lodash='lodash -d underscore exports=amd'
 alias airplay-fix='sudo killall coreaudiod'
 alias hostname-fix='sudo scutil --set HostName $*'
 alias webfont-rename="rename 's/-webfont//' *-webfont*" # brew install rename
+alias cw="compass watch"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"

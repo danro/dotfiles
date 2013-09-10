@@ -30,7 +30,6 @@
 		"bundles",
 		"_archive",
 		"_assets",
-		"assets",
 		"video",
 		"videos",
 		"img",
@@ -50,9 +49,9 @@
 	"hot_exit": true,
 	"ignored_packages":
 	[
-		"JavaScript",
+		"Vintage",
 		"CSS",
-		"Vintage"
+		"JavaScript"
 	],
 	"indent_subsequent_lines": true,
 	"index_files": false,
@@ -67,6 +66,7 @@
 	"smart_indent": true,
 	"tab_size": 2,
 	"theme": "Refined-Dark.sublime-theme",
+	"translate_tabs_to_spaces": true,
 	"tree_animation_enabled": false,
 	"trim_automatic_white_space": false,
 	"word_separators": "./\\()\"'-:,.;<>~!#%&^*|+=[]{}`~?",
