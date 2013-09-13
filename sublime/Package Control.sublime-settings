@@ -5,9 +5,13 @@
 		"Alignment",
 		"ChangeQuotes",
 		"Emmet",
-		"SCSS",
+		"SCSS-sublime",
 		"SideBarEnhancements",
 		"SublimeOnSaveBuild",
 		"Tomorrow Color Schemes"
+	],
+	"repositories":
+	[
+		"https://github.com/danro/SCSS-sublime"
 	]
 }

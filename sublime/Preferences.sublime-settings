@@ -49,9 +49,9 @@
 	"hot_exit": true,
 	"ignored_packages":
 	[
+		"JavaScript",
 		"Vintage",
-		"CSS",
-		"JavaScript"
+		"CSS"
 	],
 	"indent_subsequent_lines": true,
 	"index_files": false,

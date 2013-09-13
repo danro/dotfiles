@@ -1,5 +1,11 @@
 #!/bin/zsh
 
+# Disable OMZ updates
+DISABLE_AUTO_UPDATE=true
+
+# Term colors
+TERM=xterm-256color
+
 # PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 PATH=$PATH:$HOME/scripts # Add custom scripts to path
 
@@ -12,10 +18,6 @@ ZSH_THEME="danro"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # plugins=(node npm)
-
-# Disable oh-my-zsh updates
-DISABLE_UPDATE_PROMPT=true
-DISABLE_AUTO_UPDATE=true
 
 source $ZSH/oh-my-zsh.sh
 export EDITOR='sub'
@@ -32,18 +34,18 @@ alias l='ls -lahGo $*'
 alias ll='ls -lhGo $*'
 alias ks='ksdiff'
 alias profile='sub ~/sites/github/dotfiles/zsh/zshrc'
-alias subuser='sub ~/sites/github/dotfiles/sublime'
 alias shortcuts='sub ~/.dotfiles/zsh/custom/shortcuts.zsh'
 alias theme='sub ~/sites/github/dotfiles/zsh/danro.zsh-theme'
+
 alias gitignore='cp -v ~/.dotfiles/git/ignore-project .gitignore'
-alias asciifonts='cd /usr/local/lib/node_modules/asciimo && node node-all-fonts.js'
 alias clean-asl='sudo rm -rfv /private/var/log/asl/*.asl'
-alias migrate-install='php artisan migrate:install --env=local'
-alias migrate-update='php artisan migrate --env=local'
 alias custom-lodash='lodash -d underscore exports=amd'
 alias airplay-fix='sudo killall coreaudiod'
 alias hostname-fix='sudo scutil --set HostName $*'
 alias webfont-rename="rename 's/-webfont//' *-webfont*" # brew install rename
+
+alias composer-update='php composer.phar install'
+alias migrate='php artisan migrate --env=local'
 alias cw="compass watch"
 
 ### Added by the Heroku Toolbelt
