@@ -104,27 +104,8 @@
     ]
   },
   
-  // properly indent between HTML tags (seems fixed in 3018)
-  // { "keys": ["enter"], "command": "run_macro_file",
-  //  "args": {"file": "res://Packages/User/macros/Tag Indent.sublime-macro"},
-  //  "context": [ { "key": "selector", "operator": "equal", "operand": "meta.scope.between-tag-pair.html" } ]
-  // },
-  
-  // wrap tag around selection (temp replacement for emmet)
-  // { "keys": ["ctrl+w"], "command": "insert_snippet", "args": { "name": "Packages/XML/long-tag.sublime-snippet" } },
-  
-  // surroundings
-  { "keys": ["ctrl+shift+s"], "command": "add_surround" },
-  { "keys": ["ctrl+shift+d"], "command": "delete_surround" },
-  { "keys": ["ctrl+shift+c"], "command": "replace_surround" },
-  { "keys": ["ctrl+'"], "command": "quotes_to_single" },
-  { "keys": ["ctrl+shift+'"], "command": "quotes_to_double" },
-  
-  // copy expanded file or text to clipboard (broken in ST3)
-  // { "keys": ["super+shift+c"], "command": "copy_expanded" },
-  
-  // spaces to tabs
-  // { "keys": ["super+."], "command": "unexpand_tabs", "args": {"set_translate_tabs": true} },
+  // AdvancedNewFile: move/rename file
+  { "keys": ["alt+super+m"], "command": "advanced_new_file", "args": {"rename": true}},
   
   // move tabs to group
   { "keys": ["super+1"], "command": "move_to_group", "args": { "group": 0 } },
@@ -143,5 +124,20 @@
   
   // disabled keys
   { "keys": ["ctrl+v"], "command": "noop" },
-  { "keys": ["f5"], "command": "noop" }
+  { "keys": ["f5"], "command": "noop" },
+  
+  // properly indent between HTML tags (seems fixed in 3018)
+  // { "keys": ["enter"], "command": "run_macro_file",
+  //  "args": {"file": "res://Packages/User/macros/Tag Indent.sublime-macro"},
+  //  "context": [ { "key": "selector", "operator": "equal", "operand": "meta.scope.between-tag-pair.html" } ]
+  // },
+  
+  // wrap tag around selection (temp replacement for emmet)
+  // { "keys": ["ctrl+w"], "command": "insert_snippet", "args": { "name": "Packages/XML/long-tag.sublime-snippet" } },
+  
+  // copy expanded file or text to clipboard (broken in ST3)
+  // { "keys": ["super+shift+c"], "command": "copy_expanded" },
+  
+  // spaces to tabs
+  // { "keys": ["super+."], "command": "unexpand_tabs", "args": {"set_translate_tabs": true} }
 ]
