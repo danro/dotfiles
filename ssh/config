@@ -34,3 +34,7 @@ Host *.beanstalkapp.com
 	User git
 	IdentityFile ~/.ssh/beanstalk
 
+Host ocean.danro.net
+	User root
+	IdentityFile ~/.ssh/digitalocean
+

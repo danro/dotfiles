@@ -2,10 +2,11 @@
 	<content><![CDATA[
 define(function (require) {
 	
-	// dependencies
+	// Dependencies
 	var \$ = require('jquery');
+  var _ = require('underscore');
 	
-	// return exposed module
+	// Export module
 	return ${1:Module};
 });
 ]]></content>
