@@ -9,4 +9,5 @@ desk=~/Desktop
 danro=~/Sites/Danro
 github=~/Sites/GitHub
 bkwld=~/Sites/BKWLD
+webflow=~/Sites/GitHub/webflow
 sublime=~/Library/Application\ Support/Sublime\ Text\ 3/Packages

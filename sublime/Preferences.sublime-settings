@@ -39,6 +39,7 @@
 		".ogv",
 		".webm",
 		".mp4",
+		".aep",
 		"log",
 		"storage",
 		"dist",
@@ -50,8 +51,8 @@
 	"ignored_packages":
 	[
 		"CSS",
-		"JavaScript",
-		"Vintage"
+		"Vintage",
+		"JavaScript"
 	],
 	"indent_subsequent_lines": true,
 	"index_files": false,

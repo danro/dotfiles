@@ -114,7 +114,7 @@
   { "keys": ["super+4"], "command": "move_to_group", "args": { "group": 3 } },
   
   // disable ":" snippets
-  { "keys": [":"], "command": "insert_snippet", "args": {"contents": ":"} },
+  // { "keys": [":"], "command": "insert_snippet", "args": {"contents": ":"} },
   
   // snippet helper snippet!
   { "keys": ["ctrl+f"], "command": "insert_snippet", 
