@@ -48,5 +48,4 @@ alias composer-update='php composer.phar install'
 alias migrate='php artisan migrate --env=local'
 alias cw="compass watch"
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
