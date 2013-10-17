@@ -12,6 +12,5 @@
   "sub": true,
   "laxcomma": true,
   "node": true,
-  "es5": true,
   "predef": ["define", "require"]
 }
