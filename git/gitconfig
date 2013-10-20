@@ -2,7 +2,7 @@
 # ---- base config ----
 [user]
 	name = Dan Rogers
-	email = dan.rogers@bkwld.com
+	email = dan@danro.net
 [core]
 	excludesfile = ~/.gitignore
 	quotepath = false
