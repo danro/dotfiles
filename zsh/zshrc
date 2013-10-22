@@ -48,3 +48,6 @@ alias screenjpg="defaults write com.apple.screencapture type jpg && killall Syst
 alias screenpng="defaults write com.apple.screencapture type png && killall SystemUIServer"
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+# ENV scripts with secure keys
+source $HOME/.env/aws.sh
