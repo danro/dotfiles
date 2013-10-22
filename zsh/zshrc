@@ -44,8 +44,7 @@ alias airplay-fix='sudo killall coreaudiod'
 alias hostname-fix='sudo scutil --set HostName $*'
 alias webfont-rename="rename 's/-webfont//' *-webfont*" # brew install rename
 
-alias composer-update='php composer.phar install'
-alias migrate='php artisan migrate --env=local'
-alias cw="compass watch"
+alias screenjpg="defaults write com.apple.screencapture type jpg && killall SystemUIServer"
+alias screenpng="defaults write com.apple.screencapture type png && killall SystemUIServer"
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

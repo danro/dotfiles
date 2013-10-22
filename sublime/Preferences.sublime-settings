@@ -51,8 +51,8 @@
 	"ignored_packages":
 	[
 		"CSS",
-		"Vintage",
-		"JavaScript"
+		"JavaScript",
+		"Vintage"
 	],
 	"indent_subsequent_lines": true,
 	"index_files": false,
@@ -72,6 +72,5 @@
 	"tree_animation_enabled": false,
 	"trim_automatic_white_space": false,
 	"word_separators": "./\\()\"'-:,.;<>~!#%&^*|+=[]{}`~?",
-	"word_wrap": true,
-	"wrap_width": 90
+	"word_wrap": true
 }
