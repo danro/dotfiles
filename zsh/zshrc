@@ -43,6 +43,7 @@ alias custom-lodash='lodash -d underscore exports=amd'
 alias airplay-fix='sudo killall coreaudiod'
 alias hostname-fix='sudo scutil --set HostName $*'
 alias webfont-rename="rename 's/-webfont//' *-webfont*" # brew install rename
+alias start="sh start.sh"
 
 alias screenjpg="defaults write com.apple.screencapture type jpg && killall SystemUIServer"
 alias screenpng="defaults write com.apple.screencapture type png && killall SystemUIServer"
