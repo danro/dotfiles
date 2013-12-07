@@ -13,6 +13,8 @@
 	st = status
 	ci = commit -vam
 	co = checkout
+	pr = pull --rebase
+	ms = merge --squash
 	f = fetch
 	unstage = reset HEAD
 	untrack = rm --cached

@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-"use strict";
+'use strict';
 ]]></content>
 	<tabTrigger>strict</tabTrigger>
 	<scope>source.js</scope>

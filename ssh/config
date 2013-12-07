@@ -38,7 +38,11 @@ Host ocean.danro.net
 	User root
 	IdentityFile ~/.ssh/digitalocean
 
-Host teamcity.*
+Host teamcity.webflow.com
+	User ubuntu
+	IdentityFile ~/.ssh/teamcity
+
+Host blog.webflow.com
 	User ubuntu
 	IdentityFile ~/.ssh/teamcity
 

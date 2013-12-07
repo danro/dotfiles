@@ -123,6 +123,7 @@
   },
   
   // disabled keys
+  { "keys": ["ctrl+t"], "command": "noop" },
   { "keys": ["ctrl+v"], "command": "noop" },
   { "keys": ["f5"], "command": "noop" },
   
