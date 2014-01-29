@@ -30,8 +30,8 @@ unsetopt correct_all
 export PATH="/usr/local/opt/php54/bin:$PATH"
 
 # Custom aliases
-alias l='ls -lahGo $*'
-alias ll='ls -lhGo $*'
+alias l='ls -lahGo'
+alias ll='ls -lhGo'
 alias ks='ksdiff'
 alias profile='sub ~/sites/github/dotfiles/zsh/zshrc'
 alias shortcuts='sub ~/.dotfiles/zsh/custom/shortcuts.zsh'
@@ -44,9 +44,15 @@ alias airplay-fix='sudo killall coreaudiod'
 alias hostname-fix='sudo scutil --set HostName $*'
 alias webfont-rename="rename 's/-webfont//' *-webfont*" # brew install rename
 alias start="sh start.sh"
+alias serv="python -m SimpleHTTPServer"
 
 alias screenjpg="defaults write com.apple.screencapture type jpg && killall SystemUIServer"
 alias screenpng="defaults write com.apple.screencapture type png && killall SystemUIServer"
+
+# Doge git
+alias such='git log --author'
+alias very=git
+alias wow='git st'
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 

@@ -8,7 +8,7 @@
 	quotepath = false
 	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
 	editor = vim
-  ignorecase = false
+	ignorecase = false
 [alias]
 	st = status
 	ci = commit -vam
