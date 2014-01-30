@@ -50,11 +50,11 @@
 	"hot_exit": true,
 	"ignored_packages":
 	[
-		"HTML",
 		"JavaScript",
+		"HTML",
 		"AdvancedNewFile",
-		"CSS",
-		"Vintage"
+		"Vintage",
+		"CSS"
 	],
 	"indent_subsequent_lines": true,
 	"index_files": false,
@@ -72,6 +72,7 @@
 	"theme": "Refined-3.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"tree_animation_enabled": false,
+	"trim_automatic_white_space": false,
 	"trim_trailing_white_space_on_save": true,
 	"word_separators": "./\\()\"'-:,.;<>~!#%&^*|+=[]{}`~?",
 	"word_wrap": true
