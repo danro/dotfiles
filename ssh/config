@@ -6,33 +6,7 @@ Host danro.net
 
 Host github.com
 	User git
-	IdentityFile ~/.ssh/github
-
-Host heroku.com
-	User git
-	IdentityFile ~/.ssh/heroku
-
-Host codebasehq.com
-	User git
-	IdentityFile ~/.ssh/codebasehq
-
-Host bkwlddev.com
-	User bkwld
-	IdentityFile ~/.ssh/bkwlddev
-
-Host *.pagodabox.com
-	User git
-	Hostname git.pagodabox.com
-	PreferredAuthentications publickey
-	IdentityFile ~/.ssh/pagoda-danbuck
-
-Host *.amazonaws.com
-	User ubuntu
-	IdentityFile ~/.ssh/canon.pem
-
-Host *.beanstalkapp.com
-	User git
-	IdentityFile ~/.ssh/beanstalk
+	IdentityFile ~/.ssh/danflow2
 
 Host ocean.danro.net
 	User root

@@ -46,15 +46,15 @@
 		"tmp"
 	],
 	"font_face": "Monaco",
-	"font_size": 12.0,
+	"font_size": 13.0,
 	"hot_exit": true,
 	"ignored_packages":
 	[
-		"AdvancedNewFile",
 		"JavaScript",
-		"Vintage",
+		"AdvancedNewFile",
+		"HTML",
 		"CSS",
-		"HTML"
+		"Vintage"
 	],
 	"indent_subsequent_lines": true,
 	"index_files": false,
