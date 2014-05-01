@@ -45,6 +45,7 @@ alias hostname-fix='sudo scutil --set HostName $*'
 alias webfont-rename="rename 's/-webfont//' *-webfont*" # brew install rename
 alias start="sh start.sh"
 alias serv="python -m SimpleHTTPServer"
+alias release="git push && git push origin master:gh-pages && git push --tags && npm publish"
 
 alias screenjpg="defaults write com.apple.screencapture type jpg && killall SystemUIServer"
 alias screenpng="defaults write com.apple.screencapture type png && killall SystemUIServer"

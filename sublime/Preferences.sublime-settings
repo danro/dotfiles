@@ -50,11 +50,11 @@
 	"hot_exit": true,
 	"ignored_packages":
 	[
-		"JavaScript",
 		"AdvancedNewFile",
+		"Vintage",
+		"JavaScript",
 		"HTML",
-		"CSS",
-		"Vintage"
+		"CSS"
 	],
 	"indent_subsequent_lines": true,
 	"index_files": false,

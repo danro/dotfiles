@@ -1,0 +1,5 @@
+#!/bin/sh
+SOURCE=/Users/dan/Sites/GitHub/javascript/tram
+DEST=/Users/dan/Sites/GitHub/webflow/webflow/public
+cp $SOURCE/dist/tram.js $DEST/lib/tram.js
+cp $SOURCE/dist/tram-min.js $DEST/js/site/modules/plugin-tram.js

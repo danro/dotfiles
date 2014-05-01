@@ -21,7 +21,7 @@
 	remotes = remote -v
 	branches = branch -va --color
 	diffs = diff --stat master
-	logs = log --stat --color
+	logs = log --stat --color --date=local
 	sub = submodule add
 	subinit = submodule update --init --recursive
 	subpull = submodule foreach git pull origin master
@@ -29,7 +29,8 @@
 	watch = update-index --no-assume-unchanged --
 	refresh = update-index --really-refresh
 	zip = archive --format zip --output
-	diff = difftool
+[log]
+	date = relative
 # ---- pretty colors ----
 [color]
 	ui = true
@@ -49,6 +50,7 @@
 	branch = magenta
 [push]
 	default = simple
+# ---- Kaleidoscope ----
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [diff]
