@@ -50,11 +50,11 @@
 	"hot_exit": true,
 	"ignored_packages":
 	[
-		"AdvancedNewFile",
-		"Vintage",
+		"CSS",
 		"JavaScript",
-		"HTML",
-		"CSS"
+		"Vintage",
+		"AdvancedNewFile",
+		"HTML"
 	],
 	"indent_subsequent_lines": true,
 	"index_files": false,
@@ -67,7 +67,6 @@
 	"scroll_speed": 0,
 	"show_panel_on_build": true,
 	"smart_indent": true,
-	"soda_folder_icons": true,
 	"tab_size": 2,
 	"theme": "Refined-3.sublime-theme",
 	"translate_tabs_to_spaces": true,
