@@ -33,6 +33,7 @@ export PATH="/usr/local/opt/php54/bin:$PATH"
 alias l='ls -lahGo'
 alias ll='ls -lhGo'
 alias ks='ksdiff'
+alias run='npm run'
 alias profile='sub ~/sites/github/dotfiles/zsh/zshrc'
 alias shortcuts='sub ~/.dotfiles/zsh/custom/shortcuts.zsh'
 alias theme='sub ~/sites/github/dotfiles/zsh/danro.zsh-theme'
