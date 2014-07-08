@@ -52,9 +52,9 @@
 	[
 		"CSS",
 		"JavaScript",
-		"Vintage",
 		"AdvancedNewFile",
-		"HTML"
+		"HTML",
+		"Vintage"
 	],
 	"indent_subsequent_lines": true,
 	"index_files": false,
