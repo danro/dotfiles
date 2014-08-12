@@ -45,8 +45,10 @@
 		"dist",
 		"tmp"
 	],
-	"font_face": "Monaco",
-	"font_size": 13.0,
+	"font_face": "InputMonoNarrow",
+	"font_size": 14,
+	"line_padding_top": 2,
+	"line_padding_bottom": 1,
 	"hot_exit": true,
 	"ignored_packages":
 	[
@@ -58,7 +60,6 @@
 	],
 	"indent_subsequent_lines": true,
 	"index_files": false,
-	"line_padding_top": 1,
 	"match_selection": false,
 	"open_files_in_new_window": false,
 	"overlay_scroll_bars": "system",
