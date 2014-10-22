@@ -1,0 +1,4 @@
+[
+  {"command": "move", "args": { "by": "characters", "forward": false, "extend": false} },
+  {"command": "insert", "args": {"characters": ";"}}
+]

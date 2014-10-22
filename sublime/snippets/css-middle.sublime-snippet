@@ -1,7 +1,11 @@
 <snippet>
 	<content><![CDATA[
-border: ${1:0}px ${2:dotted/dashed/solid} ${3:color};$0
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+margin: auto;
 ]]></content>
-	<tabTrigger>border</tabTrigger>
+	<tabTrigger>middle</tabTrigger>
 	<scope>source.css, source.scss, source.less</scope>
 </snippet>

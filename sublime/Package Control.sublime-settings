@@ -8,6 +8,8 @@
 		"Emmet",
 		"Jade",
 		"SCSS-sublime",
+		"SublimeLinter",
+		"SublimeLinter-jshint",
 		"SublimeOnSaveBuild",
 		"Tomorrow Color Schemes"
 	],

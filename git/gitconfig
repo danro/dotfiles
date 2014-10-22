@@ -29,6 +29,7 @@
 	watch = update-index --no-assume-unchanged --
 	refresh = update-index --really-refresh
 	zip = archive --format zip --output
+	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
 [log]
 	date = relative
 # ---- pretty colors ----

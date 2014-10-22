@@ -64,6 +64,14 @@
   // insert semicolon macro
   { "keys": ["super+;"], "command": "run_macro_file", "args": {"file": "res://Packages/User/macros/Semicolon.sublime-macro"} },
 
+  // replace an empty newline selection with semicolon
+  { "keys": [";"], "command": "run_macro_file", "args": {"file": "res://Packages/User/macros/Semicolon-Newline.sublime-macro"}, "context":
+    [
+      { "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true },
+      { "key": "text", "operator": "regex_contains", "operand": "\n", "match_all": true }
+    ]
+  },
+
   // add semicolon after newline in curly braces
   { "keys": ["super+enter"], "command": "run_macro_file", "args": {"file": "res://Packages/User/macros/Semicolon-Break.sublime-macro"}, "context":
     [
