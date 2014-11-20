@@ -10,6 +10,7 @@
 		"SCSS-sublime",
 		"SublimeLinter",
 		"SublimeLinter-jshint",
+		"SublimeLinter-jsxhint",
 		"SublimeOnSaveBuild",
 		"Tomorrow Color Schemes"
 	],
