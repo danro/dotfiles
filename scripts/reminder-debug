@@ -1,0 +1,1 @@
+defaults write com.apple.reminders RemindersDebugMenu -boolean true
