@@ -155,6 +155,9 @@
   { "keys": ["ctrl+v"], "command": "noop" },
   { "keys": ["f5"], "command": "noop" },
 
+  // alignment
+  { "keys": ["super+ctrl+a"], "command": "alignment" }
+
   // properly indent between HTML tags (seems fixed in 3018)
   // { "keys": ["enter"], "command": "run_macro_file",
   //  "args": {"file": "res://Packages/User/macros/Tag Indent.sublime-macro"},

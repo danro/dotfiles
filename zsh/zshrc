@@ -6,7 +6,7 @@ DISABLE_AUTO_UPDATE=true
 # Term colors
 TERM=xterm-256color
 
-# PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+PATH="/usr/local/bin:$PATH"
 PATH=$PATH:$HOME/scripts # Add custom scripts to path
 
 # Path to your oh-my-zsh configuration.

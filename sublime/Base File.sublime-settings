@@ -1,3 +1,11 @@
 {
-  "jsdocs_extend_double_slash": false
+  "jsdocs_extend_double_slash": false,
+
+  // The mid-line characters to align in a multi-line selection, changing
+  // this to an empty array will disable mid-line alignment
+  "alignment_chars": ["=", ","],
+
+  // If the following character is matched for alignment, insert a space
+  // before it in the final alignment
+  "alignment_space_chars": ["=", ","]
 }

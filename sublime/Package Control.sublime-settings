@@ -1,4 +1,12 @@
 {
+	"in_process_packages":
+	[
+	],
+	"installed_dependencies":
+	[
+		"0_package_control_loader",
+		"bz2"
+	],
 	"installed_packages":
 	[
 		"AdvancedNewFile",
@@ -6,7 +14,10 @@
 		"ChangeQuotes",
 		"DocBlockr",
 		"Emmet",
+		"GitHubinator",
 		"Jade",
+		"Package Control",
+		"ReactJS",
 		"SCSS-sublime",
 		"SublimeLinter",
 		"SublimeLinter-jshint",
