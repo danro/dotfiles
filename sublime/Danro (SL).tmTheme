@@ -126,9 +126,9 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Variable static property</string>
+			<string>Variable static / constant</string>
 			<key>scope</key>
-			<string>variable.other.property.static</string>
+			<string>variable.other.property.static, variable.other.constant, meta.property.class variable.other.class</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>

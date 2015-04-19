@@ -29,8 +29,8 @@ settings:
 - name: Variable class
   scope: variable.other.class
   settings: {foreground: '#FFFFFF'}
-- name: Variable static property
-  scope: variable.other.property.static
+- name: Variable static / constant
+  scope: variable.other.property.static, variable.other.constant, meta.property.class variable.other.class
   settings: {foreground: '#1CDB95'}
 - name: Keyword
   scope: keyword
