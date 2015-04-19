@@ -4,9 +4,15 @@
 	"show_css_completions": false,
 
 	// List of scopes where Emmet CSS completions should be available
-	"css_completions_scope": ""
+	"css_completions_scope": "",
 
 	// A comma-separated list of scopes where Emmet’s Tab key
 	// abbreviation expander should be disabled
 	// "disable_tab_abbreviations_for_scopes": "source, text"
+
+  "syntaxProfiles": {
+    "jsx": {
+       "attr_quotes": "single"
+     }
+  }
 }

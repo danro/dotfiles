@@ -1,0 +1,3 @@
+# disable
+sudo chmod a-x /System/Library/CoreServices/rcd.app/Contents/MacOS/rcd
+killall -9 rcd

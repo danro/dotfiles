@@ -2,7 +2,7 @@
 # ---- base config ----
 [user]
 	name = Dan Rogers
-	email = dan@danro.net
+	email = dan@webflow.com
 [core]
 	excludesfile = ~/.gitignore
 	quotepath = false

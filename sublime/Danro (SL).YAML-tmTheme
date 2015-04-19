@@ -1,0 +1,217 @@
+name: Danro
+settings:
+- settings: {background: '#1b1b1b', caret: '#ffffff', foreground: '#FFFFFF', invisibles: '#3B3A32',
+    lineHighlight: '#444444', selection: '#48595B', selectionForeground: '#ffffff'}
+- name: Comment
+  scope: comment, comment invalid
+  settings: {foreground: '#84A4AA'}
+- name: String
+  scope: string
+  settings: {foreground: '#E4D25D'}
+- name: Number
+  scope: constant.numeric
+  settings: {foreground: '#9B6FFF'}
+- name: Built-in constant
+  scope: constant.language
+  settings: {foreground: '#9B6FFF'}
+- name: User-defined constant
+  scope: constant.character, constant.other
+  settings: {foreground: '#9B6FFF'}
+- name: Variable
+  scope: variable
+  settings: {foreground: '#D3CFA7'}
+- name: Variable (js)
+  scope: source.js variable
+  settings: {foreground: '#FFFFFF'}
+- name: Variable this/super
+  scope: variable.language.this, variable.language.super
+  settings: {foreground: '#AAAF90'}
+- name: Variable class
+  scope: variable.other.class
+  settings: {foreground: '#FFFFFF'}
+- name: Variable static property
+  scope: variable.other.property.static
+  settings: {foreground: '#1CDB95'}
+- name: Keyword
+  scope: keyword
+  settings: {foreground: '#F4005F'}
+- name: Keyword Accessor
+  scope: keyword.operator.accessor
+  settings: {foreground: '#0082C7'}
+- name: Storage
+  scope: storage
+  settings: {foreground: '#FA841A'}
+- name: Storage type
+  scope: storage.type
+  settings: {foreground: '#58D1EB'}
+- name: Class name
+  scope: entity.name.class
+  settings: {foreground: '#98E124'}
+- name: Class name before static function
+  scope: meta.function.static entity.name.class
+  settings: {foreground: '#FFFFFF'}
+- name: Inherited class
+  scope: entity.other.inherited-class
+  settings: {foreground: '#98E124'}
+- name: Function name
+  scope: entity.name.function
+  settings: {foreground: '#8BDF43'}
+- name: Function call
+  scope: meta.function-call entity.name.function
+  settings: {foreground: '#AEC47B'}
+- name: Function argument
+  scope: variable.parameter
+  settings: {foreground: '#E67015'}
+- name: Braces square
+  scope: meta.brace.square
+  settings: {foreground: '#0082C7'}
+- name: Markup XML declaration
+  scope: meta.tag.preprocessor.xml
+  settings: {foreground: '#68685B'}
+- name: Markup DOCTYPE
+  scope: meta.tag.sgml.doctype, meta.tag.sgml.doctype entity, meta.tag.sgml.doctype
+    string, meta.tag.preprocessor.xml, meta.tag.preprocessor.xml entity, meta.tag.preprocessor.xml
+    string
+  settings: {foreground: '#84A4AA'}
+- name: Markup DTD
+  scope: string.quoted.docinfo.doctype.DTD
+  settings: {fontStyle: italic}
+- name: String Quoted
+  scope: string.quoted
+  settings: {foreground: '#e5d56d'}
+- name: String Unquoted
+  scope: string.unquoted
+  settings: {foreground: '#D3CFA7'}
+- name: Markup tag
+  scope: meta.tag punctuation.definition.tag, meta.tag entity.name.tag
+  settings: {foreground: '#DA4632'}
+- name: HTML Script tag
+  scope: text.html entity.name.tag.script, text.html source.js punctuation.definition.tag
+  settings: {foreground: '#FF950A'}
+- name: HTML Style tag
+  scope: text.html entity.name.tag.style, text.html source.css punctuation.definition.tag
+  settings: {foreground: '#A883FF'}
+- name: HTML mustache tag
+  scope: text.html entity.name.tag.mustache, text.html meta.tag.template.mustache
+  settings: {foreground: '#A0C25F'}
+- name: PHP tag
+  scope: text.html source.php punctuation.section.embedded
+  settings: {foreground: '#F4005F'}
+- name: Key value
+  scope: punctuation.separator.key-value
+  settings: {foreground: '#FFFFFF'}
+- name: Tag attribute
+  scope: entity.other.attribute-name
+  settings: {foreground: '#42D1EC'}
+- name: Library function
+  scope: support.function
+  settings: {foreground: '#42D1EC'}
+- name: Library constant
+  scope: support.constant
+  settings: {foreground: '#42D1EC'}
+- name: Named color
+  scope: support.constant.color
+  settings: {foreground: '#68bfb6'}
+- name: Library class/type
+  scope: support.type, support.class
+  settings: {foreground: '#42D1EC'}
+- name: Library variable
+  scope: support.other.variable
+  settings: {}
+- name: Invalid
+  scope: invalid
+  settings: {background: '#38000B', foreground: '#E6002B'}
+- name: Invalid deprecated
+  scope: invalid.deprecated
+  settings: {background: '#38000B', foreground: '#E6002B'}
+- name: markup.italic
+  scope: markup.italic
+  settings: {fontStyle: italic, foreground: '#D2CFA7'}
+- name: markup.bold
+  scope: markup.bold
+  settings: {fontStyle: bold, foreground: '#E9C062'}
+- name: markup.underlineline
+  scope: markup.underline
+  settings: {fontStyle: underline, foreground: '#DFDDCA'}
+- name: markup.quote
+  scope: markup.quote
+  settings: {foreground: '#3399CC'}
+- name: markup.heading
+  scope: markup.heading
+  settings: {background: '#212817', foreground: '#76974C'}
+- name: markup.list
+  scope: markup.list
+  settings: {foreground: '#D2CFA7'}
+- name: markup.raw
+  scope: markup.raw
+  settings: {foreground: '#578BB3'}
+- name: markup.comment
+  scope: markup.comment
+  settings: {foreground: '#AE81FF'}
+- name: markup.separator
+  scope: markup.separator
+  settings: {background: '#4D4C3C', foreground: '#85893F'}
+- name: SublimeLinter Annotations
+  scope: sublimelinter.notes
+  settings: {background: '#FFFFAA', foreground: '#FFFFFF'}
+- name: SublimeLinter Error Outline
+  scope: sublimelinter.outline.illegal
+  settings: {background: '#FF4A52', foreground: '#FFFFFF'}
+- name: SublimeLinter Error Underline
+  scope: sublimelinter.underline.illegal
+  settings: {background: '#FF0000'}
+- name: SublimeLinter Warning Outline
+  scope: sublimelinter.outline.warning
+  settings: {background: '#DF9400', foreground: '#FFFFFF'}
+- name: SublimeLinter Warning Underline
+  scope: sublimelinter.underline.warning
+  settings: {background: '#FF0000'}
+- name: SublimeLinter Violation Outline
+  scope: sublimelinter.outline.violation
+  settings: {background: '#ffffff33', foreground: '#FFFFFF'}
+- name: SublimeLinter Violation Underline
+  scope: sublimelinter.underline.violation
+  settings: {background: '#FF0000'}
+- name: css.id
+  scope: entity.other.attribute-name.id.css
+  settings: {foreground: '#E5D56D'}
+- name: css.class
+  scope: entity.other.attribute-name.class
+  settings: {foreground: '#A0C25F'}
+- name: less.mixin
+  scope: entity.other.less.mixin
+  settings: {foreground: '#98E124'}
+- name: css.element
+  scope: keyword.control.html.elements
+  settings: {foreground: '#DA4632'}
+- name: css.string
+  scope: meta.attribute-selector.css
+  settings: {foreground: '#FF950A'}
+- name: diff.header
+  scope: meta.diff, meta.diff.header
+  settings: {foreground: '#75715E'}
+- name: diff.deleted
+  scope: markup.deleted
+  settings: {foreground: '#F92672'}
+- name: diff.inserted
+  scope: markup.inserted
+  settings: {foreground: '#A6E22E'}
+- name: diff.changed
+  scope: markup.changed
+  settings: {foreground: '#E6DB74'}
+- scope: constant.numeric.line-number.find-in-files - match
+  settings: {foreground: '#AE81FFA0'}
+- scope: entity.name.filename.find-in-files
+  settings: {foreground: '#98e124'}
+- scope: text.find-in-files
+  settings: {foreground: '#84a4aa'}
+- name: SublimeLinter Warning
+  scope: sublimelinter.mark.warning
+  settings: {foreground: '#EDBA00'}
+- name: SublimeLinter Gutter Mark
+  scope: sublimelinter.gutter-mark
+  settings: {foreground: '#FFFFFF'}
+- name: SublimeLinter Error
+  scope: sublimelinter.mark.error
+  settings: {foreground: '#DA2000'}
+uuid: 6C415C87-5245-4BF1-86BC-79BCE8A13D09
