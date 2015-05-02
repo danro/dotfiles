@@ -27,8 +27,8 @@ settings:
   scope: variable.language.this, variable.language.super
   settings: {foreground: '#AAAF90'}
 - name: Variable class
-  scope: variable.other.class
-  settings: {foreground: '#FFFFFF'}
+  scope: variable.other.class, meta.class.extends variable.other
+  settings: {foreground: '#1CDB95'}
 - name: Variable static / constant
   scope: variable.other.property.static, variable.other.constant, meta.property.class variable.other.class
   settings: {foreground: '#1CDB95'}
@@ -54,7 +54,7 @@ settings:
   scope: entity.other.inherited-class
   settings: {foreground: '#98E124'}
 - name: Function name
-  scope: entity.name.function
+  scope: entity.name.function, entity.name.method
   settings: {foreground: '#8BDF43'}
 - name: Function call
   scope: meta.function-call entity.name.function

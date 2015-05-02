@@ -16,8 +16,7 @@
 		"Package Control",
 		"SCSS-sublime",
 		"SublimeLinter",
-		"SublimeLinter-jshint",
-		"SublimeLinter-jsxhint",
+		"SublimeLinter-contrib-eslint",
 		"SublimeOnSaveBuild",
 		"Tomorrow Color Schemes"
 	],

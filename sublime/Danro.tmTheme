@@ -117,11 +117,11 @@
 			<key>name</key>
 			<string>Variable class</string>
 			<key>scope</key>
-			<string>variable.other.class</string>
+			<string>variable.other.class, meta.class.extends variable.other</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#FFFFFF</string>
+				<string>#1CDB95</string>
 			</dict>
 		</dict>
 		<dict>
@@ -216,7 +216,7 @@
 			<key>name</key>
 			<string>Function name</string>
 			<key>scope</key>
-			<string>entity.name.function</string>
+			<string>entity.name.function, entity.name.method</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>

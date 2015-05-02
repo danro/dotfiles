@@ -5,18 +5,14 @@
         "error_color": "D02000",
         "gutter_theme": "Packages/SublimeLinter/gutter-themes/Default/Default.gutter-theme",
         "gutter_theme_excludes": [],
-        "javascript_linter": "jsxhint",
         "lint_mode": "save only",
         "linters": {
-            "jshint": {
+            "eslint": {
                 "@disable": false,
                 "args": [],
-                "excludes": []
-            },
-            "jsxhint": {
-                "@disable": false,
-                "args": [],
-                "excludes": []
+                "excludes": [
+                    "*.html"
+                ]
             }
         },
         "mark_style": "outline",
@@ -40,6 +36,7 @@
             "html (django)": "html",
             "html (rails)": "html",
             "html 5": "html",
+            "javascript (babel)": "javascript",
             "php": "html",
             "python django": "python"
         },

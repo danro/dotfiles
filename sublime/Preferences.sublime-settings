@@ -10,7 +10,7 @@
 	],
 	"auto_complete_with_fields": true,
 	"auto_match_enabled": true,
-	"color_scheme": "Packages/User/Danro (SL).tmTheme",
+	"color_scheme": "Packages/User/Danro.tmTheme",
 	"create_window_at_startup": false,
 	"detect_indentation": true,
 	"detect_slow_plugins": false,
@@ -50,11 +50,11 @@
 	"hot_exit": true,
 	"ignored_packages":
 	[
-		"CSS",
-		"HTML",
 		"Vintage",
 		"JavaScript",
-		"AdvancedNewFile"
+		"AdvancedNewFile",
+		"CSS",
+		"HTML"
 	],
 	"indent_subsequent_lines": true,
 	"index_files": false,
