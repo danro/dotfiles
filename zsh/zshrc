@@ -30,6 +30,7 @@ unsetopt correct_all
 export PATH="/usr/local/opt/php54/bin:$PATH"
 
 # Custom aliases
+alias g='git'
 alias l='ls -lahGo'
 alias ll='ls -lhGo'
 alias ks='ksdiff'
@@ -44,7 +45,8 @@ alias custom-lodash='lodash -d underscore exports=amd'
 alias airplay-fix='sudo killall coreaudiod'
 alias hostname-fix='sudo scutil --set HostName $*'
 alias webfont-rename="rename 's/-webfont//' *-webfont*" # brew install rename
-alias start="sh start.sh"
+alias start="npm start"
+alias shrink="ulimit -n 2560 && npm-shrinkwrap"
 alias serv="python -m SimpleHTTPServer"
 alias release="git push && git push origin master:gh-pages && git push --tags && npm publish"
 alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport"
@@ -61,3 +63,9 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # ENV scripts with secure keys
 source $HOME/.env/aws.sh
+
+# Docker ENV
+export DOCKER_HOST=tcp://192.168.59.103:2376
+export DOCKER_CERT_PATH=/Users/dan/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
+

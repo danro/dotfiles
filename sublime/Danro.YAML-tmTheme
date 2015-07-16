@@ -57,7 +57,7 @@ settings:
   scope: entity.name.function, entity.name.method
   settings: {foreground: '#8BDF43'}
 - name: Function call
-  scope: meta.function-call entity.name.function
+  scope: meta.function-call entity.name.function, variable.function
   settings: {foreground: '#AEC47B'}
 - name: Function argument
   scope: variable.parameter

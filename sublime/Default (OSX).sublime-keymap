@@ -156,20 +156,14 @@
   { "keys": ["f5"], "command": "noop" },
 
   // alignment
-  { "keys": ["super+ctrl+a"], "command": "alignment" }
+  { "keys": ["super+ctrl+a"], "command": "alignment" },
 
-  // properly indent between HTML tags (seems fixed in 3018)
-  // { "keys": ["enter"], "command": "run_macro_file",
-  //  "args": {"file": "res://Packages/User/macros/Tag Indent.sublime-macro"},
-  //  "context": [ { "key": "selector", "operator": "equal", "operand": "meta.scope.between-tag-pair.html" } ]
-  // },
+  // Move by paragraph
+  {"keys": ["ctrl+up"], "command": "move_by_paragraph", "args": {"forward": false}},
+  {"keys": ["ctrl+down"], "command": "move_by_paragraph", "args": {"forward": true}},
+  {"keys": ["ctrl+shift+up"], "command": "move_by_paragraph", "args": {"forward": false, "extend": true}},
+  {"keys": ["ctrl+shift+down"], "command": "move_by_paragraph", "args": {"forward": true, "extend": true}},
 
-  // wrap tag around selection (temp replacement for emmet)
-  // { "keys": ["ctrl+w"], "command": "insert_snippet", "args": { "name": "Packages/XML/long-tag.sublime-snippet" } },
-
-  // copy expanded file or text to clipboard (broken in ST3)
-  // { "keys": ["super+shift+c"], "command": "copy_expanded" },
-
-  // spaces to tabs
-  // { "keys": ["super+."], "command": "unexpand_tabs", "args": {"set_translate_tabs": true} }
+  // Fin
+  {}
 ]

@@ -51,10 +51,7 @@
 	"ignored_packages":
 	[
 		"Vintage",
-		"JavaScript",
-		"AdvancedNewFile",
-		"CSS",
-		"HTML"
+		"AdvancedNewFile"
 	],
 	"indent_subsequent_lines": true,
 	"index_files": false,
