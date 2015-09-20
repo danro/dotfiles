@@ -46,12 +46,12 @@
 		"tmp"
 	],
 	"font_face": "InputMonoNarrow",
-	"font_size": 14,
+	"font_size": 15,
 	"hot_exit": true,
 	"ignored_packages":
 	[
-		"Vintage",
-		"AdvancedNewFile"
+		"AdvancedNewFile",
+		"Vintage"
 	],
 	"indent_subsequent_lines": true,
 	"index_files": false,

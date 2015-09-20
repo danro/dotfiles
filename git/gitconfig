@@ -50,7 +50,7 @@
 	untracked = blue bold
 	branch = magenta
 [push]
-	default = simple
+	default = current
 # ---- Kaleidoscope ----
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
