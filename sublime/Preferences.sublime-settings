@@ -1,4 +1,5 @@
 {
+  "always_show_minimap_viewport": true,
 	"auto_complete_commit_on_tab": true,
 	"auto_complete_selector":
 	[
@@ -10,7 +11,7 @@
 	],
 	"auto_complete_with_fields": true,
 	"auto_match_enabled": true,
-	"color_scheme": "Packages/User/Danro.tmTheme",
+  "bold_folder_labels": true,
 	"create_window_at_startup": false,
 	"detect_indentation": true,
 	"detect_slow_plugins": false,
@@ -53,9 +54,10 @@
 		"AdvancedNewFile",
 		"Vintage"
 	],
+  "indent_guide_options": [ "draw_normal", "draw_active" ],
 	"indent_subsequent_lines": true,
 	"index_files": false,
-	"line_padding_bottom": 1,
+	"line_padding_bottom": 2,
 	"line_padding_top": 2,
 	"match_selection": false,
 	"open_files_in_new_window": false,
@@ -66,7 +68,8 @@
 	"show_panel_on_build": true,
 	"smart_indent": true,
 	"tab_size": 2,
-	"theme": "Refined-3.sublime-theme",
+  "theme": "Material-Theme-Darker.sublime-theme",
+	"color_scheme": "Packages/User/Danro.tmTheme",
 	"translate_tabs_to_spaces": true,
 	"tree_animation_enabled": false,
 	"trim_automatic_white_space": false,

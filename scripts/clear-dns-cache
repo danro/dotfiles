@@ -1,6 +1,9 @@
 #!/bin/sh
-sudo dscacheutil -flushcache
-sudo killall -HUP mDNSResponder
+
+# Mountain Lion
+# sudo dscacheutil -flushcache
 
 # Yosemite
 # sudo discoveryutil mdnsflushcache
+
+sudo killall -HUP mDNSResponder
