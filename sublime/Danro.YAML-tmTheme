@@ -1,6 +1,6 @@
 name: Danro
 settings:
-- settings: {background: '#1b1b1b', caret: '#ffffff', foreground: '#FFFFFF', invisibles: '#3B3A32',
+- settings: {background: '#171A1C', caret: '#ffffff', foreground: '#FFFFFF', invisibles: '#3B3A32',
     lineHighlight: '#444444', selection: '#48595B', selectionForeground: '#ffffff'}
 - name: Comment
   scope: comment, comment invalid
