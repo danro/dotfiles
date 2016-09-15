@@ -1,0 +1,7 @@
+
+
+/* Status bar */
+
+.monaco-workbench > .part.statusbar { 
+  background-color:#151515;
+}

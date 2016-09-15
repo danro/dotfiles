@@ -66,6 +66,7 @@
 	"preview_on_click": true,
 	"scroll_past_end": true,
 	"scroll_speed": 0,
+	"show_definitions": false,
 	"show_panel_on_build": true,
 	"smart_indent": true,
 	"tab_size": 2,

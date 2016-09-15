@@ -5,7 +5,6 @@
 	],
 	"installed_packages":
 	[
-		"AAAPackageDev",
 		"AdvancedNewFile",
 		"Alignment",
 		"Babel",
@@ -15,14 +14,10 @@
 		"Jade",
 		"Material Theme",
 		"Package Control",
-		"SCSS-sublime",
+		"PackageDev",
 		"SublimeLinter",
 		"SublimeLinter-contrib-eslint",
 		"SublimeOnSaveBuild",
 		"Tomorrow Color Schemes"
-	],
-	"repositories":
-	[
-		"https://github.com/danro/SCSS-sublime"
 	]
 }
