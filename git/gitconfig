@@ -15,6 +15,7 @@
 	co = checkout
 	pr = pull --rebase
 	ms = merge --squash
+	ds = difftool --staged
 	f = fetch
 	unstage = reset HEAD
 	untrack = rm --cached
@@ -30,6 +31,7 @@
 	refresh = update-index --really-refresh
 	zip = archive --format zip --output
 	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+	dm = log --graph --pretty=format:'%Cred%h%Creset: [%an]%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative HEAD..dev
 [log]
 	date = relative
 # ---- pretty colors ----
