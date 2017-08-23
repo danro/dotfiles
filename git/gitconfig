@@ -16,6 +16,7 @@
 	pr = pull --rebase
 	ms = merge --squash
 	ds = difftool --staged
+	dev = fetch origin dev:dev
 	f = fetch
 	unstage = reset HEAD
 	untrack = rm --cached

@@ -41,6 +41,9 @@
   },
 
   // snippet commands
+  { "keys": ["ctrl+v"], "command": "insert_snippet", "args":
+    {"name": "Packages/User/snippets/js-template-variable.sublime-snippet"}
+  },
   { "keys": ["ctrl+j"], "command": "insert_snippet", "args":
     {"name": "Packages/User/snippets/js-$jquery.sublime-snippet"}
   },
@@ -152,7 +155,7 @@
 
   // disabled keys
   { "keys": ["ctrl+t"], "command": "noop" },
-  { "keys": ["ctrl+v"], "command": "noop" },
+  // { "keys": ["ctrl+v"], "command": "noop" },
   { "keys": ["f5"], "command": "noop" },
 
   // alignment
