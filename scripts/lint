@@ -1,0 +1,28 @@
+#!/bin/bash
+
+RED="\e[1;31m"
+GREEN="\e[0;32m"
+YELLOW="\e[0;33m"
+EOL="\e[0m\n"
+
+problems=0;
+
+for file in $(git diff --diff-filter=d --cached --name-only | grep -E '\.(js|jsx)$')
+do
+  ./node_modules/.bin/eslint "$file" --fix
+  if [ $? -ne 0 ]; then
+    ((problems++))
+    printf "${YELLOW}↑ $file${EOL}"
+  else
+    printf "${GREEN}✓ $file${EOL}"
+    git add "$file"
+  fi
+done
+
+if [ "$problems" -eq 1 ]; then
+  printf "${RED}${problems} problem found.${EOL}"
+elif [ "$problems" -gt 1 ]; then
+  printf "${RED}${problems} problems found.${EOL}"
+else
+  printf "${GREEN}lint ok!${EOL}"
+fi

@@ -3,20 +3,25 @@ IdentitiesOnly yes
 Host danro.net
 	User danro
 	IdentityFile ~/.ssh/danro
+	UseKeychain yes
 
 Host github.com
 	User git
 	IdentityFile ~/.ssh/danflow2
+	UseKeychain yes
 
 Host ocean.danro.net
 	User root
 	IdentityFile ~/.ssh/digitalocean
+	UseKeychain yes
 
 Host teamcity.webflow.com
 	User ubuntu
 	IdentityFile ~/.ssh/teamcity
+	UseKeychain yes
 
 Host blog.webflow.com
 	User ubuntu
 	IdentityFile ~/.ssh/teamcity
+	UseKeychain yes
 

@@ -12,8 +12,8 @@
   // run default build system
   { "keys": ["super+r"], "command": "build" },
 
-  // add layout pane
-  { "keys": ["ctrl+a"], "command": "new_pane", "args": {"move": true} },
+  // sublime linter error panel
+  { "keys": ["ctrl+a"], "command": "sublime_linter_panel_toggle" },
 
   // expand selection
   { "keys": ["super+alt+g"], "command": "find_under_expand" },

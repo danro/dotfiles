@@ -48,10 +48,11 @@
 		"tmp"
 	],
 	"font_face": "InputMonoNarrow",
-	"font_size": 15,
+	"font_size": 14,
 	"hot_exit": true,
 	"ignored_packages":
 	[
+		"0_package_control_loader",
 		"AdvancedNewFile",
 		"Vintage"
 	],
@@ -69,6 +70,7 @@
 	"show_definitions": false,
 	"show_panel_on_build": true,
 	"smart_indent": true,
+	"spell_check": true,
 	"tab_size": 2,
 	"theme": "Material-Theme.sublime-theme",
 	"translate_tabs_to_spaces": true,

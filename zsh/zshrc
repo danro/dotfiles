@@ -39,7 +39,6 @@ alias run='npm run'
 alias profile='sub ~/sites/github/dotfiles/zsh/zshrc'
 alias shortcuts='sub ~/.dotfiles/zsh/custom/shortcuts.zsh'
 alias theme='sub ~/sites/github/dotfiles/zsh/danro.zsh-theme'
-
 alias gitignore='cp -v ~/.dotfiles/git/ignore-project .gitignore'
 alias clean-asl='sudo rm -rfv /private/var/log/asl/*.asl'
 alias custom-lodash='lodash -d underscore exports=amd'

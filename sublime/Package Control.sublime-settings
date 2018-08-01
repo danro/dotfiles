@@ -2,6 +2,7 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
+		"0_package_control_loader"
 	],
 	"installed_packages":
 	[
@@ -15,8 +16,6 @@
 		"Material Theme",
 		"Package Control",
 		"PackageDev",
-		"SublimeLinter",
-		"SublimeLinter-contrib-eslint",
 		"SublimeOnSaveBuild",
 		"Tomorrow Color Schemes",
 		"Wrap Plus"
