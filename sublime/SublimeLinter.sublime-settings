@@ -3,12 +3,7 @@
     "lint_mode": "load_save",
     "linters": {
       "eslint": {
-          "selector": "source.js",
-          "disable": false,
-          "args": [],
-          "excludes": [
-              "*.html"
-          ]
+          "selector": "source.js - meta.attribute-with-value",
       }
     },
 }

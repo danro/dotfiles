@@ -2,20 +2,27 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
-		"0_package_control_loader"
 	],
 	"installed_packages":
 	[
 		"AdvancedNewFile",
 		"Alignment",
 		"Babel",
+		"Better CoffeeScript",
 		"ChangeQuotes",
 		"DocBlockr",
 		"Emmet",
+		"Flow",
+		"FramerCompletion",
 		"Jade",
+		"Javascript Beautify",
+		"JsPrettier",
 		"Material Theme",
+		"Naomi",
 		"Package Control",
 		"PackageDev",
+		"SublimeLinter",
+		"SublimeLinter-flow",
 		"SublimeOnSaveBuild",
 		"Tomorrow Color Schemes",
 		"Wrap Plus"

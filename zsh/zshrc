@@ -32,6 +32,8 @@ export PATH="/usr/local/opt/php54/bin:$PATH"
 
 # Custom aliases
 alias g='git'
+alias gg='git add . && lint'
+alias flow='yarn run flow'
 alias l='ls -lahGo'
 alias ll='ls -lhGo'
 alias ks='ksdiff'
@@ -45,7 +47,8 @@ alias custom-lodash='lodash -d underscore exports=amd'
 alias airplay-fix='sudo killall coreaudiod'
 alias hostname-fix='sudo scutil --set HostName $*'
 alias webfont-rename="rename 's/-webfont//' *-webfont*" # brew install rename
-alias start="./start.sh"
+alias start="./start.sh --danger-skip-shared-reload --DANGER_SKIP_SHARED_RELOAD"
+alias startprod="./start.sh --webpack-prod-env --danger-skip-shared-reload --DANGER_SKIP_SHARED_RELOAD"
 alias serv="python -m SimpleHTTPServer"
 alias release="git push && git push origin master:gh-pages && git push --tags && npm publish"
 alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport"

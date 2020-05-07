@@ -1,0 +1,40 @@
+{
+  "auto_format_on_save": true,
+  "allow_inline_formatting": true,
+  "debug": true,
+  "prettier_cli_path": "",
+  "prettier_options": {
+    // Fit code within this line limit
+    "printWidth": 80,
+
+    // If true, will use single instead of double quotes
+    "singleQuote": true,
+
+    // Controls the printing of trailing commas wherever possible.
+    //
+    // Valid options:
+    //
+    // "none" - No trailing commas
+    // "es5"  - Trailing commas where valid in ES5 (objects, arrays, etc)
+    // "all"  - Trailing commas wherever possible (function arguments)
+    "trailingComma": "all",
+
+    // Controls the printing of spaces inside array and objects
+    "bracketSpacing": false,
+
+    // If true, puts the `>` of a multi-line jsx element at the end of
+    // the last line instead of being alone on the next line
+    "jsxBracketSameLine": false,
+
+    // Which parser to use. Valid options are "flow" and "babylon"
+    "parser": "flow",
+
+    // Whether to add a semicolon at the end of every line (semi: true),
+    // or only at the beginning of lines that may introduce ASI failures (semi: false)
+    "semi": true
+  },
+  "additional_cli_args": {
+    "--parser": "babylon"
+  }
+
+}

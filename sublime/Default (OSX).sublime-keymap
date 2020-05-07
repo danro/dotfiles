@@ -21,9 +21,10 @@
 
   // goto file / command palette / switch project
   { "keys": ["super+t"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+  { "keys": ["super+p"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
   { "keys": ["alt+t"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
-  { "keys": ["super+p"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
-  { "keys": ["super+shift+p"], "command": "prompt_select_project" },
+  { "keys": ["super+shift+p"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
+  // { "keys": ["super+shift+p"], "command": "prompt_select_project" },
 
   // goto line number
   { "keys": ["super+l"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },

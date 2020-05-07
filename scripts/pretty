@@ -9,7 +9,7 @@ problems=0;
 
 for file in $(git diff --diff-filter=d --cached --name-only | grep -E '\.(js|jsx)$')
 do
-  ./node_modules/.bin/eslint "$file"
+  ./node_modules/.bin/prettier --write "$file"
   if [ $? -ne 0 ]; then
     ((problems++))
     printf "${YELLOW}↑ $file${EOL}"
@@ -24,5 +24,5 @@ if [ "$problems" -eq 1 ]; then
 elif [ "$problems" -gt 1 ]; then
   printf "${RED}${problems} problems found.${EOL}"
 else
-  printf "${GREEN}lint ok!${EOL}"
+  printf "${GREEN}pretty ok!${EOL}"
 fi

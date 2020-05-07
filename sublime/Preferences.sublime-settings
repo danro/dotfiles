@@ -22,6 +22,7 @@
 	"fade_fold_buttons": false,
 	"folder_exclude_patterns":
 	[
+		".next",
 		".sass-cache",
 		".svn",
 		".git",
@@ -52,7 +53,6 @@
 	"hot_exit": true,
 	"ignored_packages":
 	[
-		"0_package_control_loader",
 		"AdvancedNewFile",
 		"Vintage"
 	],
