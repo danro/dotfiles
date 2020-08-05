@@ -1,8 +1,10 @@
 {
+	"auto_close_tags": false,
 	"extensions":
 	[
 		"jsx",
 		"tsx",
-		"js"
+		"js",
+		".babelrc"
 	]
 }

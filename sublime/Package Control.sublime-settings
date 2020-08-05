@@ -22,8 +22,10 @@
 		"Package Control",
 		"PackageDev",
 		"SublimeLinter",
+		"SublimeLinter-eslint",
 		"SublimeLinter-flow",
 		"SublimeOnSaveBuild",
+		"TabNine",
 		"Tomorrow Color Schemes",
 		"Wrap Plus"
 	]

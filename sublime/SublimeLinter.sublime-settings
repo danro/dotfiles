@@ -4,6 +4,7 @@
     "linters": {
       "eslint": {
           "selector": "source.js - meta.attribute-with-value",
+          "env": {"PATH":"~/.nvm/versions/node/v8.11.1/bin/"}
       }
     },
 }
