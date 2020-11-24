@@ -1,0 +1,22 @@
+{
+    "name": "theme-danro",
+    "displayName": "theme-danro",
+    "description": "Danro Theme",
+    "version": "0.0.1",
+    "publisher": "Danro",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Danro",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Danro.tmTheme"
+            }
+        ]
+    }
+}

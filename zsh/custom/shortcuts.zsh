@@ -6,10 +6,8 @@
 df=~/.dotfiles
 vim=~/.dotfiles/vim
 desk=~/Desktop
-danro=~/Sites/Danro
+danro=~/Sites/GitHub/danro
 github=~/Sites/GitHub
+glitch=~/Sites/Glitch
 bkwld=~/Sites/BKWLD
 webflow=~/Sites/GitHub/webflow/webflow
-sublime=~/Library/Application\ Support/Sublime\ Text\ 3/Packages
-tram=~/Sites/GitHub/javascript/tram
-mash=~/Sites/GitHub/javascript/mash

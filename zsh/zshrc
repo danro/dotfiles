@@ -47,8 +47,7 @@ alias custom-lodash='lodash -d underscore exports=amd'
 alias airplay-fix='sudo killall coreaudiod'
 alias hostname-fix='sudo scutil --set HostName $*'
 alias webfont-rename="rename 's/-webfont//' *-webfont*" # brew install rename
-alias start="./start.sh --danger-skip-shared-reload --DANGER_SKIP_SHARED_RELOAD"
-alias startprod="./start.sh --webpack-prod-env --danger-skip-shared-reload --DANGER_SKIP_SHARED_RELOAD"
+alias start="./start.sh"
 alias serv="python -m SimpleHTTPServer"
 alias release="git push && git push origin master:gh-pages && git push --tags && npm publish"
 alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport"
@@ -68,3 +67,5 @@ source $HOME/.env/aws.sh
 
 export NVM_DIR="/Users/dan/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
