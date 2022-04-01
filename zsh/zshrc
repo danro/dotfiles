@@ -28,7 +28,7 @@ unsetopt correct_all
 
 # Swap between PHP53 and PHP54
 # export PATH="/usr/local/opt/php53/bin:$PATH"
-export PATH="/usr/local/opt/php54/bin:$PATH"
+# export PATH="/usr/local/opt/php54/bin:$PATH"
 
 # Custom aliases
 alias g='git'
@@ -42,8 +42,6 @@ alias profile='sub ~/sites/github/dotfiles/zsh/zshrc'
 alias shortcuts='sub ~/.dotfiles/zsh/custom/shortcuts.zsh'
 alias theme='sub ~/sites/github/dotfiles/zsh/danro.zsh-theme'
 alias gitignore='cp -v ~/.dotfiles/git/ignore-project .gitignore'
-alias clean-asl='sudo rm -rfv /private/var/log/asl/*.asl'
-alias custom-lodash='lodash -d underscore exports=amd'
 alias airplay-fix='sudo killall coreaudiod'
 alias hostname-fix='sudo scutil --set HostName $*'
 alias webfont-rename="rename 's/-webfont//' *-webfont*" # brew install rename
@@ -64,8 +62,3 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # ENV scripts with secure keys
 source $HOME/.env/aws.sh
-
-export NVM_DIR="/Users/dan/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
